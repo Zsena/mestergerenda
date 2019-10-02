@@ -7,7 +7,7 @@
 
 @include('fragments.navigation')
 
-<div id="content" style="margin-top: 80px;">
+<div id="content">
     @yield('content')
 </div>
 

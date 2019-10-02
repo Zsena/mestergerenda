@@ -16,7 +16,7 @@ Route::group(['prefix' => 'admin'], function () {
 });
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('startpage');
 });
 
 Route::get('{slug}', 'PageController@renderPage');

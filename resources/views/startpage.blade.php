@@ -178,6 +178,7 @@
                 </div>
             </section>
             <section class="faq-section">
+                <img class="ref-long-bline" src="../assets/img/homepage/design-elements/vertical-line-brown-longer-ref.png" alt="Design elem">
                 <div class="ref-program-box">
                     <img class="ref-green-line" src="../assets/img/homepage/design-elements/horizontal-green-line.png" alt="Design elem">
                 </div>
@@ -192,9 +193,9 @@
                         </p>
                     </div>
                     <div class="col-12 heading-group">
-                        <h2>Gyakori kérdések</h2>
+                        <h2 class="text-highlight-darker">Gyakori kérdések</h2>
                     </div>
-                    <div class="row">
+                    <div class="row faq-row">
                         <div class="col-6">
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam interdum accumsan dui, et aliquet ex convallis et.
                                 Sed ac mauris imperdiet neque consectetur mattis nec eu nunc. Donec quis erat orci. Mauris massa eros,
@@ -217,12 +218,45 @@
                         </div>
                     </div>
                 </div>
+                <img class="bottom-white-elem" src="{{ asset('assets/img/homepage/design-elements/first-sec-bottom.png') }}" alt="Design elem">
             </section>
             <section class="testimonial">
                 <div class="m-container">
-                    <div class="row">
+                    <div class="row testi-row">
                         <div class="col">
-                            <img src="{{ asset('assets/img/homepage/fooldal_rolunkmondtak.png') }}" alt="">
+                            <img class="testi-main-img" src="{{ asset('assets/img/homepage/fooldal_rolunkmondtak.png') }}" alt="">
+                        </div>
+                        <div class="col">
+                            <div class="testi-card">
+                                <div class="col-12 heading-group">
+                                    <h2 class="text-highlight-darker">Rólunk mondták</h2>
+                                </div>
+                                <div class="row">
+                                    <div class="col-4">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam interdum accumsan dui, et aliquet ex convallis et.
+                                            Sed ac mauris imperdiet neque consectetur mattis nec eu nunc. Donec quis erat orci.
+                                            Mauris massa eros, sollicitudin ut arcu quis, vehicula blandit purus. Suspendisse eleifend nunc vel semper euismod.
+                                            Praesent tempor ipsum non urna posuere, ac convallis orci commodo.
+                                            Nullam dictum enim vitae turpis placerat vulputate. Fusce ullamcorper interdum aliquet.
+                                        </p>
+                                        <p class="commas-row">
+                                            <em class="text-highlight-darker commas">
+                                                <img class="commas-top" src="../assets/img/homepage/design-elements/commas-top.png" alt="Design elem">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam interdum accumsan dui,
+                                                et aliquet ex convallis et. Sed ac mauris imperdiet neque consectetur mattis nec eu nunc. Donec quis erat orci.
+                                                <img class="commas-bottom" src="../assets/img/homepage/design-elements/commas-bottom.png" alt="Design elem">
+                                            </em>
+                                        </p>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam interdum accumsan dui, et aliquet ex convallis et.
+                                            Sed ac mauris imperdiet neque consectetur mattis nec eu nunc. Donec quis erat orci.
+                                            Mauris massa eros, sollicitudin ut arcu quis, vehicula blandit purus. Suspendisse eleifend nunc vel semper euismod.
+                                        </p>
+                                        <a class="btn btn-primary" href="#">Referenciház program</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

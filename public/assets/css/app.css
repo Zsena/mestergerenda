@@ -188,6 +188,14 @@ p {
   margin-top: -85px;
 }
 
+.text-highlight {
+  color: #99992a;
+}
+
+.text-highlight-darker {
+  color: #586e27;
+}
+
 /* All card will be a clickable */
 
 .clickable-card-link::after {
@@ -399,6 +407,17 @@ article.header-layer-container .row .main-layer p {
   text-transform: uppercase;
 }
 
+img.bottom-white-elem {
+  position: absolute;
+  bottom: -2rem;
+  right: 0;
+  width: 50%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  min-height: 5%;
+}
+
 /* main */
 
 .main .block-house-section {
@@ -508,6 +527,12 @@ article.header-layer-container .row .main-layer p {
   position: relative;
 }
 
+.main .faq-section .ref-long-bline {
+  position: absolute;
+  top: -5rem;
+  right: 43.5rem;
+}
+
 .main .faq-section .ref-program-box {
   position: absolute;
   background-image: url("/public/assets/img/homepage/fooldal_referenciaprogram.png");
@@ -561,13 +586,71 @@ article.header-layer-container .row .main-layer p {
   color: #99992a;
 }
 
+.main .faq-section .faq-row {
+  position: relative;
+  z-index: 9999;
+}
+
+.main .faq-section .faq-row p {
+  padding-bottom: 2rem;
+}
+
 .main .testimonial {
   min-height: 885px;
   background-image: url("/public/assets/img/homepage/fooldal_rolunkmondtak_BG.png");
-  background-position: top center;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+}
+
+.main .testimonial h2 {
+  margin-bottom: 0;
+}
+
+.main .testimonial .testi-row {
+  padding: 17rem 0 5rem;
+}
+
+.main .testimonial .testi-row .testi-main-img {
+  position: relative;
+  top: -10rem;
+}
+
+.main .testimonial .testi-row .testi-card {
+  background-color: white;
+  padding: 2rem;
+  margin-top: -10rem;
+  margin-left: -2rem;
+  padding-right: 0;
+}
+
+.main .testimonial .testi-row .testi-card .commas-row {
+  font-size: 18px;
+  width: 100%;
+}
+
+.main .testimonial .testi-row .testi-card .commas {
+  margin: 2rem 0;
+  position: relative;
+  padding: 2rem 0;
+}
+
+.main .testimonial .testi-row .testi-card .commas .commas-top {
+  position: relative;
+  top: 0;
+  right: 0;
+}
+
+.main .testimonial .testi-row .testi-card .commas .commas-bottom {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+}
+
+.main .testimonial .testi-row .testi-card p {
+  text-align: justify;
 }
 
 .sticky-footer {
@@ -606,6 +689,11 @@ article.header-layer-container .row .main-layer p {
 }
 
 @media only screen and (min-width: 768px) {
+  img.bottom-white-elem {
+    bottom: -3rem;
+    min-height: 13%;
+  }
+
   .row {
     display: flex;
     flex-wrap: inherit;
@@ -713,6 +801,16 @@ article.header-layer-container .row .main-layer p {
   .main .block-house-section .img-wrap img {
     margin-bottom: 0;
   }
+
+  .main .testimonial .testi-row .testi-main-img {
+    position: inherit;
+  }
+
+  .main .testimonial .testi-row .testi-card {
+    margin-top: -10rem;
+    margin-left: -2rem;
+    padding-right: 4rem;
+  }
 }
 
 @media only screen and (min-width: 992px) {
@@ -784,6 +882,16 @@ article.header-layer-container .row .main-layer p {
   article.header-layer-container .row .main-layer h1 {
     font-size: 80px;
   }
+
+  .main .testimonial .testi-row {
+    padding: 20rem 0 10rem;
+  }
+
+  .main .testimonial .testi-row .testi-card {
+    margin-top: -10rem;
+    margin-left: -2rem;
+    padding-right: 8rem;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -808,7 +916,7 @@ article.header-layer-container .row .main-layer p {
   }
 
   .main .faq-section .faq-container {
-    padding-top: 5rem;
+    padding-top: 7rem;
   }
 
   .main .faq-section .faq-container .heading-group {
@@ -820,8 +928,32 @@ article.header-layer-container .row .main-layer p {
     margin-bottom: 0;
   }
 
-  .main .faq-section .faq-container .text-highlight {
-    color: #99992a;
+  .main .testimonial .testi-row .testi-card {
+    margin-top: -10rem;
+    margin-left: -2rem;
+    padding-right: 10rem;
+  }
+
+  .main .testimonial .testi-row .testi-card .commas-row {
+    font-size: 18px;
+    width: 120%;
+  }
+
+  .main .testimonial .testi-row .testi-card .commas {
+    margin: 2rem 0;
+    padding: 2rem 0;
+  }
+
+  .main .testimonial .testi-row .testi-card .commas .commas-top {
+    position: relative;
+    top: 30px;
+    right: -12rem;
+  }
+
+  .main .testimonial .testi-row .testi-card .commas .commas-bottom {
+    bottom: 30px;
+    left: -12rem;
+    width: 50px;
   }
 }
 

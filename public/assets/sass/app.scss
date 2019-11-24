@@ -193,6 +193,14 @@ p {
 }
 
 
+.text-highlight {
+  color: $light-green;
+}
+
+.text-highlight-darker{
+  color: $dark-green;
+}
+
 
 /* All card will be a clickable */
 .clickable-card-link::after {
@@ -396,6 +404,15 @@ article.header-layer-container {
   }
 }
 
+img.bottom-white-elem {
+  position: absolute;
+  bottom: -2rem;
+  right: 0;
+  width: 50%;
+  height: max-content;
+  min-height: 5%;
+}
+
 
 
 /* main */
@@ -492,6 +509,11 @@ article.header-layer-container {
   .faq-section {
     min-height: 625px;
     position: relative;
+    .ref-long-bline {
+      position: absolute;
+      top: -5rem;
+      right: 43.5rem;
+    }
     .ref-program-box {
       position: absolute;
       background-image: url("/public/assets/img/homepage/fooldal_referenciaprogram.png");
@@ -536,15 +558,71 @@ article.header-layer-container {
         color: $light-green;
       }
     }
+    .faq-row {
+      position: relative;
+      z-index: 9999;
+      p {
+        padding-bottom: 2rem;
+      }
+    }
+
+    //.bottom-white-elem {
+    //  bottom: -3rem;
+    //  min-height: 13%;
+    //  position: absolute;
+    //  right: 0;
+    //}
   }
 
   .testimonial {
     min-height: 885px;
     background-image: url("/public/assets/img/homepage/fooldal_rolunkmondtak_BG.png");
-    background-position: top center;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    h2 {
+      margin-bottom: 0;
+    }
+    .testi-row {
+      padding: 17rem 0 5rem;
+      .testi-main-img {
+        position: relative;
+        top: -10rem;
+      }
+      .testi-card {
+        background-color: white;
+        padding: 2rem;
+        margin-top: -10rem;
+        margin-left: -2rem;
+        padding-right: 0;
+      }
+      .testi-card {
+        .commas-row {
+          font-size: 18px;
+          width: 100%;
+        }
+        .commas {
+          margin: 2rem 0;
+          position: relative;
+          padding: 2rem 0;
+          .commas-top {
+            position: relative;
+            top: 0;
+            right: 0;
+          }
+          .commas-bottom {
+            position: relative;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+          }
+        }
+        p {
+          text-align: justify;
+        }
+      }
+    }
   }
 }
 
@@ -583,6 +661,12 @@ article.header-layer-container {
 }
 
 @media only screen and (min-width: 768px) {
+
+  img.bottom-white-elem {
+    bottom: -3rem;
+    min-height: 13%;
+  }
+
   .row {
     display: flex;
     flex-wrap: inherit;
@@ -675,6 +759,18 @@ article.header-layer-container {
       }
       .img-wrap img {
         margin-bottom: 0;
+      }
+    }
+    .testimonial {
+      .testi-row {
+        .testi-main-img {
+          position: inherit;
+        }
+        .testi-card {
+          margin-top: -10rem;
+          margin-left: -2rem;
+          padding-right: 4rem;
+        }
       }
     }
   }
@@ -773,6 +869,19 @@ article.header-layer-container {
       }
     }
   }
+
+  .main {
+    .testimonial {
+      .testi-row {
+        padding: 20rem 0 10rem;
+        .testi-card {
+          margin-top: -10rem;
+          margin-left: -2rem;
+          padding-right: 8rem;
+        }
+      }
+    }
+  }
 }
 
 
@@ -797,7 +906,7 @@ article.header-layer-container {
         margin-left: 1rem;
       }
       .faq-container {
-        padding-top: 5rem;
+        padding-top: 7rem;
         .heading-group {
           padding-bottom: 0;
         }
@@ -805,15 +914,40 @@ article.header-layer-container {
           color: $light-green;
           margin-bottom: 0;
         }
-        .text-highlight {
-          color: $light-green;
+      }
+    }
+
+    .testimonial {
+      .testi-row {
+        .testi-card {
+          margin-top: -10rem;
+          margin-left: -2rem;
+          padding-right: 10rem;
+        }
+        .testi-card {
+          .commas-row {
+            font-size: 18px;
+            width: 120%;
+          }
+          .commas {
+            margin: 2rem 0;
+            padding: 2rem 0;
+            .commas-top {
+              position: relative;
+              top: 30px;
+              right: -12rem
+            }
+            .commas-bottom {
+              bottom: 30px;
+              left: -12rem;
+              width: 50px;
+            }
+          }
         }
       }
     }
   }
 }
-
-
 
 
 @media only screen and (min-width: 1400px) {

@@ -512,32 +512,40 @@ article.header-layer-container .row .main-layer p {
   position: absolute;
   background-image: url("/public/assets/img/homepage/fooldal_referenciaprogram.png");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   top: -5rem;
   left: 0;
-  width: 70%;
-  max-height: 30%;
+  width: 100%;
+  max-height: 25%;
+  height: 100%;
 }
 
-.main .faq-section .ref-program-box .program-text {
-  margin-left: 12rem;
-  width: 45%;
-  top: 0;
-  position: relative;
+.main .faq-section .ref-program-box .ref-green-line {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
 }
 
-.main .faq-section .ref-program-box .program-text h2.ref-title {
+.main .faq-section .program-text {
+  width: 90%;
+  top: -4.2rem;
+  position: absolute;
+  text-align: justify;
+  margin-left: 1rem;
+}
+
+.main .faq-section .program-text h2.ref-title {
   color: #fff;
   margin-top: 0;
   margin-bottom: 0;
 }
 
-.main .faq-section .ref-program-box .program-text p.ref-text {
+.main .faq-section .program-text p.ref-text {
   color: #fff;
 }
 
 .main .faq-section .faq-container {
-  padding-top: 5rem;
+  padding-top: 10rem;
 }
 
 .main .faq-section .faq-container .heading-group {
@@ -775,6 +783,45 @@ article.header-layer-container .row .main-layer p {
 
   article.header-layer-container .row .main-layer h1 {
     font-size: 80px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .main .faq-section .ref-program-box {
+    top: -5rem;
+    left: 0;
+    width: 50%;
+    max-height: 200px;
+    height: 100%;
+  }
+
+  .main .faq-section .ref-program-box .ref-green-line {
+    position: absolute;
+    bottom: -5px;
+    right: -40px;
+  }
+
+  .main .faq-section .program-text {
+    width: 35%;
+    top: -4.2rem;
+    margin-left: 1rem;
+  }
+
+  .main .faq-section .faq-container {
+    padding-top: 5rem;
+  }
+
+  .main .faq-section .faq-container .heading-group {
+    padding-bottom: 0;
+  }
+
+  .main .faq-section .faq-container h2 {
+    color: #99992a;
+    margin-bottom: 0;
+  }
+
+  .main .faq-section .faq-container .text-highlight {
+    color: #99992a;
   }
 }
 

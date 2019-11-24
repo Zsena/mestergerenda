@@ -179,6 +179,9 @@
             </section>
             <section class="faq-section">
                 <div class="ref-program-box">
+                    <img class="ref-green-line" src="../assets/img/homepage/design-elements/horizontal-green-line.png" alt="Design elem">
+                </div>
+                <div class="m-container faq-container">
                     <div class="program-text">
                         <h2 class="ref-title">Referenciaház program</h2>
                         <p class="ref-text">
@@ -188,8 +191,6 @@
                             Praesent tempor ipsum non urna posuere, ac convallis orci commodo. Nullam dictum enim vitae turpis placerat vulputate.
                         </p>
                     </div>
-                </div>
-                <div class="m-container faq-container">
                     <div class="col-12 heading-group">
                         <h2>Gyakori kérdések</h2>
                     </div>
@@ -221,7 +222,7 @@
                 <div class="m-container">
                     <div class="row">
                         <div class="col">
-                            <img src="{{ asset('assets/img/homepage/.png') }}" alt="">
+                            <img src="{{ asset('assets/img/homepage/fooldal_rolunkmondtak.png') }}" alt="">
                         </div>
                     </div>
                 </div>

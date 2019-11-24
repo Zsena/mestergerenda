@@ -221,12 +221,15 @@
                 <img class="bottom-white-elem" src="{{ asset('assets/img/homepage/design-elements/first-sec-bottom.png') }}" alt="Design elem">
             </section>
             <section class="testimonial">
+                <div class="line-box">
+                    <img class="testi-top-line" src="{{ asset('assets/img/homepage/design-elements/vertical-line-dbrown-faq.png') }}" alt="Design elem">
+                </div>
                 <div class="m-container">
                     <div class="row testi-row">
                         <div class="col">
-                            <img class="testi-main-img" src="{{ asset('assets/img/homepage/fooldal_rolunkmondtak.png') }}" alt="">
+                            <img class="testi-main-img" src="{{ asset('assets/img/homepage/fooldal_rolunkmondtak.png') }}" alt="Rólunk mondták">
                         </div>
-                        <div class="col">
+                        <div class="col testi-column">
                             <div class="testi-card">
                                 <div class="col-12 heading-group">
                                     <h2 class="text-highlight-darker">Rólunk mondták</h2>
@@ -257,6 +260,7 @@
                                     </div>
                                 </div>
                             </div>
+                            <img class="testi-bottom-lines" src="{{ asset('assets/img/homepage/design-elements/home_header_elem.png') }}" alt="Design elem">
                         </div>
                     </div>
                 </div>

@@ -604,12 +604,32 @@ img.bottom-white-elem {
   background-attachment: fixed;
 }
 
+.main .testimonial .line-box {
+  position: relative;
+}
+
+.main .testimonial .line-box .testi-top-line {
+  position: relative;
+  top: -5rem;
+  left: -15rem;
+}
+
+.main .testimonial .testi-column {
+  position: relative;
+}
+
+.main .testimonial .testi-column .testi-bottom-lines {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
 .main .testimonial h2 {
   margin-bottom: 0;
 }
 
 .main .testimonial .testi-row {
-  padding: 17rem 0 5rem;
+  padding: 10rem 0 5rem;
 }
 
 .main .testimonial .testi-row .testi-main-img {
@@ -884,7 +904,7 @@ img.bottom-white-elem {
   }
 
   .main .testimonial .testi-row {
-    padding: 20rem 0 10rem;
+    padding: 10rem 0 10rem;
   }
 
   .main .testimonial .testi-row .testi-card {
@@ -926,6 +946,11 @@ img.bottom-white-elem {
   .main .faq-section .faq-container h2 {
     color: #99992a;
     margin-bottom: 0;
+  }
+
+  .main .testimonial .testi-column .testi-bottom-lines {
+    right: -1rem;
+    bottom: -1rem;
   }
 
   .main .testimonial .testi-row .testi-card {

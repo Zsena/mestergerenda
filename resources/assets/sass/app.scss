@@ -417,6 +417,7 @@ img.bottom-white-elem {
 
 /* main */
 .main {
+
   .block-house-section {
     min-height: 380px;
     position: relative;
@@ -470,7 +471,6 @@ img.bottom-white-elem {
   }
 
 
-
   .special-offers-section {
     min-height: 730px;
     background-color: $light-grey;
@@ -503,7 +503,6 @@ img.bottom-white-elem {
       }
     }
   }
-
 
 
   .faq-section {
@@ -574,6 +573,8 @@ img.bottom-white-elem {
     //}
   }
 
+
+
   .testimonial {
     min-height: 885px;
     background-image: url("/public/assets/img/homepage/fooldal_rolunkmondtak_BG.png");
@@ -581,11 +582,29 @@ img.bottom-white-elem {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    .line-box {
+      position: relative;
+      .testi-top-line {
+        position: relative;
+        top: -5rem;
+        left: -15rem;
+      }
+    }
+
+    .testi-column {
+      position: relative;
+      .testi-bottom-lines {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+      }
+    }
+
     h2 {
       margin-bottom: 0;
     }
     .testi-row {
-      padding: 17rem 0 5rem;
+      padding: 10rem 0 5rem;
       .testi-main-img {
         position: relative;
         top: -10rem;
@@ -873,7 +892,7 @@ img.bottom-white-elem {
   .main {
     .testimonial {
       .testi-row {
-        padding: 20rem 0 10rem;
+        padding: 10rem 0 10rem;
         .testi-card {
           margin-top: -10rem;
           margin-left: -2rem;
@@ -918,6 +937,14 @@ img.bottom-white-elem {
     }
 
     .testimonial {
+
+      .testi-column {
+        .testi-bottom-lines {
+          right: -1rem;
+          bottom: -1rem;
+        }
+      }
+
       .testi-row {
         .testi-card {
           margin-top: -10rem;

@@ -737,7 +737,6 @@ footer.mega-footer {
   padding: 3rem 0 1rem;
   background-color: #ededed;
   min-height: 400px;
-  height: 100%;
   font-family: "Myriad-Regular", "sans-serif";
 }
 
@@ -809,6 +808,8 @@ footer.mega-footer .flex-outer li select {
 footer.mega-footer .flex-outer li button {
   border: none;
   letter-spacing: 0.09em;
+  position: relative;
+  z-index: 9999;
 }
 
 footer.sticky-footer {
@@ -846,8 +847,9 @@ footer.sticky-footer span a:hover {
 
 footer.sticky-footer .sticky-footer-line {
   position: absolute;
-  top: -5.7rem;
+  bottom: 0;
   margin: 0 3rem;
+  height: 100%;
 }
 
 @media only screen and (min-width: 480px) {
@@ -993,6 +995,13 @@ footer.sticky-footer .sticky-footer-line {
 
   .main .news .news-row .news-card .news-bottom-lines.second-row-line {
     left: -10rem;
+  }
+
+  footer.sticky-footer .sticky-footer-line {
+    position: absolute;
+    top: -5.7rem;
+    margin: 0 3rem;
+    height: auto;
   }
 }
 

@@ -15,23 +15,23 @@
         <style></style>
     </head>
     <body>
+        <nav class="main-nav" id="navbar">
+            <ul class="menu m-container">
+                <li class="item"><a class="left-menu-item" href="#">Referenciák</a></li>
+                <li class="item"><a class="left-menu-item" href="#">Költségek</a></li>
+                <li class="item"><a class="left-menu-item" href="#">Árajánlat</a></li>
+                <li class="logo"><a href="#"><img src="{{ asset('assets/img/homepage/logo-cropped.png') }}" alt="Mestergerenda logó"></a></li>
+                <li class="item"><a href="#">Rólunk</a>
+                <li class="item"><a href="#">Hírek</a>
+                <li class="item"><a href="#">Alapanyagok</a></li>
+                <li class="item"><a href="#">Gerendaházak</a></li>
+                {{--<li class="item"><a href="#">Kapcsolat</a>--}}
+                <li class="item"><a href="#">Egyéb faépítészet</a>
+                <li class="item mobil-projects"><a href="#">Kisteres projektek</a></li>
+                <li class="toggle"><i class="fas fa-bars"></i></li>
+            </ul>
+        </nav>
         <header class="main-header">
-            <nav class="main-nav" id="navbar">
-                <ul class="menu m-container">
-                    <li class="item"><a class="left-menu-item" href="#">Referenciák</a></li>
-                    <li class="item"><a class="left-menu-item" href="#">Költségek</a></li>
-                    <li class="item"><a class="left-menu-item" href="#">Árajánlat</a></li>
-                    <li class="logo"><a href="#"><img src="{{ asset('assets/img/homepage/logo-cropped.png') }}" alt="Mestergerenda logó"></a></li>
-                    <li class="item"><a href="#">Rólunk</a>
-                    <li class="item"><a href="#">Hírek</a>
-                    <li class="item"><a href="#">Alapanyagok</a></li>
-                    <li class="item"><a href="#">Gerendaházak</a></li>
-                    {{--<li class="item"><a href="#">Kapcsolat</a>--}}
-                    <li class="item"><a href="#">Egyéb faépítészet</a>
-                    <li class="item mobil-projects"><a href="#">Kisteres projektek</a></li>
-                    <li class="toggle"><i class="fas fa-bars"></i></li>
-                </ul>
-            </nav>
             <article class="m-container header-layer-container">
                 <div class="row">
                     <div class="main-layer col">

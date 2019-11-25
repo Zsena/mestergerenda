@@ -87,6 +87,14 @@ html, body {
   padding: 15px;
 }
 
+.ml-0 {
+  margin-left: 0;
+}
+
+.column-reverse {
+  flex-direction: column-reverse;
+}
+
 /* pictures */
 
 div.img-wrap {
@@ -167,6 +175,17 @@ p {
     background-color: $dark-green;
     color: $white;
   }
+}
+
+.news-btn {
+  font-size: 14px;
+  color: $dark-green;
+  font-weight: bold;
+  font-family: Arial, 'sans-serif';
+}
+
+.news-btn:hover {
+  color: #82b77d;
 }
 
 .btn-secondary {
@@ -267,7 +286,7 @@ p {
 /* mobile screen */
 
 header.main-header {
-  background-image: url("/public/assets/img/homepage/Header.png");
+  background-image: url("/public/assets/img/homepage/Header2.png");
   background-position: top center;
   background-repeat: no-repeat;
   min-height: 900px;
@@ -413,7 +432,14 @@ img.bottom-white-elem {
   min-height: 5%;
 }
 
-
+img.top-white-elem {
+  position: absolute;
+  top: -4rem;
+  left: 0;
+  width: 50%;
+  height: max-content;
+  min-height: 5%;
+}
 
 /* main */
 .main {
@@ -421,14 +447,6 @@ img.bottom-white-elem {
   .block-house-section {
     min-height: 380px;
     position: relative;
-    img.top-white-elem {
-      position: absolute;
-      top: -4rem;
-      left: 0;
-      width: 50%;
-      height: max-content;
-      min-height: 5%;
-    }
     img.bottom-white-elem {
       position: absolute;
       bottom: -2rem;
@@ -574,7 +592,6 @@ img.bottom-white-elem {
   }
 
 
-
   .testimonial {
     min-height: 885px;
     background-image: url("/public/assets/img/homepage/fooldal_rolunkmondtak_BG.png");
@@ -643,20 +660,136 @@ img.bottom-white-elem {
       }
     }
   }
+
+  .news {
+    background-color: white;
+    position: relative;
+    padding: 0 0 4rem;
+    .m-container {
+      position: relative;
+      z-index: 9999;
+    }
+    .news-row {
+      padding: 15px;
+      h2 {
+        margin-top: -3rem;
+      }
+      .news-card {
+        position: relative;
+        .news-card-title {
+          h4 {
+            font-size: 1em;
+            font-weight: 100;
+            font-family: Arial, 'sans-serif';
+            text-transform: uppercase;
+          }
+        }
+        .news-card-text {
+          width: 85%;
+          padding-bottom: 3rem;
+        }
+
+        .news-bottom-lines {
+          position: absolute;
+          right: 0;
+          bottom: 0;
+        }
+      }
+    }
+  }
 }
 
 
+footer.mega-footer {
+  padding: 3rem 0 1rem;
+  background-color: $light-grey;
+  min-height: 400px;
+  height: 100%;
+  font-family: 'Myriad-Regular', 'sans-serif';
 
-.sticky-footer {
+
+  h4 {
+    font-size: 1.5em;
+  }
+
+  .footer-list {
+    padding-left: 0;
+    li {
+      list-style-type: none;
+      padding: 15px 0;
+      a {
+        color: $dark-green;
+        &:hover {
+          color: $svg-brown;
+        }
+      }
+    }
+  }
+
+  //newsletter
+  .flex-outer {
+    list-style-type: none;
+    padding: 0;
+    max-width: 800px;
+    margin: 0 auto;
+
+    li{
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+  }
+
+  .flex-outer > li:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .flex-outer li p {
+    padding: 8px;
+    font-weight: 300;
+    letter-spacing: .09em;
+    flex: 1 0 120px;
+    max-width: 220px;
+    margin: 0;
+  }
+
+  .flex-outer > li > label {
+    flex: 1 0 120px;
+    max-width: 220px;
+    padding: 8px;
+    font-weight: 300;
+    letter-spacing: .09em;
+    font-family: 'Myriad-Regular', 'sans-serif';
+    font-size: 12px;
+  }
+
+  .flex-outer li input:not([type='checkbox']),
+  .flex-outer li select {
+    padding: 10px;
+    border: none;
+    background-color: white;
+    width: 100%;
+  }
+
+  .flex-outer li button {
+    border: none;
+    letter-spacing: .09em;
+  }
+}
+
+
+footer.sticky-footer {
   background-color: #141611;
   min-height: 120px;
+  position: relative;
   .call-to-action-box {
-    padding: 3rem;
+    padding: 1rem;
     margin: auto;
     justify-content: center;
   }
   span {
     color: $white;
+    padding: 2rem;
     &.call-to-action-text {
       color: #a7a7a6;
       font-size: 24px;
@@ -671,15 +804,30 @@ img.bottom-white-elem {
       }
     }
   }
+
+  .sticky-footer-line {
+    position: absolute;
+    top: -5.7rem;
+    margin: 0 3rem;
+  }
 }
 
 
 @media only screen and (min-width: 480px) {
   /* Styles for wide mobiles (480px) and above */
+  footer.mega-footer {
+    .col {
+      flex: 1 25%;
+    }
+  }
 
 }
 
 @media only screen and (min-width: 768px) {
+
+  .column-reverse {
+    flex-direction: row;
+  }
 
   img.bottom-white-elem {
     bottom: -3rem;
@@ -695,6 +843,7 @@ img.bottom-white-elem {
     flex: 0 1 50%;
     //flex-flow: wrap;
   }
+
   /* Styles for tablets/netbooks (768px) and up */
   header.main-header {
     background-position: top center;
@@ -759,6 +908,10 @@ img.bottom-white-elem {
       }
     }
   }
+  img.top-white-elem {
+    top: -3rem;
+    min-height: 13%;
+  }
 
   .main {
     .block-house-section {
@@ -789,6 +942,15 @@ img.bottom-white-elem {
           margin-top: -10rem;
           margin-left: -2rem;
           padding-right: 4rem;
+        }
+      }
+    }
+    .news {
+      .news-row {
+        .news-card {
+          .news-bottom-lines.second-row-line {
+            left: -10rem;
+          }
         }
       }
     }
@@ -855,35 +1017,8 @@ img.bottom-white-elem {
     .row {
       //flex-direction: row-reverse;
       .main-layer {
-        //float: right;
-        //position: relative;
-        //top: 8rem;
-        //padding: 2rem;
-        //z-index: 9999;
-        .text-box {
-          //position: relative;
-          .home-header-svg {
-            //position: absolute;
-            //right: -10px;
-            //bottom: -10px;
-            //width: 117px;
-            //height: 117px;
-            //margin: -1rem;
-          }
-        }
         h1 {
           font-size: 80px;
-          //color: $white;
-          //font-family: GillSansMT-Condensed;
-          //text-transform: uppercase;
-          //margin: 1rem 0;
-        }
-        p {
-          //margin-top: -20px;
-          //font-family: Arial;
-          //font-size: 20px;
-          //color: $white;
-          //text-transform: uppercase;
         }
       }
     }
@@ -905,6 +1040,10 @@ img.bottom-white-elem {
 
 
 @media only screen and (min-width: 1200px) {
+  .pl-0 {
+    padding-left: 0;
+  }
+
   .main {
     .faq-section {
       .ref-program-box {
@@ -920,7 +1059,7 @@ img.bottom-white-elem {
         }
       }
       .program-text {
-        width: 35%;
+        width: 30%;
         top: -4.2rem;
         margin-left: 1rem;
       }
@@ -972,6 +1111,12 @@ img.bottom-white-elem {
           }
         }
       }
+    }
+  }
+
+  footer.mega-footer {
+    .col {
+      flex: 1 50%;
     }
   }
 }

@@ -3,16 +3,10 @@
 
 @include('fragments.head')
 
-<body id="page-top">
-
+<body>
 @include('fragments.navigation')
-
-<div id="content">
-    @yield('content')
-</div>
-
-{{-- @include('fragments.footer') --}}
+@yield('content')
+@include('fragments.footer')
 
 </body>
-
 </html>

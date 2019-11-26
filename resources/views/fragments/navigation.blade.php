@@ -1,28 +1,16 @@
-<!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav" style="color: #fff; height: 80px;">
-    <!--
-    <a class="navbar-brand js-scroll-trigger" href="{{ url('/') }}"><img
-                src="{{ asset('img/Raiffeisen_Logo.svg') }}"></a> -->
-    <div class="container">
-
-        <button id="navbar-toggler-button"
-                class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger {{ request()->is('/') ? 'active' : '' }}" href="/">Hírek</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger {{ request()->is('hely*') ? 'active' : '' }}" href="/hely">Rólunk</a>
-                </li>
-                <li class="nav-item" id="qr_reader_page">
-                    <a class="nav-link js-scroll-trigger" href="#">Kapcsolat</a>
-                </li>
-
-            </ul>
-        </div>
-    </div>
+<nav class="main-nav" id="navbar">
+    <ul class="menu m-container">
+        <li class="item"><a class="left-menu-item" href="/referenciak">Referenciák</a></li>
+        <li class="item"><a class="left-menu-item" href="/koltsegek">Költségek</a></li>
+        <li class="item"><a class="left-menu-item" href="/arajanlat">Árajánlat</a></li>
+        <li class="logo"><a href="/"><img src="{{ asset('assets/img/homepage/logo-cropped.png') }}" alt="Mestergerenda logó"></a></li>
+        <li class="item"><a href="/rolunk">Rólunk</a>
+        <li class="item"><a href="/hirek">Hírek</a>
+        <li class="item"><a href="/alapanyagok">Alapanyagok</a></li>
+        <li class="item"><a href="/gerendahaz">Gerendaházak</a></li>
+        {{--<li class="item"><a href="#">Kapcsolat</a>--}}
+        <li class="item"><a href="/egyeb-faepiteszet">Egyéb faépítészet</a>
+        <li class="item mobil-projects"><a href="/kisteres-projektek">Kisteres projektek</a></li>
+        <li class="toggle"><i class="fas fa-bars"></i></li>
+    </ul>
 </nav>

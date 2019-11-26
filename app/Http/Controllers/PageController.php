@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Repository\PageRepository as Repository;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Route;
 
 class PageController extends Controller
 {
@@ -11,12 +13,27 @@ class PageController extends Controller
     public function __construct() {
         $this->repository = new Repository;
     }
-    public function renderPage($pageSlug) {
-        $page = $this->repository->getPageBySlug($pageSlug);
-        if( ! isset($page)) {
-            abort('404');
+
+    const pages = [
+        ['view' => 'startpage', 'name' => 'startpage'],
+        ['view' => 'references', 'name' => 'references'],
+        ['view' => 'costs', 'name' => 'costs'],
+        ['view' => 'offer', 'name' => 'offer'],
+        ['view' => 'about', 'name' => 'about'],
+        ['view' => 'news', 'name' => 'news'],
+        ['view' => 'ingredients', 'name' => 'ingredients'],
+        ['view' => 'blockhouse', 'name' => 'blockhouse'],
+        ['view' => 'architecture', 'name' => 'architecture'],
+        ['view' => 'projects', 'name' => 'projects'],
+    ];
+
+    public function renderPage() {
+        $actualRoute = Route::currentRouteName();
+        foreach(self::pages as $page) {
+            if(in_array($actualRoute, $page)) {
+                return view($page['view']);
+            }
         }
 
-        return view('page')->with('page', $page);
     }
 }

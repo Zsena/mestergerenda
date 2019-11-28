@@ -1,7 +1,7 @@
 @extends('layout.app')
 
 @section('content')
-<header class="main-header">
+<header class="main-header about-us-header subpage-header-size">
     <article class="m-container header-layer-container">
         <div class="row">
             <div class="main-layer col">
@@ -15,10 +15,7 @@
     </article>
 </header>
 <main class="main m-container" style="height: 400px;">
-    <div class="row">
-        <div class="col-12">
-        </div>
-    </div>
+
 </main>
 @endsection
 

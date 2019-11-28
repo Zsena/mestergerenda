@@ -7,7 +7,7 @@
                 <div class="main-layer col">
                     <div class="text-box">
                         <h1>Hírek</h1>
-                        <p>Hírek
+                        <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                             Mauris ullamcorper tincidunt turpis
                         </p>

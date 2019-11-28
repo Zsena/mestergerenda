@@ -197,7 +197,7 @@
         <div class="m-container">
             <div class="row testi-row">
                 <div class="col">
-                    <img class="testi-main-img" src="{{ asset('assets/img/homepage/about-us3.png') }}" alt="Rólunk mondták: Photo by Djordje Petrovic from Pexels">
+                    <img class="testi-main-img" src="{{ asset('assets/img/homepage/about-us3.png') }}" title="Photo by Djordje Petrovic" alt="Rólunk mondták: Photo by Djordje Petrovic">
                 </div>
                 <div class="col testi-column">
                     <div class="testi-card">
@@ -230,7 +230,7 @@
                             </div>
                         </div>
                     </div>
-                    <img class="testi-bottom-lines" src="{{ asset('assets/img/homepage/design-elements/home_header_elem.png') }}" alt="Design elem">
+                    <img class="testi-bottom-lines" src="{{ asset('assets/img/homepage/design-elements/mestergerenda_zold_jobb.png') }}" alt="Design elem">
                 </div>
             </div>
         </div>

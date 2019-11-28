@@ -1,0 +1,37 @@
+/* header layer */
+article.header-layer-container {
+  .row {
+    flex-direction: row-reverse;
+    .main-layer {
+      position: relative;
+      top: 20rem;
+      padding: 2rem;
+      z-index: 9999;
+      .text-box {
+        position: relative;
+        .home-header-svg {
+          position: absolute;
+          right: -10px;
+          bottom: -10px;
+          width: 117px;
+          height: 117px;
+          margin: -1rem;
+        }
+      }
+      h1 {
+        font-size: 4em;
+        color: $white;
+        font-family: GillSansMT-Condensed;
+        text-transform: uppercase;
+        margin: 1rem 0;
+      }
+      p {
+        margin-top: -20px;
+        font-family: Arial;
+        font-size: 20px;
+        color: $white;
+        text-transform: uppercase;
+      }
+    }
+  }
+}

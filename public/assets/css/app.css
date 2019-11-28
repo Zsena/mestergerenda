@@ -140,6 +140,35 @@ p {
   font-family: Arial;
 }
 
+.pagination {
+  display: inline-block;
+  margin: auto;
+  padding: 5rem 0;
+  width: 100%;
+}
+
+.pagination .pagination-container {
+  display: flex;
+  justify-content: center;
+}
+
+.pagination .pagination-container a {
+  color: #adadad;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.pagination .pagination-container a:hover {
+  color: #586e27;
+}
+
+.pagination .pagination-container a.active,
+.pagination .pagination-container a:active {
+  color: #586e27;
+  font-size: 1.2em;
+}
+
 /* buttons */
 
 .default {
@@ -381,8 +410,6 @@ nav.main-nav.sticky-bg-color {
   top: 0;
 }
 
-/* mobile screen */
-
 header.main-header {
   background-image: url("/public/assets/img/homepage/Header2.png");
   background-position: top center;
@@ -414,7 +441,6 @@ article.header-layer-container .row {
 }
 
 article.header-layer-container .row .main-layer {
-  float: right;
   position: relative;
   top: 20rem;
   padding: 2rem;
@@ -990,7 +1016,10 @@ footer.sticky-footer .sticky-footer-line {
   }
 
   .main .testimonial .testi-row .testi-main-img {
-    position: inherit;
+    width: 350px;
+    margin-right: 0;
+    position: relative;
+    top: 0;
   }
 
   .main .testimonial .testi-row .testi-card {
@@ -1082,6 +1111,11 @@ footer.sticky-footer .sticky-footer-line {
 
   .main .testimonial .testi-row {
     padding: 10rem 0 10rem;
+  }
+
+  .main .testimonial .testi-row .testi-main-img {
+    width: 450px;
+    top: -3rem;
   }
 
   .main .testimonial .testi-row .testi-card {
@@ -1216,5 +1250,35 @@ footer.sticky-footer .sticky-footer-line {
   article.header-layer-container .row .main-layer h1 {
     font-size: 100px;
   }
+}
+
+header.main-header.news-subpage-header.subpage-header-size {
+  min-height: 500px;
+}
+
+header.main-header.news-subpage-header.subpage-header-size article.header-layer-container .row {
+  flex-direction: row;
+}
+
+header.main-header.news-subpage-header.subpage-header-size .main-layer {
+  position: relative;
+  top: 14rem;
+  z-index: 9999;
+  padding: 1rem;
+}
+
+header.main-header.news-subpage-header.subpage-header-size .main-layer .text-box .home-header-svg {
+  margin: -1rem 0;
+  right: -15px;
+}
+
+@media only screen and (min-width: 1200px) {
+  header.main-header.news-subpage-header.subpage-header-size .main-layer {
+    padding: 0;
+  }
+}
+
+header.news-subpage-header {
+  background-image: url("/public/assets/img/news/news-header.png");
 }
 

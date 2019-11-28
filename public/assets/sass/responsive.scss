@@ -66,7 +66,7 @@
         }
         &.logo img {
           max-width: 100px;
-          margin-top: -22px;
+          margin-top: -32px;
           margin-left: 0.5rem;
           top: inherit;
           position: relative;
@@ -99,6 +99,16 @@
       background:rgba(0,0,0,0.2);
       opacity: 0.8;
       max-height: 890px;
+    }
+  }
+
+  /* header layer */
+  article.header-layer-container {
+    .row {
+      //flex-direction: row-reverse;
+      .main-layer {
+        top: 17rem;
+      }
     }
   }
 
@@ -219,6 +229,7 @@
     .row {
       //flex-direction: row-reverse;
       .main-layer {
+        top: 20rem;
         h1 {
           font-size: 80px;
         }

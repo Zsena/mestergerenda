@@ -372,8 +372,8 @@ nav.main-nav ul.menu li.toggle {
 
 nav.main-nav ul.menu li.logo img {
   max-width: 80px;
-  top: 0.5rem;
   position: relative;
+  top: 0;
 }
 
 nav.main-nav ul.menu li a {
@@ -442,7 +442,7 @@ article.header-layer-container .row {
 
 article.header-layer-container .row .main-layer {
   position: relative;
-  top: 20rem;
+  top: 14rem;
   padding: 2rem;
   z-index: 9999;
 }
@@ -957,7 +957,7 @@ footer.sticky-footer .sticky-footer-line {
 
   nav.main-nav ul.menu li.logo img {
     max-width: 100px;
-    margin-top: -22px;
+    margin-top: -32px;
     margin-left: 0.5rem;
     top: inherit;
     position: relative;
@@ -994,6 +994,12 @@ footer.sticky-footer .sticky-footer-line {
     background: rgba(0, 0, 0, 0.2);
     opacity: 0.8;
     max-height: 890px;
+  }
+
+  /* header layer */
+
+  article.header-layer-container .row .main-layer {
+    top: 17rem;
   }
 
   .main .block-house-section img.top-white-elem {
@@ -1104,6 +1110,10 @@ footer.sticky-footer .sticky-footer-line {
   }
 
   /* header layer */
+
+  article.header-layer-container .row .main-layer {
+    top: 20rem;
+  }
 
   article.header-layer-container .row .main-layer h1 {
     font-size: 80px;

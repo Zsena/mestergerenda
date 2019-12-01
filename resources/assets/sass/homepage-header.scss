@@ -7,17 +7,18 @@ header.main-header {
   background-size: cover;
   background-attachment: fixed;
   margin-top: -85px;
-  &:after {
-    content:'\A';
-    position:absolute;
-    width:100%;
-    height:100%;
-    min-height: 900px;
-    top: -85px;
-    left:0;
-    background:rgba(0,0,0,0.3);
-    opacity:0.8;
-    transition: all 0.5s;
-    -webkit-transition: all 0.5s;
-  }
+}
+
+.header-after:after {
+  content:'\A';
+  position:absolute;
+  width:100%;
+  height:100%;
+  min-height: 900px;
+  top: -85px;
+  left:0;
+  background:rgba(0,0,0,0.3);
+  opacity:0.8;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
 }

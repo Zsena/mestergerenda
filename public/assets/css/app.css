@@ -57,7 +57,6 @@ body {
 }
 
 .col-12 {
-  display: flex;
   flex: 1 100%;
   padding: 15px;
 }
@@ -86,6 +85,18 @@ body {
   margin-left: 0;
 }
 
+.mr-0 {
+  margin-right: 0;
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.pl-0 {
+  padding-left: 0;
+}
+
 .column-reverse {
   flex-direction: column-reverse;
 }
@@ -111,6 +122,18 @@ img {
   height: auto;
   margin: auto;
   display: flex;
+}
+
+.img-after:after {
+  content: "\A";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  opacity: 0.8;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  top: 0;
 }
 
 figure {
@@ -242,6 +265,10 @@ p {
 
 .text-highlight-darker {
   color: #586e27;
+}
+
+.text-white {
+  color: #fff;
 }
 
 img.bottom-white-elem {
@@ -420,7 +447,7 @@ header.main-header {
   margin-top: -85px;
 }
 
-header.main-header:after {
+.header-after:after {
   content: "\A";
   position: absolute;
   width: 100%;
@@ -728,7 +755,7 @@ article.header-layer-container .row .main-layer p {
 
 .main .news .m-container {
   position: relative;
-  z-index: 9999;
+  z-index: 99999;
 }
 
 .main .news .news-row {
@@ -850,6 +877,7 @@ footer.sticky-footer .call-to-action-box {
   padding: 1rem;
   margin: auto;
   justify-content: center;
+  display: flex;
 }
 
 footer.sticky-footer span {
@@ -896,11 +924,13 @@ footer.sticky-footer .sticky-footer-line {
   img.bottom-white-elem {
     bottom: -3rem;
     min-height: 13%;
+    z-index: 9999;
   }
 
   img.top-white-elem {
     top: -3rem;
     min-height: 13%;
+    z-index: 9999;
   }
 
   .row {
@@ -990,7 +1020,7 @@ footer.sticky-footer .sticky-footer-line {
     min-height: 900px;
   }
 
-  header.main-header:after {
+  .header-after:after {
     background: rgba(0, 0, 0, 0.2);
     opacity: 0.8;
     max-height: 890px;
@@ -1104,7 +1134,7 @@ footer.sticky-footer .sticky-footer-line {
     min-height: 900px;
   }
 
-  header.main-header:after {
+  .header-after:after {
     background: rgba(0, 0, 0, 0.1);
     opacity: 0.8;
   }
@@ -1136,8 +1166,16 @@ footer.sticky-footer .sticky-footer-line {
 }
 
 @media only screen and (min-width: 1200px) {
-  .pl-0 {
+  .pl-xl-0 {
     padding-left: 0;
+  }
+
+  .mr-xl-0 {
+    margin-right: 0;
+  }
+
+  .ml-xl-0 {
+    margin-left: 0;
   }
 
   .main .faq-section .ref-program-box {
@@ -1250,8 +1288,8 @@ footer.sticky-footer .sticky-footer-line {
     min-height: 900px;
   }
 
-  header.main-header:after {
-    background: rgba(0, 0, 0, 0);
+  .header-after:after {
+    background: rgba(0, 0, 0, 0.2);
     opacity: 1;
   }
 
@@ -1265,7 +1303,7 @@ footer.sticky-footer .sticky-footer-line {
 /* Subpages */
 
 header.main-header.subpage-header-size {
-  min-height: 500px;
+  min-height: 540px;
 }
 
 header.main-header.subpage-header-size article.header-layer-container .row {
@@ -1284,8 +1322,32 @@ header.main-header.subpage-header-size .main-layer .text-box .home-header-svg {
   right: -15px;
 }
 
+header.main-header.subpage-primary-header-size {
+  min-height: 900px;
+}
+
+header.main-header.subpage-primary-header-size article.header-layer-container .row {
+  flex-direction: row;
+}
+
+header.main-header.subpage-primary-header-size .main-layer {
+  position: relative;
+  top: 35rem;
+  z-index: 9999;
+  padding: 1rem;
+}
+
+header.main-header.subpage-primary-header-size .main-layer .text-box .home-header-svg {
+  margin: -1rem 0;
+  right: -15px;
+}
+
 @media only screen and (min-width: 1200px) {
   header.main-header.subpage-header-size .main-layer {
+    padding: 0;
+  }
+
+  header.main-header.subpage-sec-header-size .main-layer {
     padding: 0;
   }
 }
@@ -1296,5 +1358,38 @@ header.news-subpage-header {
 
 header.about-us-header {
   background-image: url("/public/assets/img/about-us/about-us-header.png");
+}
+
+.about-us-section,
+.vision,
+.company-goals {
+  position: relative;
+  padding-bottom: 3rem;
+}
+
+.about-us-section h2,
+.vision h2,
+.company-goals h2 {
+  position: relative;
+  z-index: 99999;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.about-us-section h2 {
+  margin-top: -2rem;
+}
+
+.vision {
+  background-image: url("/public/assets/img/homepage/fooldal_rolunkmondtak_BG.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 10rem;
+  min-height: 400px;
+}
+
+.vision p {
+  position: relative;
+  z-index: 99999;
 }
 

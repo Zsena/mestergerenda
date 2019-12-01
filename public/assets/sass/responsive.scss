@@ -17,11 +17,13 @@
   img.bottom-white-elem {
     bottom: -3rem;
     min-height: 13%;
+    z-index: 9999;
   }
 
   img.top-white-elem {
     top: -3rem;
     min-height: 13%;
+    z-index: 9999;
   }
 
   .row {
@@ -95,11 +97,11 @@
   header.main-header {
     background-position: top center;
     min-height: 900px;
-    &:after {
-      background:rgba(0,0,0,0.2);
-      opacity: 0.8;
-      max-height: 890px;
-    }
+  }
+  .header-after:after {
+    background:rgba(0,0,0,0.2);
+    opacity: 0.8;
+    max-height: 890px;
   }
 
   /* header layer */
@@ -217,11 +219,11 @@
   header.main-header {
     background-position: top center;
     min-height: 900px;
-    //margin-top: -85px;
-    &:after {
-      background:rgba(0,0,0,0.1);
-      opacity: 0.8;
-    }
+  }
+
+  .header-after:after {
+    background:rgba(0,0,0,0.1);
+    opacity: 0.8;
   }
 
   /* header layer */
@@ -256,8 +258,16 @@
 }
 
 @media only screen and (min-width: 1200px) {
-  .pl-0 {
+  .pl-xl-0 {
     padding-left: 0;
+  }
+
+ .mr-xl-0 {
+    margin-right: 0;
+  }
+
+  .ml-xl-0 {
+    margin-left: 0;
   }
 
   .main {
@@ -377,10 +387,11 @@
   header.main-header {
     background-position: top center;
     min-height: 900px;
-    &:after {
-      background:rgba(0,0,0,0.0);
-      opacity: 1;
-    }
+  }
+
+  .header-after:after {
+    background:rgba(0,0,0,0.2);
+    opacity: 1;
   }
 
   /* header layer */

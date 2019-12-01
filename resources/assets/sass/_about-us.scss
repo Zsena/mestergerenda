@@ -1,0 +1,30 @@
+header.about-us-header {
+  background-image: url("/public/assets/img/about-us/about-us-header.png");
+}
+
+.about-us-section, .vision, .company-goals {
+  position: relative;
+  padding-bottom: 3rem;
+  h2 {
+    position: relative;
+    z-index: 99999;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+}
+
+.about-us-section h2 {
+  margin-top: -2rem;
+}
+
+.vision {
+  background-image: url("/public/assets/img/homepage/fooldal_rolunkmondtak_BG.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 10rem;
+  min-height: 400px;
+  p {
+    position: relative;
+    z-index: 99999;
+  }
+}

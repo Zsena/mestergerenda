@@ -26,7 +26,7 @@ html, body {
 }
 
 .col-12 {
-  display: flex;
+  //display: flex;
   flex: 1 100%;
   padding: 15px;
 }
@@ -55,6 +55,18 @@ html, body {
   margin-left: 0;
 }
 
+.mr-0 {
+  margin-right: 0;
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.pl-0 {
+  padding-left: 0;
+}
+
 .column-reverse {
   flex-direction: column-reverse;
 }
@@ -79,6 +91,18 @@ img {
   height: auto;
   margin: auto;
   display: flex;
+}
+
+.img-after:after{
+  content:'\A';
+  position:absolute;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.3);
+  opacity:0.8;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  top: 0;
 }
 
 figure {
@@ -206,6 +230,10 @@ p {
 
 .text-highlight-darker{
   color: $dark-green;
+}
+
+.text-white {
+  color: $white;
 }
 
 

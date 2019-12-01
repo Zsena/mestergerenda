@@ -1,7 +1,7 @@
 @extends('layout.app')
 
 @section('content')
-<header class="main-header">
+<header class="main-header header-after">
     <article class="m-container header-layer-container">
         <div class="row">
             <div class="main-layer col">
@@ -240,7 +240,7 @@
         <div class="m-container">
             <div class="news-row">
                 <div class="row">
-                    <div class="col pl-0">
+                    <div class="col pl-xl-0">
                         <h2 class="text-highlight-darker">Hírek</h2>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis laoreet leo ut erat tincidunt,
@@ -252,7 +252,7 @@
                 </div>
                 <div class="news-card">
                     <div class="row">
-                        <div class="col pl-0">
+                        <div class="col pl-xl-0">
                             <img class="news-card-img ml-0" src="{{ asset('assets/img/homepage/placeholder_news.png') }}" alt="Hírek">
                         </div>
                         <div class="col">
@@ -273,7 +273,7 @@
                 </div>
                 <div class="news-card">
                     <div class="row column-reverse">
-                        <div class="col pl-0">
+                        <div class="col pl-xl-0">
                             <div class="news-card-title">
                                 <h4 class="text-highlight-darker">Lorem ipsum dolor sit amet</h4>
                             </div>
@@ -294,7 +294,7 @@
                 </div>
                 <div class="news-card">
                     <div class="row">
-                        <div class="col pl-0">
+                        <div class="col pl-xl-0">
                             <img class="news-card-img ml-0" src="{{ asset('assets/img/homepage/placeholder_news.png') }}" alt="Hírek">
                         </div>
                         <div class="col">

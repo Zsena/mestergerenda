@@ -1,0 +1,35 @@
+@import '_lightbox';
+
+/* References subpage */
+header.references-header {
+  background-image: url("/public/assets/img/references/referenciak.png");
+}
+
+.references-section, .foorplan-section, .gallery-section {
+  position: relative;
+  padding-bottom: 3rem;
+  h2 {
+    position: relative;
+    z-index: 99999;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+}
+
+.references-section h2 {
+  margin-top: -2rem;
+  position: relative;
+  z-index: 999999;
+}
+
+.foorplan-section {
+  background-color: $nude-brown;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 10rem;
+  min-height: 950px;
+  p {
+    position: relative;
+    z-index: 99999;
+  }
+}

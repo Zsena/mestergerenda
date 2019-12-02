@@ -125,7 +125,7 @@
                                 Donec quis erat orci. Mauris massa eros,
                                 sollicitudin ut arcu quis, vehicula blandit purus. Suspendisse eleifend nunc.
                             </p>
-                            <a href="#" class="btn btn-primary-inverse clickable-card-link">Érdekel</a>
+                            <a href="/referenciak" class="btn btn-primary-inverse clickable-card-link">Érdekel</a>
                         </div>
                     </div>
                 </div>
@@ -226,7 +226,7 @@
                                     Sed ac mauris imperdiet neque consectetur mattis nec eu nunc. Donec quis erat orci.
                                     Mauris massa eros, sollicitudin ut arcu quis, vehicula blandit purus. Suspendisse eleifend nunc vel semper euismod.
                                 </p>
-                                <a class="btn btn-primary" href="#">Referenciház program</a>
+                                <a class="btn btn-primary" href="/referenciak">Referenciház program</a>
                             </div>
                         </div>
                     </div>

@@ -1,14 +1,27 @@
 @import 'variables';
 @import 'fonts';
 @import 'basic';
+
+/* navigation and header */
 @import 'nav';
 @import 'homepage-header';
 @import 'header-text-layer';
+
+/* Homepage main import */
 @import 'homepage-main';
-@import 'footer';
-@import 'responsive';
+
 
 /* Subpages */
 @import '_subpage-header-size';
 @import '_news-subpage';
 @import '_about-us';
+@import '_references';
+@import '_cost';
+@import '_offer';
+
+
+/* Footer import */
+@import 'footer';
+
+/* Homepage responsive import */
+@import 'responsive';

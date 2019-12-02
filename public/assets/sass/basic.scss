@@ -51,6 +51,16 @@ html, body {
   padding: 15px;
 }
 
+.col-8 {
+  flex: 1 80%;
+  padding: 15px;
+}
+
+.col-2 {
+  flex: 1 20%;
+  padding: 15px;
+}
+
 .ml-0 {
   margin-left: 0;
 }
@@ -70,6 +80,10 @@ html, body {
 .column-reverse {
   flex-direction: column-reverse;
 }
+
+//.d-block {
+//  display: block !important;
+//}
 
 /* pictures */
 
@@ -128,7 +142,13 @@ h2 {
   font-weight: 100;
 }
 
-p {
+h3 {
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 100;
+}
+
+p, li {
   font-size: 14px;
   font-family: Arial;
 }
@@ -269,6 +289,10 @@ img.top-white-elem {
   background-color: rgba(0,0,0,0);
 }
 
+.horizontal-card {
+  position: relative;
+  z-index: 99999;
+}
 
 /* menu a transition */
 

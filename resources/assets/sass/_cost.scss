@@ -1,6 +1,6 @@
-@import '_lines_subpages';
+@import '__lines_subpages';
 
-/* References subpage */
+/* Cost subpage */
 header.cost-header {
   background-image: url("/public/assets/img/cost/cost-header.jpg");
 }
@@ -75,6 +75,7 @@ header.cost-header {
 
 
 @media only screen and (min-width: 480px){
+  /* Cost subpage */
   .cost-subpage {
     .cost-list-row {
       flex-wrap: nowrap;
@@ -86,18 +87,21 @@ header.cost-header {
 
 
 @media only screen and (min-width: 992px){
+  /* Cost subpage */
   .foorplan-img {
     margin-left: 0;
   }
   .cost1-section h2 {
     margin-top: -2rem;
   }
-  .cost1-section, .cost2-section, .cost3-section {
-    h3 {
-      text-align: left;
-    }
-    a {
-      margin: 0;
+  .cost-subpage {
+    .cost1-section, .cost2-section, .cost3-section {
+      h3 {
+        text-align: left;
+      }
+      a {
+        margin: 0;
+      }
     }
   }
 

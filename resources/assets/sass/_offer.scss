@@ -1,0 +1,41 @@
+@import '__lines_subpages';
+@import '__forms';
+@import '__accordion';
+@import '__tabs';
+
+/* offer subpage */
+header.offer-header {
+  background-image: url("/public/assets/img/offer/offer-header.jpg");
+
+}
+
+.offer-subpage {
+  .form-section {
+    position: relative;
+    h2 {
+      margin-top: 0;
+      position: relative;
+      z-index: 99999;
+    }
+  }
+
+  .faq-sub-section {
+    position: relative;
+    background-color: $dark-green;
+    color: $nude-light-green;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+    min-height: 600px;
+  }
+}
+
+@media only screen and (min-width: 992px){
+  /* offer subpage */
+  .offer-subpage {
+    .form-section {
+      h2 {
+        margin-top: -2rem;
+      }
+    }
+  }
+}

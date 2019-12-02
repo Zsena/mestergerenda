@@ -17,12 +17,13 @@
             </div>
         </article>
     </header>
-    <main class="main">
+    <main class="main references-subpage">
         <section class="references-section">
             <div class="m-container">
                 <img class="top-white-elem" src="{{ asset('assets/img/homepage/design-elements/first-sec-top.png') }}" alt="Design elem">
                 <div class="col-12">
                     <h2 class="text-highlight-darker">Top 3 referenciánk</h2>
+                    <img class="design-line-top" src="{{ asset('assets/img/homepage/design-elements/vertical-line-brown.png') }}" alt="Design elem">
                     <div class="row">
                         <div class="horizontal-card">
                             <div class="row">
@@ -169,6 +170,7 @@
             <div class="m-container">
                 <div class="col-12">
                     <h2 class="text-highlight-darker">Képgaléria</h2>
+                    <img class="design-line-right-top" src="{{ asset('assets/img/lines/green-small-verti.png') }}" alt="Design elem">
                     <div class="row">
                        <div class="col pl-0">
                            <figure>

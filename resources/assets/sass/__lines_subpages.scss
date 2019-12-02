@@ -1,0 +1,22 @@
+img.design-line-top, img.design-line-right-top {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 9999;
+}
+
+@media only screen and (min-width: 992px){
+  img.design-line-top {
+    position: absolute;
+    top: -7rem;
+    z-index: 9999;
+    right: 62rem;
+  }
+
+  img.design-line-right-top {
+    position: absolute;
+    top: -1rem;
+    z-index: 9999;
+    right: 15rem;
+  }
+}

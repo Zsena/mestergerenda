@@ -25,6 +25,7 @@
         position: absolute;
         right: 0;
         top: 0;
+        z-index: 9999;
       }
     }
     .img-wrap img {
@@ -37,6 +38,7 @@
         position: absolute;
         bottom: -4rem;
         right: 13rem;
+        z-index: 9999;
       }
     }
 

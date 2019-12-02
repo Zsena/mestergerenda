@@ -1,0 +1,115 @@
+@import '_lines_subpages';
+
+/* References subpage */
+header.cost-header {
+  background-image: url("/public/assets/img/cost/cost-header.jpg");
+}
+
+
+
+.cost-subpage {
+
+  .cost-list-container {
+    text-align: left;
+    .cost-list-row {
+      padding: 0;
+      flex-wrap: wrap;
+      .col-7, .col-3 {
+        padding: 0;
+      }
+      p {
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
+
+
+  .cost1-section, .cost2-section, .cost3-section {
+    position: relative;
+    padding-bottom: 3rem;
+    h2 {
+      position: relative;
+      z-index: 99999;
+      margin-bottom: 0;
+      margin-top: 0;
+    }
+    h3 {
+      margin: 0;
+      text-align: center;
+    }
+    a {
+      margin: auto;
+    }
+  }
+
+  .cost1-section h2 {
+    margin-top: 0;
+    position: relative;
+    z-index: 99999;
+  }
+
+  .cost2-section {
+    background-color: $light-grey;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 10rem;
+    min-height: 950px;
+    p {
+      position: relative;
+      z-index: 99999;
+    }
+  }
+  .row {
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 99999;
+  }
+
+  .col {
+    flex: 1 100%;
+    flex-wrap: wrap;
+  }
+}
+
+
+@media only screen and (min-width: 480px){
+  .cost-subpage {
+    .cost-list-row {
+      flex-wrap: nowrap;
+      width: 60%;
+      margin: auto;
+    }
+  }
+}
+
+
+@media only screen and (min-width: 992px){
+  .foorplan-img {
+    margin-left: 0;
+  }
+  .cost1-section h2 {
+    margin-top: -2rem;
+  }
+  .cost1-section, .cost2-section, .cost3-section {
+    h3 {
+      text-align: left;
+    }
+    a {
+      margin: 0;
+    }
+  }
+
+  .cost-subpage {
+    .cost-list-row {
+      width: 100%;
+    }
+    .row {
+      flex-wrap: nowrap;
+    }
+    .col {
+      flex: 1 50%;
+    }
+  }
+}

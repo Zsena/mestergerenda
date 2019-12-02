@@ -1,4 +1,5 @@
 @import '_lightbox';
+@import '_lines_subpages';
 
 /* References subpage */
 header.references-header {
@@ -17,7 +18,7 @@ header.references-header {
 }
 
 .references-section h2 {
-  margin-top: -2rem;
+  margin-top: 0;
   position: relative;
   z-index: 999999;
 }
@@ -26,10 +27,23 @@ header.references-header {
   background-color: $nude-brown;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 10rem;
+  padding-top: 4rem;
   min-height: 950px;
   p {
     position: relative;
     z-index: 99999;
+  }
+}
+
+
+@media only screen and (min-width: 992px){
+  .references-section h2 {
+    margin-top: -1rem;
+  }
+  .references-subpage {
+    img.design-line-right-top {
+      top: -6rem;
+      left: -20rem;
+    }
   }
 }

@@ -27,7 +27,7 @@ header.main-header.subpage-primary-header-size {
 
   .main-layer {
     position: relative;
-    top: 35rem;
+    top: 20rem;
     z-index: 9999;
     padding: 1rem;
 
@@ -46,9 +46,15 @@ header.main-header.subpage-primary-header-size {
     }
   }
 
-  header.main-header.subpage-sec-header-size {
+  header.main-header.subpage-primary-header-size {
     .main-layer {
       padding: 0;
+    }
+  }
+
+  header.main-header.subpage-primary-header-size {
+    .main-layer {
+      top: 30rem;
     }
   }
 }

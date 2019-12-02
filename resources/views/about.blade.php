@@ -23,6 +23,7 @@
             <img class="top-white-elem" src="{{ asset('assets/img/homepage/design-elements/first-sec-top.png') }}" alt="Design elem">
             <div class="col-12">
                 <h2 class="text-highlight-darker">Rólunk</h2>
+                <img class="design-line-top" src="{{ asset('assets/img/homepage/design-elements/vertical-line-brown.png') }}" alt="Design elem">
                 <div class="row">
                     <div class="horizontal-card">
                         <div class="row">
@@ -103,6 +104,7 @@
         <div class="m-container">
             <div class="col-12">
                 <h2 class="text-white">Jövőkép</h2>
+                <img class="design-line-right-top" src="{{ asset('assets/img/lines/green-small-verti.png') }}" alt="Design elem">
                 <div class="row">
                     <div class="col-7 pl-0">
                         <p class="text-white">
@@ -128,6 +130,7 @@
         <div class="m-container">
             <div class="col-12">
                 <h2 class="text-highlight-darker">Értékek, amiket közvetítünk</h2>
+                <img class="design-line-top" src="{{ asset('assets/img/homepage/design-elements/vertical-line-brown.png') }}" alt="Design elem">
                 <div class="row">
                     <div class="col-12 pl-0">
                         <p>

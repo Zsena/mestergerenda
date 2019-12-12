@@ -35,6 +35,13 @@ class PageController extends Controller
                 return view($page['view']);
             }
         }
+    }
 
+    public function getPage($slug) {
+        $page = $this->repository->getPageBySlug($slug);
+        if($page === null) {
+            return abort('404');
+        }
+        return view('page')->with('page', $page);
     }
 }

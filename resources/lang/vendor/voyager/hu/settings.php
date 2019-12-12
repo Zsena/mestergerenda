@@ -1,0 +1,27 @@
+<?php
+
+return [
+    'usage_help'           => 'Az egyes beállítások értékét telefonon bárhol megkaphatja a webhelyén.',
+    'save'                 => 'Beállítások mentése',
+    'new'                  => 'Új beállítás',
+    'help_name'            => 'Beállítás neve, pl.: Admin Cím',
+    'help_key'             => 'Beállítás kulcsa pl: admin_title',
+    'help_option'          => '(opcionális, ugyan azok a beállítások vonatkoznak, mint a megfelelő űrlap mezőre)',
+    'add_new'              => 'Új beállítás hozzáadása',
+    'delete_question'      => 'Biztos, hogy törli a(z) :setting beállítást?',
+    'delete_confirm'       => 'Igen, törlöm a beállítást',
+    'successfully_created' => 'Beállítás sikeresen létrehozva',
+    'successfully_saved'   => 'Beállítás mentése sikeres',
+    'successfully_deleted' => 'Beállítás sikeresen törölve',
+    'already_at_top'       => 'Ez már a lista tetején van',
+    'already_at_bottom'    => 'Ez már a lista alján van',
+    'key_already_exists'   => 'A kulcs :key már létezik',
+    'moved_order_up'       => 'A(z) :name beállítás mozgatása felfelé',
+    'moved_order_down'     => 'A(z) :name beállítás mozgatása lefelé',
+    'successfully_removed' => 'A(z) :name érték sikeresen törölve',
+    'group_general'        => 'Általános',
+    'group_admin'          => 'Admin',
+    'group_site'           => 'Webhely',
+    'group'                => 'Csoport',
+    'help_group'           => 'Csoportosítsa ezt a beállítást',
+];

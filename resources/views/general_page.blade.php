@@ -9,6 +9,7 @@
                     <h1>{{ $page->title }}</h1>
                     <img class="home-header-svg" src="{{ asset('assets/img/homepage/design-elements/home_header_elem.png') }}" alt="Design elem">
                 </div>
+
             </div>
         </div>
     </article>

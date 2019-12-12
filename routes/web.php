@@ -15,15 +15,17 @@ Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
 
+Route::get('/page/{slug}', 'PageController@getPage');
 
-
-//Route::get('{slug}', 'PageController@renderPage');
 Route::get('/', 'PageController@renderPage')->name('startpage');
+
 Route::get('/referenciak', 'PageController@renderPage')->name('references');
 Route::get('/koltsegek', 'PageController@renderPage')->name('costs');
 Route::get('/arajanlat', 'PageController@renderPage')->name('offer');
 Route::get('/rolunk', 'PageController@renderPage')->name('about');
-Route::get('/hirek', 'PageController@renderPage')->name('news');
+
+Route::get('/hirek', 'NewsController@news');
+
 Route::get('/alapanyagok', 'PageController@renderPage')->name('ingredients');
 Route::get('/gerendahaz', 'PageController@renderPage')->name('blockhouse');
 Route::get('/egyeb-faepiteszet', 'PageController@renderPage')->name('architecture');

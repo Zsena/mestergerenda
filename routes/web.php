@@ -28,3 +28,4 @@ Route::get('/alapanyagok', 'PageController@renderPage')->name('ingredients');
 Route::get('/gerendahaz', 'PageController@renderPage')->name('blockhouse');
 Route::get('/egyeb-faepiteszet', 'PageController@renderPage')->name('architecture');
 Route::get('/kisteres-projektek', 'PageController@renderPage')->name('projects');
+Route::get('/kapcsolat', 'PageController@renderPage')->name('contact');

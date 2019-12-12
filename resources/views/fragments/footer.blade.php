@@ -22,7 +22,7 @@
                 <h4 class="text-highlight">Elérhetőségeink</h4>
                 <ul class="footer-list">
                     <li>
-                        <a href="#">LinkLinkLink 1</a>
+                        <a href="/kapcsolat">Kapcsolat</a>
                     </li>
                     <li>
                         <a href="#">LinkLinkLink 2</a>

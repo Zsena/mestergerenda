@@ -1499,6 +1499,227 @@ header.offer-header {
   }
 }
 
+img.design-line-top,
+img.design-line-right-top {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 9999;
+}
+
+@media only screen and (min-width: 992px) {
+  img.design-line-top {
+    position: absolute;
+    top: -7rem;
+    z-index: 9999;
+    right: 62rem;
+  }
+
+  img.design-line-right-top {
+    position: absolute;
+    top: -1rem;
+    z-index: 9999;
+    right: 15rem;
+  }
+}
+
+.flex-outer {
+  list-style-type: none;
+  padding: 0;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.flex-outer label {
+  flex: 1 0 120px;
+  max-width: 220px;
+  padding: 8px;
+  font-weight: 300;
+  letter-spacing: 0.09em;
+  font-family: "Myriad-Regular", "sans-serif";
+  font-size: 12px;
+}
+
+.flex-outer p {
+  padding: 8px;
+  font-weight: 300;
+  letter-spacing: 0.09em;
+  flex: 1 0 120px;
+  max-width: 220px;
+  margin: 0;
+}
+
+.flex-outer button {
+  border: none;
+  letter-spacing: 0.09em;
+  position: relative;
+  z-index: 9999;
+}
+
+.flex-outer textarea {
+  width: 100%;
+  min-height: 300px;
+  border: 1px solid #bcc5a9;
+}
+
+.flex-outer input:not([type=checkbox]),
+.flex-outer select {
+  padding: 10px;
+  background-color: white;
+  width: 100%;
+  border: 1px solid #bcc5a9;
+}
+
+header.contact-header {
+  background-image: url("/public/assets/img/contact/contact.png");
+}
+
+.contact-page .contact-section {
+  position: relative;
+}
+
+.contact-page .contact-section .personal-datas ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-page .form-section {
+  position: relative;
+}
+
+.contact-page .form-section h2 {
+  margin-top: 0;
+  position: relative;
+  z-index: 99999;
+}
+
+.contact-page .map {
+  position: relative;
+  background-color: #586e27;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+  background-image: url("/public/assets/img/contact/map.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 400px;
+}
+
+@media only screen and (min-width: 992px) {
+  /* offer subpage */
+
+  .contact-subpage .form-section h2 {
+    margin-top: -2rem;
+  }
+}
+
+img.design-line-top,
+img.design-line-right-top {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 9999;
+}
+
+@media only screen and (min-width: 992px) {
+  img.design-line-top {
+    position: absolute;
+    top: -7rem;
+    z-index: 9999;
+    right: 62rem;
+  }
+
+  img.design-line-right-top {
+    position: absolute;
+    top: -1rem;
+    z-index: 9999;
+    right: 15rem;
+  }
+}
+
+.flex-outer {
+  list-style-type: none;
+  padding: 0;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.flex-outer label {
+  flex: 1 0 120px;
+  max-width: 220px;
+  padding: 8px;
+  font-weight: 300;
+  letter-spacing: 0.09em;
+  font-family: "Myriad-Regular", "sans-serif";
+  font-size: 12px;
+}
+
+.flex-outer p {
+  padding: 8px;
+  font-weight: 300;
+  letter-spacing: 0.09em;
+  flex: 1 0 120px;
+  max-width: 220px;
+  margin: 0;
+}
+
+.flex-outer button {
+  border: none;
+  letter-spacing: 0.09em;
+  position: relative;
+  z-index: 9999;
+}
+
+.flex-outer textarea {
+  width: 100%;
+  min-height: 300px;
+  border: 1px solid #bcc5a9;
+}
+
+.flex-outer input:not([type=checkbox]),
+.flex-outer select {
+  padding: 10px;
+  background-color: white;
+  width: 100%;
+  border: 1px solid #bcc5a9;
+}
+
+header.ingredients-header {
+  background-image: url("/public/assets/img/ingredients/ingredients-bg.jpg");
+  /* Photo by Reto Scheiwiller */
+}
+
+.ingredients-page .type-section {
+  position: relative;
+}
+
+.ingredients-page .type-section h2 {
+  margin-top: -2rem;
+  position: relative;
+  z-index: 9999;
+}
+
+.ingredients-page .swot-section {
+  position: relative;
+  background-color: #586e27;
+  min-height: 500px;
+}
+
+.ingredients-page .properties {
+  position: relative;
+}
+
+.ingredients-page .properties h2 {
+  margin-top: -2rem;
+  position: relative;
+  z-index: 9999;
+}
+
+.ingredients-page .properties .vector-col img {
+  margin-top: 2rem;
+}
+
 /* Footer import */
 
 footer.mega-footer {

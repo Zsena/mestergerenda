@@ -25,6 +25,7 @@ class PageController extends Controller
         ['view' => 'blockhouse', 'name' => 'blockhouse'],
         ['view' => 'architecture', 'name' => 'architecture'],
         ['view' => 'projects', 'name' => 'projects'],
+        ['view' => 'contact', 'name' => 'contact'],
     ];
 
     public function renderPage() {

@@ -1,0 +1,48 @@
+@import '_lines_subpages';
+@import '__forms';
+
+header.contact-header {
+  background-image: url("/public/assets/img/contact/contact.png");
+}
+
+.contact-page {
+  .contact-section {
+    position: relative;
+    .personal-datas ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+  }
+  .form-section {
+    position: relative;
+    h2 {
+      margin-top: 0;
+      position: relative;
+      z-index: 99999;
+    }
+  }
+
+  .map {
+    position: relative;
+    background-color: $dark-green;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+    background-image: url("/public/assets/img/contact/map.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 400px;
+  }
+}
+
+@media only screen and (min-width: 992px){
+  /* offer subpage */
+  .contact-subpage {
+    .form-section {
+      h2 {
+        margin-top: -2rem;
+      }
+    }
+  }
+}

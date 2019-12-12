@@ -1,0 +1,42 @@
+@import '_lines_subpages';
+@import '__forms';
+
+header.ingredients-header {
+  background-image: url("/public/assets/img/ingredients/ingredients-bg.jpg");
+  /* Photo by Reto Scheiwiller */
+}
+
+.ingredients-page {
+  .type-section {
+    position: relative;
+    h2 {
+      margin-top: -2rem;
+      position: relative;
+      z-index: 9999;
+    }
+  }
+
+  .swot-section {
+    position: relative;
+    background-color: $dark-green;
+    min-height: 500px;
+  }
+
+  .properties {
+    position: relative;
+    h2 {
+      margin-top: -2rem;
+      position: relative;
+      z-index: 9999;
+    }
+    .vector-col {
+      img {
+        margin-top: 2rem;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 992px){
+
+}

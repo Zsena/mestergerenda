@@ -55,9 +55,9 @@
                                             <p>
                                                 {{ $n->excerpt }}
                                             </p>
-                                            <a class="news-btn" href="#">Bővebben ></a>
                                             <img class="news-bottom-lines second-row-line" src="{{ asset('assets/img/homepage/design-elements/home_header_elem.png') }}" alt="Design elem">
                                         </div>
+                                        <a class="news-btn" href="#">Bővebben ></a>
                                     </div>
                                     <div class="col">
                                         <img class="news-card-img ml-0" src="{{Voyager::image($n->thumbnail('cropped'))}}" alt="Hírek">

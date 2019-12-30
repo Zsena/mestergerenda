@@ -153,7 +153,14 @@
       .news-row {
         .news-card {
           .news-bottom-lines.second-row-line {
-            left: -10rem;
+            left: -10px;
+            right: inherit;
+            bottom: -10px;
+            transform: rotate(90deg);
+            -webkit-transform: rotate(90deg);
+            -moz-transform: rotate(90deg);
+            -ms-transform: rotate(90deg);
+            -o-transform: rotate(90deg);
           }
         }
       }
@@ -334,6 +341,15 @@
               left: -12rem;
               width: 50px;
             }
+          }
+        }
+      }
+    }
+    .news {
+      .news-row {
+        .news-card {
+          .news-bottom-lines.second-row-line {
+            left: -50px;
           }
         }
       }

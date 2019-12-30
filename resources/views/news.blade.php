@@ -47,7 +47,7 @@
                             @else
                             <div class="news-card">
                                 <div class="row column-reverse">
-                                    <div class="col pl-0">
+                                    <div class="col pl-0 position-relative">
                                         <div class="news-card-title">
                                             <h4 class="text-highlight-darker">{{ $n->title}}</h4>
                                         </div>
@@ -55,10 +55,10 @@
                                             <p>
                                                 {{ $n->excerpt }}
                                             </p>
+                                            <a class="news-btn" href="#">Bővebben ></a>
+                                            <img class="news-bottom-lines second-row-line" src="{{ asset('assets/img/homepage/design-elements/home_header_elem.png') }}" alt="Design elem">
                                         </div>
-                                        <a class="news-btn" href="#">Bővebben ></a>
                                     </div>
-                                    <img class="news-bottom-lines second-row-line" src="{{ asset('assets/img/homepage/design-elements/home_header_elem.png') }}" alt="Design elem">
                                     <div class="col">
                                         <img class="news-card-img ml-0" src="{{Voyager::image($n->thumbnail('cropped'))}}" alt="Hírek">
                                     </div>

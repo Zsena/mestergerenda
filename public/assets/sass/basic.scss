@@ -85,6 +85,10 @@ html, body {
 //  display: block !important;
 //}
 
+.position-relative {
+  position: relative;
+}
+
 /* pictures */
 
 div.img-wrap {
@@ -214,6 +218,8 @@ p, li {
   color: $dark-green;
   font-weight: bold;
   font-family: Arial, 'sans-serif';
+  position: relative;
+  z-index: 9999;
 }
 
 .news-btn:hover {

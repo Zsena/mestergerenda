@@ -125,7 +125,7 @@
                                 Donec quis erat orci. Mauris massa eros,
                                 sollicitudin ut arcu quis, vehicula blandit purus. Suspendisse eleifend nunc.
                             </p>
-                            <a href="/referenciak" class="btn btn-primary-inverse clickable-card-link">Érdekel</a>
+                            <a href="/referenciak#refProgram" class="btn btn-primary-inverse clickable-card-link">Érdekel</a>
                         </div>
                     </div>
                 </div>
@@ -154,7 +154,7 @@
         </div>
         <div class="m-container faq-container">
             <div class="program-text">
-                <h2 class="ref-title">Referenciaház program</h2>
+                <a href="/referenciak#refProgram"><h2 class="ref-title">Referenciaház program</h2></a>
                 <p class="ref-text">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam interdum accumsan dui, et aliquet ex convallis et.
                     Sed ac mauris imperdiet neque consectetur mattis nec eu nunc. Donec quis erat orci. Mauris massa eros, sollicitudin ut arcu quis,
@@ -181,10 +181,12 @@
                         fermentum consequat arcu. Nullam dui neque, porttitor ac pretium ut, varius vel libero. Suspendisse egestas enim sed velit eleifend consectetur.
                         Duis tincidunt urna velit, eget placerat erat blandit sit amet. Fusce aliquet ut felis et maximus. Integer feugiat justo ut
                     </p>
-                    <a class="btn btn-secondary" href="#">Gyakori Kérdések</a>
+                    <a class="btn btn-secondary" href="/arajanlat#gyik">Gyakori Kérdések</a>
                 </div>
                 <div class="col-4">
-                    <img src="{{ asset('assets/img/homepage/fooldal_gyakorikerdesek.png') }}" alt="Gyakori kérdések szekció:Ház kerttel kép">
+                    <figure class="color-effect">
+                        <a href="/arajanlat#gyik"><img src="{{ asset('assets/img/homepage/fooldal_gyakorikerdesek.png') }}" alt="Gyakori kérdések szekció:Ház kerttel kép"></a>
+                    </figure>
                 </div>
             </div>
         </div>

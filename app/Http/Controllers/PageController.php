@@ -26,6 +26,10 @@ class PageController extends Controller
         ['view' => 'architecture', 'name' => 'architecture'],
         ['view' => 'projects', 'name' => 'projects'],
         ['view' => 'contact', 'name' => 'contact'],
+        ['view' => 'cookie', 'name' => 'cookie'],
+        ['view' => 'privacy', 'name' => 'privacy'],
+        ['view' => 'imprint', 'name' => 'imprint'],
+        ['view' => 'news-single', 'name' => 'news-single'],
     ];
 
     public function renderPage() {

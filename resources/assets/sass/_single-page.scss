@@ -1,0 +1,128 @@
+@import '_lines_subpages';
+@import '__forms';
+@import '__tables';
+
+header.single-page-header {
+  background-image: url("/public/assets/img/contact/contact.png");
+}
+
+header.news-single-header {
+  background-image: none;
+  background-color: $dark-green;
+  article.header-layer-container .row .main-layer {
+    h1 {
+      font-size: 35px;
+    }
+    p {
+      margin-top: -5px;
+      font-size: 15px;
+    }
+  }
+}
+
+.single-page {
+  .single-page-section {
+    position: relative;
+    .personal-datas ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+  }
+  .form-section {
+    position: relative;
+    h2 {
+      margin-top: 0;
+      position: relative;
+      z-index: 99999;
+    }
+  }
+
+  .image-section {
+    position: relative;
+    background-color: $dark-green;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+    background-image: url("/public/assets/img/single-page/cookies.jpg"); /* Photo by Brigitte Tohm */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 200px;
+    h2 {
+      padding: 1rem 2rem 2rem;
+      justify-content: center;
+      display: flex;
+      z-index: 9999;
+      position: relative;
+    }
+  }
+  .image2-section {
+    position: relative;
+    background-color: $dark-green;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+    background-attachment: fixed;
+    background-image: url("/public/assets/img/single-page/privacy.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 200px;
+    h2 {
+      padding: 1rem 2rem 2rem;
+      justify-content: center;
+      display: flex;
+      z-index: 9999;
+      position: relative;
+    }
+  }
+
+  .image3-section {
+    position: relative;
+    background-color: #586e27;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+    background-attachment: fixed;
+    background-image: url("/public/assets/img/homepage/Header.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    .row {
+      justify-content: center;
+      align-items: center;
+      min-height: 380px;
+    }
+    .btn-primary {
+      position: relative;
+      z-index: 9999;
+      max-width: 300px;
+      margin: auto;
+    }
+  }
+
+  .lead-text {
+    font-weight: 600;
+    color: $light-green;
+  }
+  .news-single-section {
+    background-color: $light-green;
+    h2 {
+      color: $white;
+    }
+  }
+
+}
+
+@media only screen and (min-width: 992px){
+  .single-page {
+    .image-section {
+      h2 {
+        padding: 4rem 2rem 0;
+      }
+    }
+    .image2-section {
+      h2 {
+        padding: 4rem 2rem 0;
+      }
+    }
+  }
+}

@@ -2,19 +2,19 @@
     <div class="m-container">
         <div class="row">
             <div class="col">
-                <h4 class="text-highlight">Rólunk</h4>
+                <h4 class="text-highlight">Főbb oldalak</h4>
                 <ul class="footer-list">
                     <li>
-                        <a href="#">Link 1</a>
+                        <a href="/arajanlat">Árajánlatkérés</a>
                     </li>
                     <li>
-                        <a href="#">Link 2</a>
+                        <a href="/költsegek">Költségek</a>
                     </li>
                     <li>
-                        <a href="#">Link 3</a>
+                        <a href="/referenciak">Referenciáink</a>
                     </li>
                     <li>
-                        <a href="#">Link 4</a>
+                        <a href="/kisteres-projektek">Kisteres projektjeink</a>
                     </li>
                 </ul>
             </div>
@@ -25,13 +25,13 @@
                         <a href="/kapcsolat">Kapcsolat</a>
                     </li>
                     <li>
-                        <a href="#">LinkLinkLink 2</a>
+                        <a href="mailto:info@mestergerenda.hu">info@mestergerenda.hu</a>
                     </li>
                     <li>
-                        <a href="#">LinkLinkLink 3</a>
+                        <a href="tel:06-20-9999-99-99">06-20-9999-99-99</a>
                     </li>
                     <li>
-                        <a href="#">LinkLinkLink 4</a>
+                        <a href="tel:06-20-9999-99-99">06-20-9999-99-88</a>
                     </li>
                 </ul>
             </div>
@@ -39,16 +39,16 @@
                 <h4 class="text-highlight">Híreink</h4>
                 <ul class="footer-list">
                     <li>
-                        <a href="#">LinkLinkLink 1</a>
+                        <a href="/hir-1">Hír sablon</a>
                     </li>
                     <li>
-                        <a href="#">LinkLinkLink 2</a>
+                        <a href="hir-1">Hír sablon</a>
                     </li>
                     <li>
-                        <a href="#">LinkLinkLink 3</a>
+                        <a href="hir-1">Hír sablon</a>
                     </li>
                     <li>
-                        <a href="#">LinkLinkLink 4</a>
+                        <a href="hir-1">Hír sablon</a>
                     </li>
                 </ul>
             </div>
@@ -56,16 +56,13 @@
                 <h4 class="text-highlight">Információk</h4>
                 <ul class="footer-list">
                     <li>
-                        <a href="#">LinkLinkLink 1</a>
+                        <a href="/cookie">Cookie szabályzat</a>
                     </li>
                     <li>
-                        <a href="#">LinkLinkLink 2</a>
+                        <a href="/adatkezelesi-szabalyzat">Adatkezelési szabályzat</a>
                     </li>
                     <li>
-                        <a href="#">LinkLinkLink 3</a>
-                    </li>
-                    <li>
-                        <a href="#">LinkLinkLink 4</a>
+                        <a href="/cegadatok">Cégadatok</a>
                     </li>
                 </ul>
             </div>

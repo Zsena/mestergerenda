@@ -101,7 +101,7 @@
             </div>
             <img class="bottom-white-elem" src="{{ asset('assets/img/homepage/design-elements/first-sec-bottom.png') }}" alt="Design elem">
         </section>
-        <section class="faq-sub-section">
+        <section class="faq-sub-section" id="gyik">
             <div class="m-container">
                 <div class="col-12">
                     <h2 class="text-white">Gyakori Kérdések</h2>

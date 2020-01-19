@@ -48,7 +48,7 @@
   }
 
 
-  .special-offers-section {
+  .special-offers-section, .news-single-section {
     min-height: 730px;
     background-color: $light-grey;
     h2 {
@@ -60,6 +60,12 @@
         background-color: $white;
         padding: 1.5rem;
         position: relative;
+        &:hover {
+            transform: translate3D(0,-1px,0) scale(1.03);
+            -webkit-transition: all 0.3s ease;
+            -moz-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+        }
         .card-title {
           color: $dark-green;
           text-transform: uppercase;

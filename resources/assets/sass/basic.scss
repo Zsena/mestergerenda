@@ -77,6 +77,14 @@ html, body {
   padding-left: 0;
 }
 
+.pt-3 {
+  padding-top: 2.5rem;
+}
+
+.pt-0 {
+  padding-top: 0;
+}
+
 .column-reverse {
   flex-direction: column-reverse;
 }
@@ -111,12 +119,86 @@ img {
   display: flex;
 }
 
+.color-effect {
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  -webkit-filter: grayscale(0.5);
+  filter: grayscale(.5);
+  img{
+    width: 100%;
+    height: 100%;
+  }
+  &::before {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      z-index: 2;
+      display: block;
+      content: '';
+      width: 0;
+      height: 0;
+      background: rgba(0,0,0,.2);
+      border-radius: 100%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+  }
+  &:hover {
+      animation: bloom ease-in-out .75s forwards;
+  }
+  &:hover::before {
+    animation: circle .75s;
+  }
+}
+
+@keyframes bloom {
+  0% {
+    filter: grayscale(.5);
+  }
+  40% {
+    filter: grayscale(.5);
+  }
+  100% {
+    filter: grayscale(0);
+  }
+}
+
+@keyframes circle {
+  0% {
+    opacity: .5;
+    background: rgba(213,156,34,.2);
+
+  }
+  40% {
+    opacity: 1;
+    background: rgba(30, 213, 62, 0.2);
+  }
+  100% {
+    width: 200%;
+    height: 200%;
+    opacity: 0;
+  }
+}
+
+
+.img-frame-1 {
+  background-color: #3f7249;
+  padding: 25px;
+}
+
+.img-frame-2 {
+  background-color: #c08964;
+  padding: 25px;
+}
+
 .img-after:after{
   content:'\A';
   position:absolute;
   width:100%;
   height:100%;
-  background:rgba(0,0,0,0.3);
+  background:rgba(0,0,0,0.4);
   opacity:0.8;
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
@@ -127,11 +209,20 @@ figure {
   margin: auto;
 }
 
-
-
 /* Typography */
 a {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   text-decoration: none;
+}
+
+p a, li a {
+  color: $dark-green;
+  font-weight: 600;
+  &:hover {
+    color: $nav-link-hover;
+  }
 }
 
 h1 {
@@ -152,9 +243,10 @@ h3 {
   font-weight: 100;
 }
 
-p, li {
+p, li, th, td {
   font-size: 14px;
   font-family: Arial;
+  letter-spacing: 1px;
 }
 
 .pagination {
@@ -198,15 +290,21 @@ p, li {
 .btn-primary {
   background-color: $dark-green;
   color: $white;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   &:hover {
     background-color: $svg-brown;
-    color: $brown;
+    color: $white;
   }
 }
 
 .btn-primary-inverse {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   background-color: $svg-brown;
-  color: $brown;
+  color: $white;
   &:hover {
     background-color: $dark-green;
     color: $white;

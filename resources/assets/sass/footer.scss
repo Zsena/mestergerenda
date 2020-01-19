@@ -13,7 +13,7 @@ footer.mega-footer {
     padding-left: 0;
     li {
       list-style-type: none;
-      padding: 15px 0;
+      padding: 10px 0;
       a {
         color: $dark-green;
         &:hover {
@@ -73,6 +73,12 @@ footer.mega-footer {
     letter-spacing: .09em;
     position: relative;
     z-index: 9999;
+  }
+  .footer-logo {
+    margin: 0;
+    width: 100%;
+    margin-left: -2px;
+    max-width: 80px;
   }
 }
 

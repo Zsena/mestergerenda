@@ -16,6 +16,9 @@
                     <li>
                         <a href="/kisteres-projektek">Kisteres projektjeink</a>
                     </li>
+                    <li>
+                        <a href="/rolunk">Kik vagyunk?</a>
+                    </li>
                 </ul>
             </div>
             <div class="col">
@@ -26,6 +29,9 @@
                     </li>
                     <li>
                         <a href="mailto:info@mestergerenda.hu">info@mestergerenda.hu</a>
+                    </li>
+                    <li>
+                        <a href="mailto:info@mestergerenda.hu">hello@mestergerenda.hu</a>
                     </li>
                     <li>
                         <a href="tel:06-20-9999-99-99">06-20-9999-99-99</a>
@@ -39,16 +45,16 @@
                 <h4 class="text-highlight">Híreink</h4>
                 <ul class="footer-list">
                     <li>
-                        <a href="/hir-1">Hír sablon</a>
+                        <a href="/hir-1">Hír sablon Lorem ipsum dolor sit amet</a>
                     </li>
                     <li>
-                        <a href="hir-1">Hír sablon</a>
+                        <a href="hir-1">Hír sablon Lorem ipsum dolor sit amet</a>
                     </li>
                     <li>
-                        <a href="hir-1">Hír sablon</a>
+                        <a href="hir-1">Hír sablon Lorem ipsum dolor sit amet</a>
                     </li>
                     <li>
-                        <a href="hir-1">Hír sablon</a>
+                        <a href="hir-1">Hír sablon Lorem ipsum dolor sit amet</a>
                     </li>
                 </ul>
             </div>
@@ -63,6 +69,9 @@
                     </li>
                     <li>
                         <a href="/cegadatok">Cégadatok</a>
+                    </li>
+                    <li>
+                        <a href="/"><img class="footer-logo" src="{{ asset('assets/img/homepage/logo-cropped.png') }}" alt="Mestergerenda logó"></a>
                     </li>
                 </ul>
             </div>

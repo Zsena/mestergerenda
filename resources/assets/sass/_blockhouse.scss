@@ -1,0 +1,60 @@
+@import '__forms';
+
+header.blockhouse-header {
+  background-image: url("/public/assets/img/blockhouse/blockhouse-header.jpg");
+}
+
+.blockhouse-page {
+  .first-section {
+    position: relative;
+
+    h2 {
+      margin-top: -2rem;
+      position: relative;
+      z-index: 9999;
+    }
+  }
+
+  .b-type-section {
+    h2 {
+      color: $svg-brown
+    }
+  }
+
+  .properties {
+    position: relative;
+
+    h2 {
+      margin-top: -2rem;
+      position: relative;
+      z-index: 9999;
+    }
+
+    .vector-col {
+      img {
+        margin-right: 5rem;
+        margin-top: -1rem;
+        width: 100%;
+        max-width: 150px;
+      }
+    }
+  }
+
+  .technologies {
+    background-image: url("/public/assets/img/blockhouse/bg-brown.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 750px;
+    display: flex;
+    justify-content: center;
+
+    h2 {
+      margin-top: -2rem;
+    }
+
+    p {
+      position: relative;
+      z-index: 99999;
+    }
+  }
+}

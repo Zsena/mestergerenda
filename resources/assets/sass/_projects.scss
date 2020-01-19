@@ -1,0 +1,31 @@
+@import '_lines_subpages';
+
+header.projects-header {
+  background-image: url("/public/assets/img/about-us/about-us-header.png");
+}
+
+.projects-section, .projects-second-section {
+  position: relative;
+  padding-bottom: 3rem;
+  h2 {
+    position: relative;
+    z-index: 99999;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+}
+
+.projects-section h2 {
+  margin-top: -2rem;
+}
+
+.projects-second-section {
+  background-color: $brown;
+  min-height: 535px;
+  display: flex;
+  justify-content: center;
+  p {
+    position: relative;
+    z-index: 99999;
+  }
+}

@@ -4,7 +4,7 @@
 <header class="main-header header-after">
     <article class="m-container header-layer-container">
         <div class="row">
-            <div class="main-layer col">
+            <div class="home-page-layer main-layer col">
                 <div class="text-box">
                     <h1>Lorem ipsum dolor sit amet</h1>
                     <p>

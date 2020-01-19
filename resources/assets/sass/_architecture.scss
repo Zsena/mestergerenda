@@ -1,0 +1,31 @@
+@import '_lines_subpages';
+
+header.architecture-header {
+  background-image: url("/public/assets/img/about-us/about-us-header.png");
+}
+
+.architecture-section, .architecture-second-section {
+  position: relative;
+  padding-bottom: 3rem;
+  h2 {
+    position: relative;
+    z-index: 99999;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+}
+
+.architecture-section h2 {
+  margin-top: -2rem;
+}
+
+.architecture-second-section {
+  background-color: $light-grey;
+  min-height: 535px;
+  display: flex;
+  justify-content: center;
+  p {
+    position: relative;
+    z-index: 99999;
+  }
+}

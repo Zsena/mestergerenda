@@ -8,6 +8,14 @@ html, body {
 }
 
 /* basic */
+/*cookie section*/
+.cc-window.cc-banner {
+  z-index: 999999 !important;
+}
+
+.cc-revoke, .cc-window {
+  z-index: 9999999 !important;
+}
 
 .m-container {
   max-width: 1140px;

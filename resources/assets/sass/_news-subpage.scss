@@ -1,3 +1,10 @@
 header.news-subpage-header {
   background-image: url("/public/assets/img/news/news-header.png");
+  background-attachment: inherit;
+}
+
+@media all and (min-width: 500px) {
+  header.news-subpage-header {
+    background-attachment: fixed;
+  }
 }

@@ -4,6 +4,7 @@
 header.ingredients-header {
   background-image: url("/public/assets/img/ingredients/ingredients-bg.jpg");
   /* Photo by Reto Scheiwiller */
+  background-attachment: inherit;
 }
 
 .ingredients-page {
@@ -37,6 +38,8 @@ header.ingredients-header {
   }
 }
 
-@media only screen and (min-width: 992px){
-
+@media all and (min-width: 500px) {
+  header.ingredients-header {
+    background-attachment: fixed;
+  }
 }

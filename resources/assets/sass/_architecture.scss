@@ -2,6 +2,7 @@
 
 header.architecture-header {
   background-image: url("/public/assets/img/architecture/arch-header_1.jpg");
+  background-attachment: inherit;
 }
 
 .architecture-section, .architecture-second-section {
@@ -27,5 +28,11 @@ header.architecture-header {
   p {
     position: relative;
     z-index: 99999;
+  }
+}
+
+@media all and (min-width: 500px) {
+  header.architecture-header {
+    background-attachment: fixed;
   }
 }

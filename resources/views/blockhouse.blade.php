@@ -55,7 +55,14 @@
                         <div class="card">
                             <img src="{{ asset('assets/img/homepage/design-elements/placeholder.png') }}" alt="">
                             <div class="card-body">
-                                <a href="#" class="clickable-card-link"><h5 class="card-title">Típus_1</h5></a>
+                                <h5 class="card-title">Típus_1</h5>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
                                 <p class="card-text">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam interdum accumsan dui,
                                     et aliquet ex convallis et. Sed ac mauris imperdiet neque consectetur mattis nec eu nunc.
@@ -69,7 +76,14 @@
                         <div class="card">
                             <img src="{{ asset('assets/img/homepage/fooldal_referenciahaz.png') }}" alt="">
                             <div class="card-body">
-                                <a href="#" class="clickable-card-link"><h5 class="card-title">Típus_2</h5></a>
+                                <h5 class="card-title">Típus_2</h5>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
                                 <p class="card-text">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam interdum accumsan dui,
                                     et aliquet ex convallis et. Sed ac mauris imperdiet neque consectetur mattis nec eu nunc.
@@ -83,7 +97,14 @@
                         <div class="card">
                             <img src="{{ asset('assets/img/homepage/design-elements/placeholder.png') }}" alt="">
                             <div class="card-body">
-                                <a href="#" class="clickable-card-link"><h5 class="card-title">Típus_3</h5></a>
+                                <h5 class="card-title">Típus_3</h5>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
                                 <p class="card-text">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam interdum accumsan dui,
                                     et aliquet ex convallis et. Sed ac mauris imperdiet neque consectetur mattis nec eu nunc.
@@ -95,6 +116,28 @@
                     </div>
                 </div>
             </div>
+            <section class="pb-2 pt-3" style="width: 70%; margin: auto;">
+                <!--Start of Modal -->
+                <div class="btn-modal">
+                    <input id="modal__trigger" type="checkbox" />
+                    <label for="modal__trigger">Bővebben a típusokról</label>
+                    <div class="modal__overlay" role="dialog" aria-labelledby="modal__title" aria-describedby="modal_desc">
+                        <div class="modal__wrap">
+                            <label for="modal__trigger">&#10006;</label>
+                            <h2 id="modal__title">Bővebben a típusokról</h2>
+                            <p id="modal__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac laoreet elit. Phasellus dignissim purus vitae urna cursus, quis congue ligula tristique. Ut nec blandit risus. Donec at orci ut justo venenatis viverra. Suspendisse in volutpat lacus. In enim est, dapibus eget ipsum sed, suscipit ultrices diam.</p>
+                            <p id="modal__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac laoreet elit. Phasellus dignissim purus vitae urna cursus, quis congue ligula tristique. Ut nec blandit risus. Donec at orci ut justo venenatis viverra. Suspendisse in volutpat lacus. In enim est, dapibus eget ipsum sed, suscipit ultrices diam.</p>
+                            <p id="modal__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac laoreet elit. Phasellus dignissim purus vitae urna cursus, quis congue ligula tristique. Ut nec blandit risus. Donec at orci ut justo venenatis viverra. Suspendisse in volutpat lacus. In enim est, dapibus eget ipsum sed, suscipit ultrices diam.</p>
+                            <p id="modal__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac laoreet elit. Phasellus dignissim purus vitae urna cursus, quis congue ligula tristique. Ut nec blandit risus. Donec at orci ut justo venenatis viverra. Suspendisse in volutpat lacus. In enim est, dapibus eget ipsum sed, suscipit ultrices diam.</p>
+                            <p id="modal__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac laoreet elit. Phasellus dignissim purus vitae urna cursus, quis congue ligula tristique. Ut nec blandit risus. Donec at orci ut justo venenatis viverra. Suspendisse in volutpat lacus. In enim est, dapibus eget ipsum sed, suscipit ultrices diam.</p>
+                            <p id="modal__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac laoreet elit. Phasellus dignissim purus vitae urna cursus, quis congue ligula tristique. Ut nec blandit risus. Donec at orci ut justo venenatis viverra. Suspendisse in volutpat lacus. In enim est, dapibus eget ipsum sed, suscipit ultrices diam.</p>
+                            <p id="modal__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac laoreet elit. Phasellus dignissim purus vitae urna cursus, quis congue ligula tristique. Ut nec blandit risus. Donec at orci ut justo venenatis viverra. Suspendisse in volutpat lacus. In enim est, dapibus eget ipsum sed, suscipit ultrices diam.</p>
+                            <p id="modal__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac laoreet elit. Phasellus dignissim purus vitae urna cursus, quis congue ligula tristique. Ut nec blandit risus. Donec at orci ut justo venenatis viverra. Suspendisse in volutpat lacus. In enim est, dapibus eget ipsum sed, suscipit ultrices diam.1</p>
+                        </div>
+                    </div>
+                </div>
+                <!--End of Modal -->
+            </section>
         </section>
         <section class="properties">
             <img class="top-white-elem" src="{{ asset('assets/img/homepage/design-elements/first-sec-top.png') }}" alt="Design elem">

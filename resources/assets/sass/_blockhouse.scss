@@ -1,7 +1,8 @@
 @import '__forms';
-
+@import '__modals';
 header.blockhouse-header {
   background-image: url("/public/assets/img/blockhouse/blockhouse-header.jpg");
+  background-attachment: inherit;
 }
 
 .blockhouse-page {
@@ -9,7 +10,7 @@ header.blockhouse-header {
     position: relative;
 
     h2 {
-      margin-top: -2rem;
+      margin-top: 0;
       position: relative;
       z-index: 9999;
     }
@@ -18,6 +19,21 @@ header.blockhouse-header {
   .b-type-section {
     h2 {
       color: $svg-brown
+    }
+
+    .rating {
+      display: flex;
+      margin: auto;
+      justify-content: center;
+      margin-top: -1rem;
+      grid-row: 3;
+      color: $light-green;
+      font-size: 14px;
+      flex-flow: row nowrap;
+
+      i {
+        margin: 0 1px;
+      }
     }
   }
 
@@ -47,14 +63,27 @@ header.blockhouse-header {
     min-height: 750px;
     display: flex;
     justify-content: center;
+    background-position: center center;
 
     h2 {
-      margin-top: -2rem;
+      margin-top: 0;
     }
 
     p {
       position: relative;
       z-index: 99999;
     }
+  }
+}
+
+@media all and (min-width: 500px) {
+  header.blockhouse-header {
+    background-attachment: fixed;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .blockhouse-page .first-section h2, .blockhouse-page .technologies h2 {
+    margin-top: -2rem;
   }
 }

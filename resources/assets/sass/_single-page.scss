@@ -4,6 +4,7 @@
 
 header.single-page-header {
   background-image: url("/public/assets/img/contact/contact.png");
+  background-attachment: inherit;
 }
 
 header.news-single-header {
@@ -110,6 +111,12 @@ header.news-single-header {
     }
   }
 
+}
+
+@media all and (min-width: 500px) {
+  header.single-page-header {
+    background-attachment: fixed;
+  }
 }
 
 @media only screen and (min-width: 992px){

@@ -4,6 +4,7 @@
 /* References subpage */
 header.references-header {
   background-image: url("/public/assets/img/references/referenciak.png");
+  background-attachment: inherit;
 }
 
 .references-section, .foorplan-section, .gallery-section {
@@ -35,6 +36,11 @@ header.references-header {
   }
 }
 
+@media all and (min-width: 500px) {
+  header.references-header {
+    background-attachment: fixed;
+  }
+}
 
 @media only screen and (min-width: 992px){
   .references-section h2 {

@@ -2,6 +2,7 @@
 
 header.about-us-header {
   background-image: url("/public/assets/img/about-us/about-us-header.png");
+  background-attachment: inherit;
 }
 
 .about-us-section, .vision, .company-goals {
@@ -28,5 +29,12 @@ header.about-us-header {
   p {
     position: relative;
     z-index: 99999;
+  }
+}
+
+
+@media all and (min-width: 500px) {
+  header.about-us-header {
+    background-attachment: fixed;
   }
 }

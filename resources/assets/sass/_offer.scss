@@ -6,7 +6,7 @@
 /* offer subpage */
 header.offer-header {
   background-image: url("/public/assets/img/offer/offer-header.jpg");
-
+  background-attachment: inherit;
 }
 
 .offer-subpage {
@@ -26,6 +26,12 @@ header.offer-header {
     padding-bottom: 3rem;
     padding-top: 3rem;
     min-height: 600px;
+  }
+}
+
+@media all and (min-width: 500px) {
+  header.offer-header {
+    background-attachment: fixed;
   }
 }
 

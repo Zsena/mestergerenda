@@ -61,6 +61,7 @@
         padding: 1.5rem;
         position: relative;
         &:hover {
+            box-shadow: 5px 20px 30px rgba(0,0,0,0.2);
             transform: translate3D(0,-1px,0) scale(1.03);
             -webkit-transition: all 0.3s ease;
             -moz-transition: all 0.3s ease;
@@ -163,7 +164,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: inherit;
     .line-box {
       position: relative;
       .testi-top-line {

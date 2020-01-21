@@ -3,6 +3,7 @@
 
 header.contact-header {
   background-image: url("/public/assets/img/contact/contact.png");
+  background-attachment: inherit;
 }
 
 .contact-page {
@@ -33,6 +34,12 @@ header.contact-header {
     background-repeat: no-repeat;
     background-position: center center;
     min-height: 400px;
+  }
+}
+
+@media all and (min-width: 500px) {
+  header.contact-header {
+    background-attachment: fixed;
   }
 }
 

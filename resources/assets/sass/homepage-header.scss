@@ -5,7 +5,7 @@ header.main-header {
   background-repeat: no-repeat;
   min-height: 900px;
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: inherit;
   margin-top: -85px;
 }
 
@@ -21,4 +21,10 @@ header.main-header {
   opacity:0.8;
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
+}
+
+@media all and (min-width: 500px) {
+  header.main-header {
+    background-attachment: fixed;
+  }
 }

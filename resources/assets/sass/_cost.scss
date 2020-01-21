@@ -3,6 +3,7 @@
 /* Cost subpage */
 header.cost-header {
   background-image: url("/public/assets/img/cost/cost-header.jpg");
+  background-attachment: inherit;
 }
 
 
@@ -82,6 +83,12 @@ header.cost-header {
       width: 60%;
       margin: auto;
     }
+  }
+}
+
+@media all and (min-width: 500px) {
+  header.cost-header {
+    background-attachment: fixed;
   }
 }
 

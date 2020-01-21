@@ -2,6 +2,7 @@
 
 header.projects-header {
   background-image: url("/public/assets/img/about-us/about-us-header.png");
+  background-attachment: inherit;
 }
 
 .projects-section, .projects-second-section {
@@ -27,5 +28,12 @@ header.projects-header {
   p {
     position: relative;
     z-index: 99999;
+  }
+}
+
+
+@media all and (min-width: 500px) {
+  header.projects-header {
+    background-attachment: fixed;
   }
 }

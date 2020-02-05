@@ -72,7 +72,7 @@
           flex: 1;
           order: 1;
         }
-        &.logo img {
+        &.logo object {
           max-width: 100px;
           margin-top: -32px;
           margin-left: 0.5rem;
@@ -215,9 +215,9 @@
         &.logo {
           order: 1;
         }
-        &.logo img {
+        &.logo object {
           max-width: 120px;
-          margin-left: 1.5rem;
+          //margin-left: 1.5rem;
         }
         a {
           font-size: 14px;
@@ -299,7 +299,7 @@
         }
       }
       .program-text {
-        width: 30%;
+        width: 35%;
         top: -4.2rem;
         margin-left: 1rem;
       }
@@ -395,8 +395,8 @@
         &.logo {
           order: 1;
         }
-        &.logo img {
-          max-width: 160px;
+        &.logo object {
+          max-width: 135px;
         }
         a {
           &.left-menu-item {
@@ -431,5 +431,261 @@
         }
       }
     }
+  }
+}
+
+
+@media only screen and (min-width: 1900px) {
+  .pl-xl-0 {
+    padding-left: 0;
+  }
+
+  .mr-xl-0 {
+    margin-right: 0;
+  }
+
+  .ml-xl-0 {
+    margin-left: 0;
+  }
+
+  .main {
+    .faq-section {
+      .ref-program-box {
+        .ref-green-line {
+        }
+      }
+      .program-text {
+        width: 25%;
+        top: -4.2rem;
+        margin-left: 1rem;
+      }
+      .faq-container {
+        .heading-group {
+        }
+        h2 {
+        }
+      }
+    }
+
+    .testimonial {
+
+      .testi-column {
+        .testi-bottom-lines {
+        }
+      }
+
+      .testi-row {
+        .testi-card {
+        }
+        .testi-card {
+          .commas-row {
+          }
+          .commas {
+
+            .commas-top {
+
+            }
+            .commas-bottom {
+
+            }
+          }
+        }
+      }
+    }
+    .news {
+      .news-row {
+        .news-card {
+          .news-bottom-lines.second-row-line {
+          }
+        }
+      }
+    }
+  }
+
+  footer.mega-footer {
+    .col {
+
+    }
+  }
+}
+
+@media only screen and (min-width: 2100px) {
+  .pl-xl-0 {
+    padding-left: 0;
+  }
+
+  .mr-xl-0 {
+    margin-right: 0;
+  }
+
+  .ml-xl-0 {
+    margin-left: 0;
+  }
+
+  .main {
+    .faq-section {
+      .ref-program-box {
+        .ref-green-line {
+        }
+      }
+      .program-text {
+        width: 20%;
+        top: -4.2rem;
+        margin-left: 1rem;
+      }
+      .faq-container {
+        .heading-group {
+        }
+        h2 {
+        }
+
+      }
+    }
+
+    .testimonial {
+
+      .testi-column {
+        .testi-bottom-lines {
+        }
+      }
+
+      .testi-row {
+        .testi-card {
+        }
+        .testi-card {
+          .commas-row {
+          }
+          .commas {
+
+            .commas-top {
+
+            }
+            .commas-bottom {
+
+            }
+          }
+        }
+      }
+    }
+    .news {
+      .news-row {
+        .news-card {
+          .news-bottom-lines.second-row-line {
+          }
+        }
+      }
+    }
+  }
+
+  footer.mega-footer {
+    .col {
+
+    }
+  }
+}
+
+@media only screen and (min-width: 2500px) {
+
+  header.main-header {
+    background-position: center;
+  }
+
+  p, li, th, td, a, .btn, article.header-layer-container .row .main-layer p {
+    font-size: 2em;
+  }
+
+  nav.main-nav ul.menu li a {
+    font-size: 1.1em;
+  }
+
+  nav.main-nav.sticky-bg-color, nav.main-nav ul.menu, nav.main-nav ul.menu li.logo object  {
+    height: 160px;
+  }
+
+  nav.main-nav ul.menu li.item {
+    padding-top: 2em;
+  }
+
+  nav.main-nav ul.menu {
+    width: 100%;
+  }
+
+  nav.main-nav ul.menu li a.left-menu-item {
+    font-size: 1.2em;
+  }
+
+  footer.mega-footer .footer-list li a, footer.mega-footer .flex-outer li button {
+    font-size: 1.3em;
+  }
+
+  footer.mega-footer .flex-outer li button {
+    max-width: 80%;
+  }
+
+  footer.mega-footer .footer-list {
+    padding-right: 1em;
+  }
+
+  .m-container {
+   max-width: 90%;
+ }
+
+  .btn {
+    max-width: 35%;
+    padding: 1em;
+  }
+  .main .faq-section .program-text {
+    width: 40%;
+  }
+
+  .main .faq-section .ref-program-box {
+    min-height: 280px;
+  }
+
+  .main .faq-section .program-text p.ref-text {
+    font-size: 1.3em;
+  }
+
+  .main .faq-section .faq-container h2 {
+    margin-top: 5rem;
+  }
+
+  .main .testimonial .testi-row .testi-card .commas-row {
+    font-size: 2em;
+    width: 100%;
+  }
+
+  div.img-wrap img {
+    zoom: 1.5;
+  }
+
+  section {
+    padding: 2em 0;
+  }
+
+  .main .news .news-row .news-card .news-card-title h4 {
+    font-size: 3em;
+  }
+
+  h2, .main .special-offers-section .card-row .card .card-title {
+    font-size: 2em;
+  }
+
+  .heading-group h2, h2.text-highlight-darker {
+    font-size: 4em;
+  }
+
+
+  .main .block-house-section figcaption {
+    font-size: 3em;
+  }
+
+  .card img, .news-card img, img {
+    zoom: 2;
+  }
+
+  .main .testimonial .testi-row .testi-main-img {
+    width: 70%;
+    top: 0;
   }
 }

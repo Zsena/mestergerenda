@@ -3,7 +3,13 @@
         <li class="item"><a class="left-menu-item" href="/referenciak">Referenciák</a></li>
         <li class="item"><a class="left-menu-item" href="/koltsegek">Költségek</a></li>
         <li class="item"><a class="left-menu-item" href="/arajanlat">Árajánlat</a></li>
-        <li class="logo"><a href="/"><img src="{{ asset('assets/img/homepage/logo-cropped.png') }}" alt="Mestergerenda logó"></a></li>
+        <li class="logo">
+            <a href="/">
+                <object type="image/svg+xml" data="{{ asset('assets/img/homepage/logo.svg') }}">
+                    Your browser does not support SVG.
+                </object>
+                {{--<img src="{{ asset('assets/img/homepage/logo.svg') }}" alt="Mestergerenda logó">--}}
+            </a></li>
         <li class="item"><a href="/rolunk">Rólunk</a>
         <li class="item"><a href="/hirek">Hírek</a>
         <li class="item"><a href="/alapanyagok">Alapanyagok</a></li>

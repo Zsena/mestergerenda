@@ -2,7 +2,7 @@
 @import 'fonts';
 @import 'basic';
 
-/* navigation and header */
+/* navigation and header import*/
 @import 'nav';
 @import 'homepage-header';
 @import 'header-text-layer';
@@ -11,7 +11,7 @@
 @import 'homepage-main';
 
 
-/* Subpages */
+/* Subpages import */
 @import '_subpage-header-size';
 @import '_news-subpage';
 @import '_about-us';
@@ -25,9 +25,18 @@
 @import '_projects';
 @import 'single-page';
 
+@import '__lines_subpages';
+@import '__forms';
+@import '__accordion';
+@import '__tabs';
+@import '__lightbox';
+@import '__tables';
+@import '__modals';
+
+
 
 /* Footer import */
 @import 'footer';
 
-/* Homepage responsive import */
+/* responsive import */
 @import 'responsive';

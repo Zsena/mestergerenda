@@ -1,3 +1,7 @@
+/*====================================
+  base responsive styles
+=====================================*/
+
 @media only screen and (min-width: 480px) {
   /* Styles for wide mobiles (480px) and above */
   footer.mega-footer {
@@ -90,6 +94,7 @@
         }
       }
     }
+
     &.sticky-bg-color {
       background-color: $white-rgba;
       height: 85px;
@@ -316,7 +321,6 @@
     }
 
     .testimonial {
-
       .testi-column {
         .testi-bottom-lines {
           right: -1rem;
@@ -450,10 +454,6 @@
 
   .main {
     .faq-section {
-      .ref-program-box {
-        .ref-green-line {
-        }
-      }
       .program-text {
         width: 25%;
         top: -4.2rem;
@@ -462,49 +462,7 @@
       .faq-container {
         .heading-group {
         }
-        h2 {
-        }
       }
-    }
-
-    .testimonial {
-
-      .testi-column {
-        .testi-bottom-lines {
-        }
-      }
-
-      .testi-row {
-        .testi-card {
-        }
-        .testi-card {
-          .commas-row {
-          }
-          .commas {
-
-            .commas-top {
-
-            }
-            .commas-bottom {
-
-            }
-          }
-        }
-      }
-    }
-    .news {
-      .news-row {
-        .news-card {
-          .news-bottom-lines.second-row-line {
-          }
-        }
-      }
-    }
-  }
-
-  footer.mega-footer {
-    .col {
-
     }
   }
 }
@@ -540,46 +498,6 @@
         }
 
       }
-    }
-
-    .testimonial {
-
-      .testi-column {
-        .testi-bottom-lines {
-        }
-      }
-
-      .testi-row {
-        .testi-card {
-        }
-        .testi-card {
-          .commas-row {
-          }
-          .commas {
-
-            .commas-top {
-
-            }
-            .commas-bottom {
-
-            }
-          }
-        }
-      }
-    }
-    .news {
-      .news-row {
-        .news-card {
-          .news-bottom-lines.second-row-line {
-          }
-        }
-      }
-    }
-  }
-
-  footer.mega-footer {
-    .col {
-
     }
   }
 }

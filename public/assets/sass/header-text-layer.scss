@@ -1,4 +1,6 @@
-/* header layer */
+/*====================================
+  header layer styles
+=====================================*/
 article.header-layer-container {
   .row {
     flex-direction: row-reverse;
@@ -21,13 +23,13 @@ article.header-layer-container {
       h1 {
         font-size: 4em;
         color: $white;
-        font-family: GillSansMT-Condensed;
+        font-family: 'GillSansMT-Condensed', sans-serif;
         text-transform: uppercase;
         margin: 1rem 0 2rem 0;
       }
       p {
         margin-top: -20px;
-        font-family: Arial;
+        font-family: 'Arial', sans-serif;
         font-size: 20px;
         color: $white;
         text-transform: uppercase;

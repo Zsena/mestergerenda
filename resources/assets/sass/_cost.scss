@@ -1,6 +1,6 @@
-@import '__lines_subpages';
-
-/* Cost subpage */
+/*====================================
+  Cost page styles
+=====================================*/
 header.cost-header {
   background-image: url("/public/assets/img/cost/cost-header.jpg");
   background-attachment: inherit;
@@ -52,7 +52,6 @@ header.cost-header {
 
   .cost2-section {
     background-color: $light-grey;
-
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 10rem;

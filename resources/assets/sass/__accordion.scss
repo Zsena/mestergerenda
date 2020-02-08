@@ -1,8 +1,11 @@
+/*====================================
+  Our Accordion styles
+=====================================*/
 .content {
   width: 95%;
   .question {
     font-size: 14px;
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     position: relative;
     background: $light-green;
     color: white;
@@ -14,7 +17,7 @@
   }
   .answers {
     font-size: 14px;
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     background: transparent;
     color: $nude-light-green;
     padding: 0px 15px;

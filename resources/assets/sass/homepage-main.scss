@@ -1,6 +1,7 @@
-/* main */
+/*====================================
+  Our main styles
+=====================================*/
 .main {
-
   .block-house-section {
     min-height: 380px;
     position: relative;
@@ -109,8 +110,8 @@
       height: 100%;
       .ref-green-line {
         position: absolute;
-        bottom: 0px;
-        right: 0px;
+        bottom: 0;
+        right: 0;
       }
     }
     .program-text {
@@ -148,13 +149,6 @@
         padding-bottom: 2rem;
       }
     }
-
-    //.bottom-white-elem {
-    //  bottom: -3rem;
-    //  min-height: 13%;
-    //  position: absolute;
-    //  right: 0;
-    //}
   }
 
 
@@ -263,5 +257,4 @@
       }
     }
   }
-
 }

@@ -1,20 +1,23 @@
-html, body {
-  background-color: #fff;
-  color: #636b6f;
-  font-family: GillSansMT-Condensed;
-  font-weight: 200;
-  height: 100vh;
-  margin: 0;
-}
-
-/* basic */
-/*cookie section*/
+/*====================================
+   cookie section styles
+=====================================*/
 .cc-window.cc-banner {
   z-index: 999999 !important;
 }
 
 .cc-revoke, .cc-window {
   z-index: 9999999 !important;
+}
+/*====================================
+   base styles
+=====================================*/
+html, body {
+  background-color: #fff;
+  color: #636b6f;
+  font-family: 'GillSansMT-Condensed', sans-serif;
+  font-weight: 200;
+  height: 100vh;
+  margin: 0;
 }
 
 .m-container {
@@ -29,12 +32,12 @@ html, body {
 }
 
 .col {
-  flex: 1 100%;
+  flex-direction: column;
+  //flex: 1 100%;
   padding: 15px;
 }
 
 .col-12 {
-  //display: flex;
   flex: 1 100%;
   padding: 15px;
 }
@@ -104,16 +107,12 @@ html, body {
   flex-direction: column-reverse;
 }
 
-//.d-block {
-//  display: block !important;
-//}
-
 .position-relative {
   position: relative;
 }
-
-/* pictures */
-
+/*====================================
+  Our pictures styles
+=====================================*/
 div.img-wrap {
   margin-top: 1rem;
   display: flex;
@@ -197,7 +196,6 @@ img {
   }
 }
 
-
 .img-frame-1 {
   background-color: #3f7249;
   padding: 25px;
@@ -223,8 +221,9 @@ img {
 figure {
   margin: auto;
 }
-
-/* Typography */
+/*====================================
+  Our Typography styles
+=====================================*/
 a {
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -260,10 +259,12 @@ h3 {
 
 p, li, th, td {
   font-size: 14px;
-  font-family: Arial;
+  font-family: 'Arial', sans-serif;
   letter-spacing: 1px;
 }
-
+/*====================================
+  pagination styles
+=====================================*/
 .pagination {
   display: inline-block;
   margin: auto;
@@ -288,11 +289,9 @@ p, li, th, td {
     }
   }
 }
-
-
-
-/* buttons */
-
+/*====================================
+  Our buttons styles
+=====================================*/
 .default {
   color: $white;
   border: 1px solid $white;
@@ -352,16 +351,18 @@ p, li, th, td {
   max-width: 170px;
   width: 100%;
   display: flex;
-  font-family: HelveticaNeue-Light-Cond;
+  font-family: 'HelveticaNeue-Light-Cond', sans-serif;
   text-transform: uppercase;
   font-size: 14px;
   justify-content: center;
 }
 
+/*====================================
+  transform and color styles
+=====================================*/
 .heading-top-transform {
   margin-top: -85px;
 }
-
 
 .text-highlight {
   color: $light-green;
@@ -375,7 +376,9 @@ p, li, th, td {
   color: $white;
 }
 
-
+/*====================================
+   design-elements styles
+=====================================*/
 img.bottom-white-elem {
   position: absolute;
   bottom: -2rem;
@@ -393,9 +396,9 @@ img.top-white-elem {
   height: max-content;
   min-height: 5%;
 }
-
-
-/* All card will be a clickable */
+/*====================================
+   clickable card & card styles
+=====================================*/
 .clickable-card-link::after {
   position: absolute;
   top: 0;
@@ -413,8 +416,10 @@ img.top-white-elem {
   z-index: 99999;
 }
 
-/* menu a transition */
 
+/*====================================
+   menu 'a' transition styles
+=====================================*/
 .menu .item a {
   position: relative;
 }

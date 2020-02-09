@@ -39,7 +39,7 @@
                                                 {{ $n->excerpt }}
                                             </p>
                                         </div>
-                                        <a class="news-btn" href="#">Bővebben ></a>
+                                        <a class="news-btn" href="{{ route('news', ['id' => $n->id]) }}">Bővebben ></a>
                                     </div>
                                 </div>
                                 <img class="news-bottom-lines" src="{{ asset('assets/img/news/mestergerenda_zold_jobb.png') }}" alt="Design elem">
@@ -57,7 +57,7 @@
                                             </p>
                                             <img class="news-bottom-lines second-row-line" src="{{ asset('assets/img/homepage/design-elements/home_header_elem.png') }}" alt="Design elem">
                                         </div>
-                                        <a class="news-btn" href="#">Bővebben ></a>
+                                        <a class="news-btn" href="{{ route('news', ['id' => $n->id]) }}">Bővebben ></a>
                                     </div>
                                     <div class="col">
                                         <img class="news-card-img ml-0" src="{{Voyager::image($n->thumbnail('cropped'))}}" alt="Hírek">

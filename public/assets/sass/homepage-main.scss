@@ -57,10 +57,15 @@
     }
     .card-row {
       padding-bottom: 8rem;
+      .col {
+        display: flex;
+        justify-content: center;
+      }
       .card {
         background-color: $white;
         padding: 1.5rem;
         position: relative;
+        min-height: 300px;
         &:hover {
             box-shadow: 5px 20px 30px rgba(0,0,0,0.2);
             transform: translate3D(0,-1px,0) scale(1.03);

@@ -7,4 +7,8 @@ class NewsRepository {
     public function getNews() {
         return News::orderBy('created_at', 'desc')->paginate(4);
     }
+
+    public function getLatestNews() {
+        return News::orderBy('created_at', 'desc')->limit(3)->get();
+    }
 }

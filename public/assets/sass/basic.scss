@@ -113,6 +113,10 @@ html, body {
 /*====================================
   Our pictures styles
 =====================================*/
+object {
+  pointer-events: none;
+  display: block;
+}
 div.img-wrap {
   margin-top: 1rem;
   display: flex;
@@ -390,7 +394,7 @@ img.bottom-white-elem {
 
 img.top-white-elem {
   position: absolute;
-  top: -4rem;
+  top: -3rem;
   left: 0;
   width: 50%;
   height: max-content;

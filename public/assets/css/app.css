@@ -154,6 +154,11 @@ body {
   Our pictures styles
 =====================================*/
 
+object {
+  pointer-events: none;
+  display: block;
+}
+
 div.img-wrap {
   margin-top: 1rem;
   display: flex;
@@ -497,7 +502,7 @@ img.bottom-white-elem {
 
 img.top-white-elem {
   position: absolute;
-  top: -4rem;
+  top: -3rem;
   left: 0;
   width: 50%;
   height: -webkit-max-content;
@@ -823,12 +828,20 @@ article.header-layer-container .row .main-layer p {
   padding-bottom: 8rem;
 }
 
+.main .special-offers-section .card-row .col,
+.main .news-single-section .card-row .col,
+.main .b-type-section .card-row .col {
+  display: flex;
+  justify-content: center;
+}
+
 .main .special-offers-section .card-row .card,
 .main .news-single-section .card-row .card,
 .main .b-type-section .card-row .card {
   background-color: #fff;
   padding: 1.5rem;
   position: relative;
+  min-height: 300px;
 }
 
 .main .special-offers-section .card-row .card:hover,
@@ -1714,6 +1727,12 @@ header.single-page-header {
   background-attachment: inherit;
 }
 
+header.news-single-header.header-after:after {
+  min-height: 540px;
+  height: auto;
+  background: rgba(0, 0, 0, 0.4);
+}
+
 header.news-single-header {
   background-image: none;
   background-color: #586e27;
@@ -1726,6 +1745,10 @@ header.news-single-header article.header-layer-container .row .main-layer h1 {
 header.news-single-header article.header-layer-container .row .main-layer p {
   margin-top: -5px;
   font-size: 15px;
+}
+
+.single-page img.top-white-elem {
+  min-height: 50px;
 }
 
 .single-page .single-page-section {
@@ -1820,17 +1843,37 @@ header.news-single-header article.header-layer-container .row .main-layer p {
   color: #99992a;
 }
 
+.single-page .article-body {
+  position: relative;
+}
+
+.single-page .article-body strong {
+  color: #586e27;
+}
+
 .single-page .news-single-section {
   background-color: #99992a;
+  min-height: 600px;
 }
 
 .single-page .news-single-section h2 {
   color: #fff;
 }
 
+.single-page .news-single-section .card-row {
+  min-height: 400px;
+  padding-bottom: 0;
+}
+
 @media all and (min-width: 500px) {
   header.single-page-header {
     background-attachment: fixed;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  header.news-single-header.header-after:after {
+    max-height: 540px;
   }
 }
 
@@ -1841,6 +1884,10 @@ header.news-single-header article.header-layer-container .row .main-layer p {
 
   .single-page .image2-section h2 {
     padding: 4rem 2rem 0;
+  }
+
+  header.news-single-header.header-after:after {
+    min-height: 540px;
   }
 }
 

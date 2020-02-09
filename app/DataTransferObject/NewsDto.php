@@ -8,14 +8,16 @@ use App\News;
  * Class NewsDto
  * @package App\DataTransferObject
  */
-class NewsDto {
+class NewsDto extends BaseDataTransfer{
 
     /**
      * @var
      */
     private $id;
 
-
+    /**
+     * @var
+     */
     private $author;
 
     /**
@@ -74,8 +76,15 @@ class NewsDto {
     private $createdAt;
 
 
+    /**
+     * @var
+     */
     private $thumbnail;
 
+    /**
+     * NewsDto constructor.
+     * @param News $news
+     */
     public function __construct(News $news) {
         $this->id = $news->id;
         $this->author = $news->author->name;

@@ -3,7 +3,7 @@
 @section('content')
     <style type="text/css">
         header.news-single-header {
-            background-image: url({{Voyager::image($news->thumbnail('cropped'))}});
+            background-image: url({{ $news->getThumbnail() }}{{-- Voyager::image($news->thumbnail('cropped')) --}});
         }
     </style>
     <header class="news-single-header header-after subpage-header-size main-header">
@@ -11,9 +11,9 @@
             <div class="row">
                 <div class="main-layer col">
                     <div class="text-box">
-                        <h1>{{ $news->title}}</h1>
+                        <h1>{{ $news->getTitle() }}</h1>
                         <img class="home-header-svg" src="{{ asset('assets/img/homepage/design-elements/home_header_elem.png') }}" alt="Design elem">
-                        <p class="header-excerpt">{{ $news->excerpt }}</p>
+                        <p class="header-excerpt">{{ $news->getExcerpt() }}</p>
                     </div>
                 </div>
             </div>
@@ -25,7 +25,7 @@
                 <img class="top-white-elem" src="{{ asset('assets/img/homepage/design-elements/first-sec-top.png') }}" alt="Design elem">
                 <div class="col-12 pt-3">
                     {{--<h2 class="text-highlight-darker pt-3">{{ $news->title}}</h2>--}}
-                    <small class="pt-3">{{ $news->author->name }}: {{ $news->created_at }}</small>
+                    <small class="pt-3">{{-- {{ $news->author->name }}:--}}{{ $news->getCreatedAt() }}</small>
                     {{--{{var_dump($latest_news)}}--}}
                     <img class="design-line-top" src="{{ asset('assets/img/homepage/design-elements/vertical-line-brown.png') }}" alt="Design elem">
                     <div class="row">
@@ -33,7 +33,7 @@
                             <div class="row">
                                 <div class="pl-0 pt-0">
                                     <p class="lead-text ">
-                                        {{ $news->excerpt }}
+                                        {{ $news->getExcerpt() }}
                                     </p>
                                 </div>
                             </div>
@@ -43,7 +43,7 @@
                 <div class="row pb-2">
                     <div class="col-12">
                         <figure class="img-frame-2 thumbnail-img position-relative z-index-99999">
-                            <img src="{{Voyager::image($news->thumbnail('cropped'))}}" alt="basic">
+                            <img src="{{$news->getThumbnail()}}" alt="basic">
                         </figure>
                     </div>
                 </div>
@@ -59,12 +59,12 @@
             <img class="top-white-elem" src="{{ asset('assets/img/homepage/design-elements/first-sec-top.png') }}" alt="Design elem">
             <div class="m-container">
                 <div class="col-12">
-                    <h2 class="text-highlight-darker">{{ $news->title}}</h2>
+                    <h2 class="text-highlight-darker">{{ $news->getTitle() }}</h2>
                     <img class="design-line-top" src="{{ asset('assets/img/homepage/design-elements/vertical-line-brown.png') }}" alt="Design elem">
                     <div class="row">
                         <div class="col-12 pl-0 pt-3 news-body">
                             <p>
-                                {!! $news-> body !!}
+                                {!! $news->getBody() !!}
                             </p>
                             <p>Források</p>
                             <ul>
@@ -184,7 +184,7 @@
                         <div class="card">
                             <img src="{{Voyager::image($l->thumbnail('cropped'))}}" alt="">
                             <div class="card-body">
-                                <a href="{{ route('news', ['id' => $l->id]) }}" class="clickable-card-link"><h5 class="card-title">{{ $l->title }}</h5></a>
+                                <a href="/hirek/{{ $l->id }}/{{ $l->slug }}" class="clickable-card-link"><h5 class="card-title">{{ $l->title }}</h5></a>
                                 <p class="card-text ellipsis">
                                     {{ $l->excerpt }}
                                 </p>

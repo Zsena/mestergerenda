@@ -28,18 +28,18 @@
                                 <div class="row">
                                     <div class="col pl-0">
                                        {{-- <img class="news-card-img ml-0" src="/storage/{{ $n->image }}" alt="Hírek">--}}
-                                        <img class="news-card-img ml-0" src="{{Voyager::image($n->thumbnail('cropped'))}}" alt="Hírek">
+                                        <img class="news-card-img ml-0" src="{{ $n->getThumbnail() }}" alt="Hírek">
                                     </div>
                                     <div class="col">
                                         <div class="news-card-title">
-                                            <h4 class="text-highlight-darker">{{ $n->title}}</h4>
+                                            <h4 class="text-highlight-darker">{{ $n->getTitle() }}</h4>
                                         </div>
                                         <div class="news-card-text">
                                             <p>
-                                                {{ $n->excerpt }}
+                                                {{ $n->getExcerpt() }}
                                             </p>
                                         </div>
-                                        <a class="news-btn" href="{{ route('news', ['id' => $n->id]) }}">Bővebben ></a>
+                                        <a class="news-btn" href="/hir/{{ $n->getId() }}/{{ $n->getSlug() }}">Bővebben ></a>
                                     </div>
                                 </div>
                                 <img class="news-bottom-lines" src="{{ asset('assets/img/news/mestergerenda_zold_jobb.png') }}" alt="Design elem">
@@ -49,18 +49,18 @@
                                 <div class="row column-reverse">
                                     <div class="col pl-0 position-relative">
                                         <div class="news-card-title">
-                                            <h4 class="text-highlight-darker">{{ $n->title}}</h4>
+                                            <h4 class="text-highlight-darker">{{ $n->getTitle() }}</h4>
                                         </div>
                                         <div class="news-card-text">
                                             <p>
-                                                {{ $n->excerpt }}
+                                                {{ $n->getExcerpt() }}
                                             </p>
                                             <img class="news-bottom-lines second-row-line" src="{{ asset('assets/img/homepage/design-elements/home_header_elem.png') }}" alt="Design elem">
                                         </div>
-                                        <a class="news-btn" href="{{ route('news', ['id' => $n->id]) }}">Bővebben ></a>
+                                        <a class="news-btn" href="/hir/{{ $n->getId() }}/{{ $n->getSlug() }}">Bővebben ></a>
                                     </div>
                                     <div class="col">
-                                        <img class="news-card-img ml-0" src="{{Voyager::image($n->thumbnail('cropped'))}}" alt="Hírek">
+                                        <img class="news-card-img ml-0" src="{{ $n->getThumbnail() }}" alt="Hírek">
                                     </div>
                                 </div>
                             </div>
@@ -71,7 +71,7 @@
 
                         <div class="pagination">
                             <div class="pagination-container">
-                                {{ $news->links('vendor.pagination.bootstrap-4') }}
+                                {{ $links[0] }}
                             </div>
                         </div>
 

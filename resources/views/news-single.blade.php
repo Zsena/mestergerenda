@@ -13,7 +13,7 @@
                     <div class="text-box">
                         <h1>{{ $news->title}}</h1>
                         <img class="home-header-svg" src="{{ asset('assets/img/homepage/design-elements/home_header_elem.png') }}" alt="Design elem">
-                        <p>{{ $news->excerpt }}</p>
+                        <p class="header-excerpt">{{ $news->excerpt }}</p>
                     </div>
                 </div>
             </div>
@@ -31,16 +31,20 @@
                     <div class="row">
                         <div class="horizontal-card">
                             <div class="row">
-                                <div class="col-12 pl-0 pt-0">
-                                    <p class="lead-text">
+                                <div class="pl-0 pt-0">
+                                    <p class="lead-text ">
                                         {{ $news->excerpt }}
                                     </p>
-                                    <figure class="img-frame-2">
-                                        <img src="{{Voyager::image($news->thumbnail('cropped'))}}" alt="basic">
-                                    </figure>
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div class="row pb-2">
+                    <div class="col-12">
+                        <figure class="img-frame-2 thumbnail-img position-relative z-index-99999">
+                            <img src="{{Voyager::image($news->thumbnail('cropped'))}}" alt="basic">
+                        </figure>
                     </div>
                 </div>
             </div>
@@ -58,7 +62,7 @@
                     <h2 class="text-highlight-darker">{{ $news->title}}</h2>
                     <img class="design-line-top" src="{{ asset('assets/img/homepage/design-elements/vertical-line-brown.png') }}" alt="Design elem">
                     <div class="row">
-                        <div class="col-12 pl-0 pt-3">
+                        <div class="col-12 pl-0 pt-3 news-body">
                             <p>
                                 {!! $news-> body !!}
                             </p>
@@ -169,10 +173,10 @@
             </div>
             <img class="bottom-white-elem" src="{{ asset('assets/img/homepage/design-elements/first-sec-bottom.png') }}" alt="Design elem">
         </section>
-        <section class="news-single-section">
+        <section class="news-single-section latest-news-section">
             <div class="m-container">
                 <div class="col-12">
-                    <h2>További Híreink</h2>
+                    <h2>Legfrissebb Híreink</h2>
                 </div>
                 <div class="row card-row">
                     @foreach($latest_news as $l)
@@ -181,7 +185,7 @@
                             <img src="{{Voyager::image($l->thumbnail('cropped'))}}" alt="">
                             <div class="card-body">
                                 <a href="{{ route('news', ['id' => $l->id]) }}" class="clickable-card-link"><h5 class="card-title">{{ $l->title }}</h5></a>
-                                <p class="card-text">
+                                <p class="card-text ellipsis">
                                     {{ $l->excerpt }}
                                 </p>
                             </div>

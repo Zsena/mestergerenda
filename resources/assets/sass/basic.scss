@@ -110,6 +110,30 @@ html, body {
 .position-relative {
   position: relative;
 }
+
+.z-index-99999 {
+  z-index: 99999;
+}
+/*====================================
+  Related post excerpt styles
+=====================================*/
+$font-size: 11.2px;
+$line-height: 1.8;
+$lines-to-show: 3;
+
+.ellipsis {
+  display: block; /* Fallback for non-webkit */
+  display: -webkit-box;
+  max-width: 400px;
+  height: $font-size*$line-height*$lines-to-show; /* Fallback for non-webkit */
+  margin: 0 auto;
+  font-size: $font-size;
+  line-height: $line-height;
+  -webkit-line-clamp: $lines-to-show;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 /*====================================
   Our pictures styles
 =====================================*/

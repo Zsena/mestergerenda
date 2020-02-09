@@ -8,7 +8,7 @@ use App\News;
  * Class NewsDto
  * @package App\DataTransferObject
  */
-class NewsDto extends BaseDataTransfer{
+class NewsDto extends BaseDataTransfer {
 
     /**
      * @var
@@ -82,13 +82,18 @@ class NewsDto extends BaseDataTransfer{
     private $thumbnail;
 
     /**
+     * @var
+     */
+    private $latestNews;
+
+    /**
      * NewsDto constructor.
      * @param News $news
      */
     public function __construct(News $news) {
         $this->id = $news->id;
         $this->author = $news->author->name;
-        $this->title = $news->tilte;
+        $this->title = $news->title;
         $this->seoTitle = $news->seo_title;
         $this->excerpt = $news->excerpt;
         $this->body = $news->body;
@@ -100,7 +105,6 @@ class NewsDto extends BaseDataTransfer{
         $this->status = $news->status;
         $this->createdAt = $news->created_at;
         $this->thumbnail = \Voyager::image($news->thumbnail('cropped'));
-
     }
 
     /**
@@ -213,6 +217,14 @@ class NewsDto extends BaseDataTransfer{
     public function getThumbnail()
     {
         return $this->thumbnail;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getLatestNews()
+    {
+        return $this->latestNews;
     }
 
 }

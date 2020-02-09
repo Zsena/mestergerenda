@@ -252,41 +252,40 @@
                         <div class="col"></div>
                     </div>
                 </div>
+                @foreach($latest_news as $l)
+                @if($loop->odd)
                 <div class="news-card">
                     <div class="row">
                         <div class="col pl-xl-0">
-                            <img class="news-card-img ml-0" src="{{ asset('assets/img/homepage/placeholder_news.png') }}" alt="Hírek">
+                            <img class="news-card-img ml-0" src="{{$l->getThumbnail()}}" alt="Hírek">
                         </div>
                         <div class="col">
                             <div class="news-card-title">
-                                <h4 class="text-highlight-darker">Lorem ipsum dolor sit amet</h4>
+                                <h4 class="text-highlight-darker">{{ $l->getTitle() }}</h4>
                             </div>
                             <div class="news-card-text">
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis laoreet leo ut erat tincidunt,
-                                    condimentum egestas libero convallis.
-                                    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                                <p class="ellipsis">
+                                    {{ $l->getExcerpt() }}
                                 </p>
                             </div>
-                            <a class="news-btn" href="#">Bővebben ></a>
+                            <a class="news-btn" href="/hirek/{{ $l->getId() }}/{{ $l->getSlug() }}">Bővebben></a>
                         </div>
                     </div>
                     <img class="news-bottom-lines" src="{{ asset('assets/img/homepage/design-elements/mestergerenda_zold_jobb.png') }}" alt="Design elem">
                 </div>
+                @else
                 <div class="news-card">
                     <div class="row column-reverse">
                         <div class="col pl-xl-0">
                             <div class="news-card-title">
-                                <h4 class="text-highlight-darker">Lorem ipsum dolor sit amet</h4>
+                                <h4 class="text-highlight-darker">{{ $l->getTitle() }}</h4>
                             </div>
                             <div class="news-card-text">
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis laoreet leo ut erat tincidunt,
-                                    condimentum egestas libero convallis.
-                                    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                                <p class="ellipsis">
+                                    {{ $l->getExcerpt() }}
                                 </p>
                             </div>
-                            <a class="news-btn" href="#">Bővebben ></a>
+                            <a class="news-btn" href="/hirek/{{ $l->getId() }}/{{ $l->getSlug() }}">Bővebben ></a>
                         </div>
                         <img class="news-bottom-lines second-row-line" src="{{ asset('assets/img/homepage/design-elements/home_header_elem.png') }}" alt="Design elem">
                         <div class="col">
@@ -294,27 +293,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="news-card">
-                    <div class="row">
-                        <div class="col pl-xl-0">
-                            <img class="news-card-img ml-0" src="{{ asset('assets/img/homepage/placeholder_news.png') }}" alt="Hírek">
-                        </div>
-                        <div class="col">
-                            <div class="news-card-title">
-                                <h4 class="text-highlight-darker">Lorem ipsum dolor sit amet</h4>
-                            </div>
-                            <div class="news-card-text">
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis laoreet leo ut erat tincidunt,
-                                    condimentum egestas libero convallis.
-                                    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-                                </p>
-                            </div>
-                            <a class="news-btn" href="#">Bővebben ></a>
-                        </div>
-                    </div>
-                    <img class="news-bottom-lines" src="{{ asset('assets/img/homepage/design-elements/mestergerenda_zold_jobb.png') }}" alt="Design elem">
-                </div>
+                @endif
+                @endforeach
             </div>
         </div>
         <img class="bottom-white-elem" src="{{ asset('assets/img/homepage/design-elements/first-sec-bottom.png') }}" alt="Design elem">

@@ -7,7 +7,7 @@
                 <div class="main-layer col">
                     <div class="text-box">
                         <h1>Hírek</h1>
-                        <p>
+                        <p class="header-excerpt">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                             Mauris ullamcorper tincidunt turpis
                         </p>
@@ -35,11 +35,11 @@
                                             <h4 class="text-highlight-darker">{{ $n->getTitle() }}</h4>
                                         </div>
                                         <div class="news-card-text">
-                                            <p>
+                                            <p class="">
                                                 {{ $n->getExcerpt() }}
                                             </p>
                                         </div>
-                                        <a class="news-btn" href="/hir/{{ $n->getId() }}/{{ $n->getSlug() }}">Bővebben ></a>
+                                        <a class="news-btn" href="/hirek/{{ $n->getId() }}/{{ $n->getSlug() }}">Bővebben ></a>
                                     </div>
                                 </div>
                                 <img class="news-bottom-lines" src="{{ asset('assets/img/news/mestergerenda_zold_jobb.png') }}" alt="Design elem">
@@ -52,12 +52,12 @@
                                             <h4 class="text-highlight-darker">{{ $n->getTitle() }}</h4>
                                         </div>
                                         <div class="news-card-text">
-                                            <p>
+                                            <p class="">
                                                 {{ $n->getExcerpt() }}
                                             </p>
                                             <img class="news-bottom-lines second-row-line" src="{{ asset('assets/img/homepage/design-elements/home_header_elem.png') }}" alt="Design elem">
                                         </div>
-                                        <a class="news-btn" href="/hir/{{ $n->getId() }}/{{ $n->getSlug() }}">Bővebben ></a>
+                                        <a class="news-btn" href="/hirek/{{ $n->getId() }}/{{ $n->getSlug() }}">Bővebben ></a>
                                     </div>
                                     <div class="col">
                                         <img class="news-card-img ml-0" src="{{ $n->getThumbnail() }}" alt="Hírek">

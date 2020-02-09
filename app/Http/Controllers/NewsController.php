@@ -25,7 +25,6 @@ class NewsController extends Controller {
     }
 
     public function show($id, $slug) {
-
         return view('news-single', [
             'news' => $this->repository->getNewsByIdAndSlug($id, $slug),
             'latest_news' => $this->repository->getLatestNews()

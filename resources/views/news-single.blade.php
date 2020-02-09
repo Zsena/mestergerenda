@@ -32,8 +32,9 @@
                         <div class="horizontal-card">
                             <div class="row">
                                 <div class="pl-0 pt-0">
-                                    <p class="lead-text ">
+                                    <p class="lead-text ellipsis">
                                         {{ $news->getExcerpt() }}
+                                        {{--{{ var_dump($latest_news)}}--}}
                                     </p>
                                 </div>
                             </div>

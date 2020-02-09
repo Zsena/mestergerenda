@@ -17,7 +17,7 @@ Route::group(['prefix' => 'admin'], function () {
 
 Route::get('/page/{slug}', 'PageController@getPage');
 
-Route::get('/', 'PageController@renderPage')->name('startpage');
+Route::get('/', 'StartPageController@index')->name('startpage');
 
 Route::get('/referenciak', 'PageController@renderPage')->name('references');
 Route::get('/koltsegek', 'PageController@renderPage')->name('costs');
@@ -25,7 +25,7 @@ Route::get('/arajanlat', 'PageController@renderPage')->name('offer');
 Route::get('/rolunk', 'PageController@renderPage')->name('about');
 
 Route::get('/hirek', 'NewsController@news');
-Route::get('/hir/{id}/{slug}', 'NewsController@show');
+Route::get('/hirek/{id}/{slug}', 'NewsController@show');
 
 Route::get('/alapanyagok', 'PageController@renderPage')->name('ingredients');
 Route::get('/gerendahaz', 'PageController@renderPage')->name('blockhouse');

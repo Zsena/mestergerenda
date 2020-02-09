@@ -74,20 +74,6 @@
                                 {{ $links[0] }}
                             </div>
                         </div>
-
-                        {{--
-                        <div class="pagination">
-                            <div class="pagination-container">
-                                <a href="#">&laquo;</a>
-                                <a href="#">1</a>
-                                <a href="#">2</a>
-                                <a class="active" href="#">3</a>
-                                <a href="#">4</a>
-                                <a href="#">5</a>
-                                <a href="#">&raquo;</a>
-                            </div>
-                        </div>
-                        --}}
                     </div>
                     <img class="bottom-white-elem" src="{{ asset('assets/img/homepage/design-elements/first-sec-bottom.png') }}" alt="Design elem">
                 </section>

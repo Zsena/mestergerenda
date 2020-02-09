@@ -11,29 +11,12 @@ class StartPageRepository {
      */
     public function getNews() {
 
-        $newsCollection = ['news'=>[]];
-
-        $news = News::orderBy('created_at', 'desc')->get();
-
+        $newsCollection = [];
+        $news = News::orderBy('created_at', 'desc')->limit(3)->get();
         foreach($news as $n) {
-            $newsCollection['news'][] = new NewsDto($n);
+            $newsCollection[] = new NewsDto($n);
         }
-
         return collect($newsCollection);
     }
 
-    /**
-     * @param $id
-     * @param $slug
-     * @return NewsDto
-     */
-    public function getNewsByIdAndSlug($id, $slug) {
-        $news = News::where([
-            ['id', '=', $id],
-            ['slug', '=', $slug]
-        ])->first();
-
-         return new NewsDto($news);
-
-    }
 }

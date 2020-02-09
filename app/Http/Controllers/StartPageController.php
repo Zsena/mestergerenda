@@ -21,6 +21,6 @@ class StartPageController extends Controller {
     public function index() {
         $news = $this->repository->getNews();
         return view('startpage')
-            ->with('latest_news', $news['news']);
+            ->with('latest_news', $news);
     }
 }

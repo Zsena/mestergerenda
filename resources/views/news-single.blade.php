@@ -180,14 +180,14 @@
                     <h2>Legfrissebb Híreink</h2>
                 </div>
                 <div class="row card-row">
-                    @foreach($latest_news as $l)
+                    @foreach($latest_news as $ln)
                     <div class="col">
                         <div class="card">
-                            <img src="{{Voyager::image($l->thumbnail('cropped'))}}" alt="">
+                            <img src="{{ $ln->getThumbnail()  }}" alt="">
                             <div class="card-body">
-                                <a href="/hirek/{{ $l->id }}/{{ $l->slug }}" class="clickable-card-link"><h5 class="card-title">{{ $l->title }}</h5></a>
-                                <p class="card-text ellipsis">
-                                    {{ $l->excerpt }}
+                                <a href="/hirek/{{ $ln->getId() }}/{{ $ln->getSlug() }}" class="clickable-card-link"><h5 class="card-title">{{ $ln->getTitle() }}</h5></a>
+                                <p class="card-text">
+                                    {{ $ln->getExcerpt() }}
                                 </p>
                             </div>
                         </div>

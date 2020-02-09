@@ -27,7 +27,13 @@ class NewsRepository {
      * @return mixed
      */
     public function getLatestNews() {
-        return News::orderBy('created_at', 'desc')->limit(3)->get();
+
+        $collection = [];
+        $news = News::orderBy('created_at', 'desc')->limit(3)->get();
+        foreach($news as $n) {
+            $collection[] = new NewsDto($n);
+        }
+        return collect($collection);
     }
 
     /**

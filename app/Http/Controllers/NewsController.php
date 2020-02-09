@@ -16,9 +16,10 @@ class NewsController extends Controller {
         return view('news')
             ->with('news', $news);
     }
-    public function show($id) {
+    public function show($id, $slug) {
+
         return view('news-single', [
-            'news' => News::findOrFail($id),
+            'news' => $this->repository->getNewsByIdAndSlug($id, $slug),
             'latest_news' => $this->repository->getLatestNews()
         ]);
     }

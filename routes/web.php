@@ -25,7 +25,7 @@ Route::get('/arajanlat', 'PageController@renderPage')->name('offer');
 Route::get('/rolunk', 'PageController@renderPage')->name('about');
 
 Route::get('/hirek', 'NewsController@news');
-Route::get('news/{id}', 'NewsController@show')->name('news');
+Route::get('/hir/{id}/{slug}', 'NewsController@show');
 
 Route::get('/alapanyagok', 'PageController@renderPage')->name('ingredients');
 Route::get('/gerendahaz', 'PageController@renderPage')->name('blockhouse');

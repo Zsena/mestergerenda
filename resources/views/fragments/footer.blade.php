@@ -1,6 +1,6 @@
 <footer class="mega-footer">
     <div class="m-container">
-        <div class="row">
+        <div class="row mega-footer-row">
             <div class="col">
                 <h4 class="text-highlight">Főbb oldalak</h4>
                 <ul class="footer-list">
@@ -44,18 +44,11 @@
             <div class="col">
                 <h4 class="text-highlight">Híreink</h4>
                 <ul class="footer-list">
+                    @foreach($footer_news as $l)
                     <li>
-                        <a href="/hir-1">Hír sablon Lorem ipsum dolor sit amet</a>
+                        <a href="/hirek/{{ $l->getId() }}/{{ $l->getSlug() }}">{{ $l->getTitle() }}</a>
                     </li>
-                    <li>
-                        <a href="hir-1">Hír sablon Lorem ipsum dolor sit amet</a>
-                    </li>
-                    <li>
-                        <a href="hir-1">Hír sablon Lorem ipsum dolor sit amet</a>
-                    </li>
-                    <li>
-                        <a href="hir-1">Hír sablon Lorem ipsum dolor sit amet</a>
-                    </li>
+                    @endforeach
                 </ul>
             </div>
             <div class="col">

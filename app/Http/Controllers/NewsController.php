@@ -14,6 +14,7 @@ class NewsController extends Controller {
     private $repository;
 
     public function __construct() {
+        parent::__construct();
         $this->repository = new NewsRepository();
     }
 

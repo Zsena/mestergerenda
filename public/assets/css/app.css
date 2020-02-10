@@ -68,6 +68,8 @@ body {
 .row {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .col {
@@ -715,7 +717,7 @@ header.main-header {
   content: "\A";
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: auto;
   min-height: 900px;
   top: -85px;
   left: 0;
@@ -831,8 +833,30 @@ article.header-layer-container .row .main-layer p {
   z-index: 9999;
 }
 
-.main .block-house-section figcaption {
+.main .block-house-section .picto-row {
+  align-items: center;
+  justify-content: center;
+}
+
+.main .block-house-section .picto-row figure img {
+  max-width: 40px;
+  margin: auto;
+}
+
+.main .block-house-section .picto-row figure figcaption {
   text-align: center;
+  font-size: 12px;
+  padding-top: 1em;
+}
+
+@media all and (min-width: 400px) {
+  .main .block-house-section .picto-row {
+    flex-flow: nowrap;
+  }
+}
+
+.main .block-house-section .picto-row .col {
+  align-self: flex-start;
 }
 
 .main .special-offers-section,
@@ -2966,6 +2990,11 @@ footer.mega-footer {
   font-family: "Myriad-Regular", "sans-serif";
 }
 
+footer.mega-footer .mega-footer-row {
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
 footer.mega-footer h4 {
   font-size: 1.5em;
 }
@@ -2977,6 +3006,7 @@ footer.mega-footer .footer-list {
 footer.mega-footer .footer-list li {
   list-style-type: none;
   padding: 10px 0;
+  font-size: 13px;
 }
 
 footer.mega-footer .footer-list li a {
@@ -3132,6 +3162,8 @@ footer.sticky-footer .sticky-footer-line {
   .row {
     display: flex;
     flex-wrap: inherit;
+    align-items: flex-start;
+    justify-content: flex-start;
   }
 
   .col {
@@ -3453,6 +3485,7 @@ footer.sticky-footer .sticky-footer-line {
 
   footer.mega-footer .col {
     flex: 1 50%;
+    padding: 0 5px;
   }
 }
 

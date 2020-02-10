@@ -11,6 +11,7 @@ class PageController extends Controller
 {
     private $repository;
     public function __construct() {
+        parent::__construct();
         $this->repository = new Repository;
     }
 

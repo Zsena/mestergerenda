@@ -39,6 +39,8 @@
   .row {
     display: flex;
     flex-wrap: inherit;
+    align-items: flex-start;
+    justify-content: flex-start;
   }
 
   .col {
@@ -370,6 +372,7 @@
   footer.mega-footer {
     .col {
       flex: 1 50%;
+      padding: 0 5px;
     }
   }
 }

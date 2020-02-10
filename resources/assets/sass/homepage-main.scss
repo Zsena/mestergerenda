@@ -43,8 +43,27 @@
       }
     }
 
-    figcaption {
-      text-align: center;
+    .picto-row {
+      align-items: center;
+      justify-content: center;
+      figure {
+        img {
+          max-width: 40px;
+          margin: auto;
+        }
+
+        figcaption {
+          text-align: center;
+          font-size: 12px;
+          padding-top: 1em;
+        }
+      }
+      @media all and (min-width: 400px){
+        flex-flow: nowrap;
+      }
+      .col {
+        align-self: flex-start;
+      }
     }
   }
 

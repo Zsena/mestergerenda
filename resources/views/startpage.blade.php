@@ -6,14 +6,15 @@
         <div class="row">
             <div class="home-page-layer main-layer col">
                 <div class="text-box">
-                    <h1>Lorem ipsum dolor sit amet</h1>
+                    <h1>A velünk élő otthonok</h1>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ullamcorper
-                        tincidunt turpis, mattis ullamcorper nisl pulvinar quis. Vestibulum quis erat risus.
+                        A Mestergerenda tervezői a szaktudást ötvözik a fa iránti szenvedéllyel.
+                        A fagerendából vagy rönkből készült házak pénztárcakímélők és környezetbarátok. Kerüljön közelebb a természethez gerendaházzal!
+                        Kérjen tőlünk árajánlatot!
                     </p>
                     <img class="home-header-svg" src="{{ asset('assets/img/homepage/design-elements/home_header_elem.png') }}" alt="Design elem">
                 </div>
-                <a href="#" class="default btn" type="button">Érdekel</a>
+                <a href="/arajanlat" class="default btn" type="button">ÁRAJÁNLATKÉRÉS</a>
             </div>
         </div>
     </article>
@@ -25,56 +26,44 @@
             <div class="row">
                 <div class="col heading-top-transform">
                     <div class="heading-group">
-                        <h2>Gerendaház</h2>
+                        <h2>A gerendaházakról</h2>
                         <img class="line-top" src="{{ asset('assets/img/homepage/design-elements/vertical-line-brown.png') }}" alt="Design elem">
                     </div>
                     <p>
-                        Lorem ipsum dolor sit amet,
-                        consectetur adipiscing elit. Aliquam interdum accumsan dui,
-                        et aliquet ex convallis et. Sed ac mauris imperdiet neque consectetur mattis
-                        nec eu nunc. Donec quis erat orci. Mauris massa eros, sollicitudin ut arcu quis,
-                        vehicula blandit purus. Suspendisse eleifend nunc vel semper euismod.
-                        Praesent tempor ipsum non urna posuere, ac convallis orci commodo.
-                        Nullam dictum enim vitae turpis placerat vulputate.
-                        Fusce ullamcorper interdum aliquet.
+                        A gerendaház tökéletes választás Ön és családja, párja számára, ha közel szeretnék magukat érezni a természethez, de pénztárcabarát épületre is vágynak. Egyedi igényeit nem csak a gerendaház tervezése során valósíthatja meg. A könnyű falszerkezet lehetővé teszi, hogy a későbbiekben könnyen átalakíthassa a belső tereket vagy hozzáépítsen otthonához.
                     </p>
                     <p>
-                        Integer auctor nulla id risus scelerisque sollicitudin sed et mi.
-                        Donec vitae dapibus enim. Proin ornare venenatis neque a ultrices.
-                        Suspendisse placerat enim consequat, blandit mi non, rhoncus mauris.
-                        Vivamus quis erat dolor. Fusce convallis metus eget justo euismod, sit amet cursus metus congue.
-                        In ante mauris,
-                        ultricies eget risus sed, fermentum consequat arcu.
+                        A gerendaházak pozitív hatással vannak az egészségre: a természetes alapanyagoknak hála fellélegezhetnek az allergiások és a tiszta környezetre vágyók. Ráadásul amellett, hogy a gerendaház garantálja az időtálló eleganciát, előállítása jelentősen kisebb ökológiai lábnyomot hagy maga után, mint más épületeké.
                     </p>
-                    <div class="row">
+                    <div class="row picto-row">
                         <div class="col">
                             <figure>
                                 <img src="{{ asset('assets/img/homepage/design-elements/vector1.png') }}" alt="Ikon">
-                                <figcaption>Lorem Ipsum</figcaption>
+                                <figcaption>Személyre szabható</figcaption>
                             </figure>
                         </div>
                         <div class="col">
                             <figure>
-                                <img src="{{ asset('assets/img/homepage/design-elements/vector2.png') }}" alt="Ikon">
-                                <figcaption>Lorem Ipsum</figcaption>
+                                <img style="max-width: 35px;" src="{{ asset('assets/img/homepage/design-elements/vector2.png') }}" alt="Ikon">
+                                <figcaption>Természetes alapanyagok</figcaption>
                             </figure>
                         </div>
                         <div class="col">
                             <figure>
                                 <img src="{{ asset('assets/img/homepage/design-elements/vector3.png') }}" alt="Ikon">
-                                <figcaption>Lorem Ipsum</figcaption>
+                                <figcaption>Egészséges beltér</figcaption>
                             </figure>
                         </div>
                         <div class="col">
                             <figure>
                                 <img src="{{ asset('assets/img/homepage/design-elements/vector4.png') }}" alt="Ikon">
-                                <figcaption>Lorem Ipsum</figcaption>
+                                <figcaption>Jó ár-érték arány</figcaption>
                             </figure>
                         </div>
                         <div class="col">
                             <figure>
                                 <img src="{{ asset('assets/img/homepage/design-elements/vector5.png') }}" alt="Ikon">
-                                <figcaption>Lorem Ipsum</figcaption>
+                                <figcaption>Kisebb ökológiai lábnyom</figcaption>
                             </figure>
                         </div>
                     </div>
@@ -167,21 +156,13 @@
             </div>
             <div class="row faq-row">
                 <div class="col-6">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam interdum accumsan dui, et aliquet ex convallis et.
-                        Sed ac mauris imperdiet neque consectetur mattis nec eu nunc. Donec quis erat orci. Mauris massa eros,
-                        sollicitudin ut arcu quis, vehicula blandit purus. Suspendisse eleifend nunc vel semper euismod.
-                        Praesent tempor ipsum non urna posuere, ac convallis orci commodo.
-                        Nullam dictum enim vitae turpis placerat vulputate. Fusce ullamcorper interdum aliquet.
+                    <p>Egyre többen döntenek a gerendaházak mellett számos előnye és szépsége miatt. Az itthon még szokatlan épületekről azonban egyelőre keveset tudnak a megrendelők. Mi megosztjuk a tudásunkat Önnel!
                     </p>
                     <p>
-                        <span class="text-highlight">Integer auctor nulla id risus scelerisque sollicitudin sed et mi?</span><br>
-                        Donec vitae dapibus enim. Proin ornare venenatis neque a ultrices.
-                        Suspendisse placerat enim consequat, blandit mi non, rhoncus mauris. Vivamus quis erat dolor.
-                        Fusce convallis metus eget justo euismod, sit amet cursus metus congue. In ante mauris, ultricies eget risus sed,
-                        fermentum consequat arcu. Nullam dui neque, porttitor ac pretium ut, varius vel libero. Suspendisse egestas enim sed velit eleifend consectetur.
-                        Duis tincidunt urna velit, eget placerat erat blandit sit amet. Fusce aliquet ut felis et maximus. Integer feugiat justo ut
+                        <span class="text-highlight">Mi az a gerendaház?</span><br>
+                        A gerendaház fagerendákból épült ház. Számos elkészítési módja létezik, de mi a tradicionális eljárást ötvözzük a modern technológiával. Ez azt jelenti, hogy a természetes alapanyagok mellett technológiai szigetelést alkalmazunk és ásványgyapotot is használunk.
                     </p>
-                    <a class="btn btn-secondary" href="/arajanlat#gyik">Gyakori Kérdések</a>
+                    <a class="btn btn-secondary" href="/arajanlat#gyik">Még több válasz</a>
                 </div>
                 <div class="col-4">
                     <figure class="color-effect">
@@ -209,17 +190,13 @@
                         <div class="row">
                             <div class="col-4">
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam interdum accumsan dui, et aliquet ex convallis et.
-                                    Sed ac mauris imperdiet neque consectetur mattis nec eu nunc. Donec quis erat orci.
-                                    Mauris massa eros, sollicitudin ut arcu quis, vehicula blandit purus. Suspendisse eleifend nunc vel semper euismod.
-                                    Praesent tempor ipsum non urna posuere, ac convallis orci commodo.
-                                    Nullam dictum enim vitae turpis placerat vulputate. Fusce ullamcorper interdum aliquet.
+                                    Habár számunkra a munka az utolsó faelem beszerelésével véget ér, egy családnak egy új élet kezdődik onnantól. Emiatt különösen nagy örömmel tölt el minket, amikor mások is elégedettek azzal, ami számunkra szenvedély.
                                 </p>
                                 <p class="commas-row">
                                     <em class="text-highlight-darker commas">
                                         <img class="commas-top" src="../assets/img/homepage/design-elements/commas-top.png" alt="Design elem">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam interdum accumsan dui,
-                                        et aliquet ex convallis et. Sed ac mauris imperdiet neque consectetur mattis nec eu nunc. Donec quis erat orci.
+                                        „Gyönyörű otthont kaptam a Mestergerendától. Minden gördülékenyen ment velük, és maximálisan nyitottak voltak az elképzeléseimre. Máskor is őket választom.”
+                                        Gipsz Jakab
                                         <img class="commas-bottom" src="../assets/img/homepage/design-elements/commas-bottom.png" alt="Design elem">
                                     </em>
                                 </p>
@@ -228,7 +205,7 @@
                                     Sed ac mauris imperdiet neque consectetur mattis nec eu nunc. Donec quis erat orci.
                                     Mauris massa eros, sollicitudin ut arcu quis, vehicula blandit purus. Suspendisse eleifend nunc vel semper euismod.
                                 </p>
-                                <a class="btn btn-primary" href="/referenciak">Referenciház program</a>
+                                <a class="btn btn-primary" href="/referenciak">Referenciáink</a>
                             </div>
                         </div>
                     </div>
@@ -245,9 +222,7 @@
                     <div class="col pl-xl-0">
                         <h2 class="text-highlight-darker">Hírek</h2>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis laoreet leo ut erat tincidunt,
-                            condimentum egestas libero convallis.
-                            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                            Értesüljön legfrissebb híreinkről! Nálunk nemcsak építészeti újdonságokról olvashat, hanem hasznos tanácsokkal is ellátjuk a gerendaházakat illetően.
                         </p>
                         <div class="col"></div>
                     </div>

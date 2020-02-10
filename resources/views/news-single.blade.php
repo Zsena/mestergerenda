@@ -32,7 +32,7 @@
                         <div class="horizontal-card">
                             <div class="row">
                                 <div class="pl-0 pt-0">
-                                    <p class="lead-text ellipsis">
+                                    <p class="lead-text">
                                         {{ $news->getExcerpt() }}
                                         {{--{{ var_dump($latest_news)}}--}}
                                     </p>
@@ -186,7 +186,7 @@
                             <img src="{{ $ln->getThumbnail()  }}" alt="">
                             <div class="card-body">
                                 <a href="/hirek/{{ $ln->getId() }}/{{ $ln->getSlug() }}" class="clickable-card-link"><h5 class="card-title">{{ $ln->getTitle() }}</h5></a>
-                                <p class="card-text">
+                                <p class="card-text ellipsis">
                                     {{ $ln->getExcerpt() }}
                                 </p>
                             </div>

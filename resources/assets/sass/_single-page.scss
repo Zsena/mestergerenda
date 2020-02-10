@@ -247,6 +247,7 @@ header.news-single-header {
       padding: 1em;
       font-size: 14px;
       font-weight: 100;
+      width: 20% !important;
       @extend .secondary-table-td;
     }
     td span, tr td:first-child span {

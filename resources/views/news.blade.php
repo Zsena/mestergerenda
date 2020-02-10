@@ -35,7 +35,7 @@
                                             <h4 class="text-highlight-darker">{{ $n->getTitle() }}</h4>
                                         </div>
                                         <div class="news-card-text">
-                                            <p class="">
+                                            <p class="ellipsis">
                                                 {{ $n->getExcerpt() }}
                                             </p>
                                         </div>

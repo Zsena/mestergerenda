@@ -107,118 +107,130 @@
                     <h2 class="text-white">Gyakori Kérdések</h2>
                     <img class="design-line-right-top" src="{{ asset('assets/img/lines/green-small-verti.png') }}" alt="Design elem">
                     <div class="row">
-                        <div data-tabs class="tabs">
-                            <div class="tab">
-                                <input type="radio" name="tabgroup" id="tab-1" checked>
-                                <label for="tab-1">Tab 1</label>
-                                <div class="tab__content">
-                                    <div class="content">
-                                        <div>
-                                            <input type="checkbox" id="question1" name="q"  class="questions">
-                                            <label for="question1" class="question">
-                                                Lorem ipsum dolor sit amet?
-                                                <img class="arrow" src="{{ asset('assets/img/icons/arrow-right.png') }}" alt="Nyíl">
-                                            </label>
-                                            <div class="answers">
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet ultrices erat, non bibendum ligula.
-                                                Nunc at tellus vitae libero gravida consequat id sed orci. Morbi maximus odio neque, vitae faucibus dolor gravida ac.
-                                                Proin volutpat, nisl sit amet sodales congue, purus orci pharetra arcu, non aliquet nunc diam a est.
-                                                Phasellus sollicitudin mi eget pretium scelerisque. Quisque vulputate cursus quam, a posuere ante luctus non.
-                                                Sed sed faucibus ligula, sit amet commodo massa.
-                                                Morbi et lorem laoreet, auctor tortor ac, congue felis.
+                        <div id="wrapper">
+                            <div class="content-row">
+                                <!-- Tab links -->
+                                <div class="tabs">
+                                    <button class="tablinks active" data-tabs="tab-A"><p data-title="GYIK">GYIK</p></button>
+                                    <button class="tablinks" data-tabs="tab-B"><p data-title="Lorem">Tab2</p></button>
+                                    <button class="tablinks" data-tabs="tab-C"><p data-title="ipsum">Tab3</p></button>
+                                    <button class="tablinks" data-tabs="tab-D"><p data-title="dolor">Tab4</p></button>
+                                </div>
+                                <!-- Tab content -->
+                                <div class="wrapper_tabcontent">
+                                    <div id="tab-A" class="tabcontent active">
+                                        <h3>GYIK</h3>
+                                        <div class="content">
+                                            <div>
+                                                <input type="checkbox" id="question1" name="q"  class="questions">
+                                                <label for="question1" class="question">
+                                                    Lorem ipsum dolor sit amet?
+                                                    <img class="arrow" src="{{ asset('assets/img/icons/arrow-right.png') }}" alt="Nyíl">
+                                                </label>
+                                                <div class="answers">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet ultrices erat, non bibendum ligula.
+                                                    Nunc at tellus vitae libero gravida consequat id sed orci. Morbi maximus odio neque, vitae faucibus dolor gravida ac.
+                                                    Proin volutpat, nisl sit amet sodales congue, purus orci pharetra arcu, non aliquet nunc diam a est.
+                                                    Phasellus sollicitudin mi eget pretium scelerisque. Quisque vulputate cursus quam, a posuere ante luctus non.
+                                                    Sed sed faucibus ligula, sit amet commodo massa.
+                                                    Morbi et lorem laoreet, auctor tortor ac, congue felis.
+                                                </div>
                                             </div>
-                                        </div>
-
-                                        <div>
-                                            <input type="checkbox" id="question2" name="q" class="questions">
-                                            <label for="question2" class="question">
-                                                Short?
-                                                <img class="arrow" src="{{ asset('assets/img/icons/arrow-right.png') }}" alt="Nyíl">
-                                            </label>
-                                            <div class="answers">
-                                                short!
+                                            <div>
+                                                <input type="checkbox" id="question2" name="q" class="questions">
+                                                <label for="question2" class="question">
+                                                    Short?
+                                                    <img class="arrow" src="{{ asset('assets/img/icons/arrow-right.png') }}" alt="Nyíl">
+                                                </label>
+                                                <div class="answers">
+                                                    short!
+                                                </div>
                                             </div>
-                                        </div>
-
-                                        <div>
-                                            <input type="checkbox" id="question3" name="q" class="questions">
-                                            <label for="question3" class="question">
-                                                Lorem ipsum dolor sit amet?
-                                                <img class="arrow" src="{{ asset('assets/img/icons/arrow-right.png') }}" alt="Nyíl">
-                                            </label>
-                                            <div class="answers">
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet ultrices erat, non bibendum ligula.
-                                                Nunc at tellus vitae libero gravida consequat id sed orci. Morbi maximus odio neque, vitae faucibus dolor gravida ac.
-                                                Proin volutpat, nisl sit amet sodales congue, purus orci pharetra arcu, non aliquet nunc diam a est.
-                                                Phasellus sollicitudin mi eget pretium scelerisque. Quisque vulputate cursus quam, a posuere ante luctus non.
-                                                Sed sed faucibus ligula, sit amet commodo massa.
-                                                Morbi et lorem laoreet, auctor tortor ac, congue felis.
+                                            <div>
+                                                <input type="checkbox" id="question3" name="q" class="questions">
+                                                <label for="question3" class="question">
+                                                    Lorem ipsum dolor sit amet?
+                                                    <img class="arrow" src="{{ asset('assets/img/icons/arrow-right.png') }}" alt="Nyíl">
+                                                </label>
+                                                <div class="answers">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet ultrices erat, non bibendum ligula.
+                                                    Nunc at tellus vitae libero gravida consequat id sed orci. Morbi maximus odio neque, vitae faucibus dolor gravida ac.
+                                                    Proin volutpat, nisl sit amet sodales congue, purus orci pharetra arcu, non aliquet nunc diam a est.
+                                                    Phasellus sollicitudin mi eget pretium scelerisque. Quisque vulputate cursus quam, a posuere ante luctus non.
+                                                    Sed sed faucibus ligula, sit amet commodo massa.
+                                                    Morbi et lorem laoreet, auctor tortor ac, congue felis.
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div>
-                                            <input type="checkbox" id="question4" name="q"  class="questions">
-                                            <label for="question4" class="question">
-                                                Lorem ipsum dolor sit amet?
-                                                <img class="arrow" src="{{ asset('assets/img/icons/arrow-right.png') }}" alt="Nyíl">
-                                            </label>
-                                            <div class="answers">
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet ultrices erat, non bibendum ligula.
-                                                Nunc at tellus vitae libero gravida consequat id sed orci. Morbi maximus odio neque, vitae faucibus dolor gravida ac.
-                                                Proin volutpat, nisl sit amet sodales congue, purus orci pharetra arcu, non aliquet nunc diam a est.
-                                                Phasellus sollicitudin mi eget pretium scelerisque. Quisque vulputate cursus quam, a posuere ante luctus non.
-                                                Sed sed faucibus ligula, sit amet commodo massa.
-                                                Morbi et lorem laoreet, auctor tortor ac, congue felis.
+                                            <div>
+                                                <input type="checkbox" id="question4" name="q"  class="questions">
+                                                <label for="question4" class="question">
+                                                    Lorem ipsum dolor sit amet?
+                                                    <img class="arrow" src="{{ asset('assets/img/icons/arrow-right.png') }}" alt="Nyíl">
+                                                </label>
+                                                <div class="answers">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet ultrices erat, non bibendum ligula.
+                                                    Nunc at tellus vitae libero gravida consequat id sed orci. Morbi maximus odio neque, vitae faucibus dolor gravida ac.
+                                                    Proin volutpat, nisl sit amet sodales congue, purus orci pharetra arcu, non aliquet nunc diam a est.
+                                                    Phasellus sollicitudin mi eget pretium scelerisque. Quisque vulputate cursus quam, a posuere ante luctus non.
+                                                    Sed sed faucibus ligula, sit amet commodo massa.
+                                                    Morbi et lorem laoreet, auctor tortor ac, congue felis.
+                                                </div>
                                             </div>
-                                        </div>
-
-                                        <div>
-                                            <input type="checkbox" id="question5" name="q" class="questions">
-                                            <label for="question5" class="question">
-                                                Short?
-                                                <img class="arrow" src="{{ asset('assets/img/icons/arrow-right.png') }}" alt="Nyíl">
-                                            </label>
-                                            <div class="answers">
-                                                short!
+                                            <div>
+                                                <input type="checkbox" id="question5" name="q" class="questions">
+                                                <label for="question5" class="question">
+                                                    Short?
+                                                    <img class="arrow" src="{{ asset('assets/img/icons/arrow-right.png') }}" alt="Nyíl">
+                                                </label>
+                                                <div class="answers">
+                                                    short!
+                                                </div>
                                             </div>
-                                        </div>
-
-                                        <div>
-                                            <input type="checkbox" id="question6" name="q" class="questions">
-                                            <label for="question6" class="question">
-                                                Lorem ipsum dolor sit amet?
-                                                <img class="arrow" src="{{ asset('assets/img/icons/arrow-right.png') }}" alt="Nyíl">
-                                            </label>
-                                            <div class="answers">
-                                                This is the answer!
+                                            <div>
+                                                <input type="checkbox" id="question6" name="q" class="questions">
+                                                <label for="question6" class="question">
+                                                    Lorem ipsum dolor sit amet?
+                                                    <img class="arrow" src="{{ asset('assets/img/icons/arrow-right.png') }}" alt="Nyíl">
+                                                </label>
+                                                <div class="answers">
+                                                    This is the answer!
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="tab">
-                                <input type="radio" name="tabgroup" id="tab-2">
-                                <label for="tab-2">Tab 2</label>
-                                <div class="tab__content">
-                                    <h4>Tab heading 2</h4>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur odio cum eveniet excepturi eum provident molestias ad ipsa unde dignissimos illo porro animi earum aliquam perspiciatis id omnis, adipisci incidunt. Qui, beatae. Beatae animi totam obcaecati at quae, iste facere fuga nemo pariatur esse nihil?</p>
-                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque commodi eos voluptatem numquam pariatur deleniti repellat fugiat eligendi nulla molestiae sunt praesentium vero sequi distinctio error quibusdam maiores natus magnam, explicabo hic sed alias dolores, quis eum! Reprehenderit atque cupiditate dolorum? Saepe, doloribus veniam? Nulla!</p>
-                                </div>
-                            </div>
-                            <div class="tab">
-                                <input type="radio" name="tabgroup" id="tab-3">
-                                <label for="tab-3">Tab 3</label>
-                                <div class="tab__content">
-                                    <h4>Tab heading 3</h4>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam officiis voluptas maiores deserunt ullam aliquam?</p>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, officia accusantium quod fuga porro eius animi earum excepturi omnis! Reprehenderit!</p>
-                                </div>
-                            </div>
-                            <div class="tab">
-                                <input type="radio" name="tabgroup" id="tab-4">
-                                <label for="tab-4">Tab 4</label>
-                                <div class="tab__content">
-                                    <h4>Tab heading 4</h4>
-                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia exercitationem veritatis vero eaque. Nam totam dolorem sapiente ullam non sed nostrum praesentium voluptatem, ad quam libero deserunt nemo fuga hic repudiandae veritatis cupiditate, mollitia recusandae!</p>
+                                    <div id="tab-B" class="tabcontent">
+                                        <h3>Lorem</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet ultrices erat, non bibendum ligula.
+                                            Nunc at tellus vitae libero gravida consequat id sed orci.
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet ultrices erat, non bibendum ligula.
+                                            Nunc at tellus vitae libero gravida consequat id sed orci.
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet ultrices erat, non bibendum ligula.
+                                            Nunc at tellus vitae libero gravida consequat id sed orci.
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet ultrices erat, non bibendum ligula.
+                                            Nunc at tellus vitae libero gravida consequat id sed orci.
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet ultrices erat, non bibendum ligula.
+                                            Nunc at tellus vitae libero gravida consequat id sed orci.
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet ultrices erat, non bibendum ligula.
+                                            Nunc at tellus vitae libero gravida consequat id sed orci.</p>
+                                    </div>
+                                    <div id="tab-C" class="tabcontent">
+                                        <h3>ipsum</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet ultrices erat, non bibendum ligula.
+                                            Nunc at tellus vitae libero gravida consequat id sed orci.</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet ultrices erat, non bibendum ligula.
+                                            Nunc at tellus vitae libero gravida consequat id sed orci.</p>
+                                    </div>
+                                    <div id="tab-D" class="tabcontent">
+                                        <h3>dolor</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet ultrices erat, non bibendum ligula.
+                                            Nunc at tellus vitae libero gravida consequat id sed orci.
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet ultrices erat, non bibendum ligula.
+                                            Nunc at tellus vitae libero gravida consequat id sed orci.
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet ultrices erat, non bibendum ligula.
+                                            Nunc at tellus vitae libero gravida consequat id sed orci.
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet ultrices erat, non bibendum ligula.
+                                            Nunc at tellus vitae libero gravida consequat id sed orci.</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>

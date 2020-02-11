@@ -35,43 +35,44 @@
                     </div>
 
                      {{--Basic form--}}{{-- TODO -- need a VALIDATION --}}
-                    <form action="#">
+                    <form action="#" id="contactForm">
+                        <ul id="errorContainer" class="error-container"></ul>
                         <div class="row">
                         <div class="col-3">
                             <div class="row flex-outer">
                                 <div class="col">
-                                    <input type="text" id="lastName" placeholder="*Vezetéknév:" required>
+                                    <input type="text" id="lastName" name="lastName" placeholder="*Vezetéknév:" required>
                                 </div>
                                 <div class="col">
-                                    <input type="text" id="firstName" placeholder="*Keresztnév:" required>
+                                    <input type="text" id="firstName" name="firstName" placeholder="*Keresztnév:" required>
                                 </div>
                             </div>
                             <div class="row flex-outer">
                                 <div class="col-12">
-                                    <input type="email" id="email" placeholder="*E-mail:" required>
+                                    <input type="email" id="email" name="email" placeholder="*E-mail:" required>
                                 </div>
                             </div>
                             <div class="row flex-outer">
                                 <div class="col-12">
-                                    <input type="tel" id="tel" placeholder="*Telefonszám:" required>
+                                    <input type="tel" id="tel" name="tel" placeholder="*Telefonszám:" required>
                                 </div>
                             </div>
                             <div class="row flex-outer">
                                 <div class="col">
-                                    <input type="text" id="zipCode" placeholder="*Irányítószám:" required>
+                                    <input type="text" id="zipCode" name="zipCode" placeholder="*Irányítószám:" required>
                                 </div>
                                 <div class="col">
-                                    <input type="text" id="zipCode" placeholder="*Település:" required>
+                                    <input type="text" id="city" name="city" placeholder="*Település:" required>
                                 </div>
                             </div>
                             <div class="row flex-outer">
                                 <div class="col-12">
-                                    <input type="file" id="uploadFile" required>
+                                    <input type="file" id="uploadFile">
                                 </div>
                             </div>
                             <div class="row flex-outer">
                                 <div class="col-12">
-                                    <input type="checkbox" id="agree">
+                                    <input type="checkbox" id="agree" name="agree" required>
                                     <label for="agree">Elfogadom  az adatvédelmi nyilatkozatot</label>
                                 </div>
                             </div>
@@ -84,7 +85,7 @@
                         <div class="col-7">
                             <div class="flex-outer row">
                                 <div class="col-12">
-                                    <textarea id="message" placeholder="Írja le mit szeretne pontosan..." required></textarea>
+                                    <textarea id="message" name="message" placeholder="Írja le mit szeretne pontosan..." required></textarea>
                                 </div>
                             </div>
                         </div>

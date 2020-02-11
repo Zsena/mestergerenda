@@ -16,6 +16,12 @@ header.offer-header {
       position: relative;
       z-index: 99999;
     }
+
+    .error-container {
+      label {
+        color: $brown;
+      }
+    }
   }
 
   .faq-sub-section {

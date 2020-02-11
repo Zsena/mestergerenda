@@ -26,6 +26,10 @@ html, body {
   margin: auto;
 }
 
+.hide {
+  display: none;
+}
+
 .row {
   display: flex;
   flex-wrap: wrap;

@@ -35,7 +35,7 @@ header.news-single-header {
   }
 }
 
-.single-page {
+.single-page, .offer-subpage {
   img.top-white-elem {
     min-height: 50px;
   }
@@ -129,7 +129,7 @@ header.news-single-header {
     color: $light-green;
   }
 
-  .article-body {
+  .article-body, #contactForm {
     position: relative;
     strong {
       color: $dark-green;
@@ -161,7 +161,7 @@ header.news-single-header {
       }
     }
 
-    ul {
+    ul, .error-container {
       list-style: none;
       margin: 0;
       padding: 0;

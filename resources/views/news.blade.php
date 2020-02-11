@@ -1,15 +1,14 @@
  @extends('layout.app')
 
 @section('content')
-    <header class="news-subpage-header subpage-header-size main-header">
+    <header class="news-subpage-header header-after subpage-header-size main-header">
         <article class="m-container header-layer-container">
             <div class="row">
                 <div class="main-layer col">
                     <div class="text-box">
                         <h1>Hírek</h1>
                         <p class="header-excerpt">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Mauris ullamcorper tincidunt turpis
+                            Értesüljön legfrissebb híreinkről! Nálunk nemcsak építészeti újdonságokról olvashat, hanem hasznos tanácsokkal is ellátjuk a gerendaházakat illetően.
                         </p>
                         <img class="home-header-svg" src="{{ asset('assets/img/news/mestergerenda_barna_jobb.png') }}" alt="Design elem">
                     </div>

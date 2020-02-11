@@ -22,21 +22,17 @@
         <div class="m-container">
             <img class="top-white-elem" src="{{ asset('assets/img/homepage/design-elements/first-sec-top.png') }}" alt="Design elem">
             <div class="col-12">
-                <h2 class="text-highlight-darker">Rólunk</h2>
+                <h2 class="text-highlight-darker">Kik vagyunk?</h2>
                 <img class="design-line-top" src="{{ asset('assets/img/homepage/design-elements/vertical-line-brown.png') }}" alt="Design elem">
                 <div class="row">
                     <div class="horizontal-card">
                         <div class="row">
                             <div class="col-7 pl-0">
                                 <p class="text-highlight">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac odio aliquet ante lacinia vulputate vel at sem.
-                                    Sed dictum varius neque. Quisque congue nisi eu ullamcorper condimentum. Morbi sodales nibh mi, a sollicitudin enim sollicitudin ac.
-                                    Suspendisse gravida sem nulla, et tristique neque placerat sed. Vivamus auctor nisi vitae finibus tincidunt. Etiam et dui nisi.
-                                    Fusce venenatis ultricies condimentum. Nam venenatis tincidunt neque eu scelerisque.
-                                    Cras vel tincidunt lectus. Proin ultrices aliquet justo eu venenatis. Sed finibus, nunc vitae gravida accumsan,
-                                    augue tortor sodales ante, nec eleifend tellus sapien et magna. Vivamus dignissim enim in venenatis lobortis.
-                                    In hac habitasse platea dictumst. Phasellus pulvinar euismod laoreet.
+                                    Gerendaház- és rönkházépítéssel foglalkozó cégünk 2019-ben alakult. Olyan, több évtizedes tapasztalattal rendelkező műszaki szakemberekkel dolgozunk, akiknek már a felmenőik is famegmunkálással foglalkoztak.
                                 </p>
+                                <h3 class="text-highlight-darker">Hitvallásunk</h3>
+                                <p>Szenvedélyünk a fa. Ezért számunkra minden felkérés olyan örömteli, mint egy pihentető séta a természetben. Megrendelőink elképzeléseinek megvalósításához minden esetben precíz szakértelemmel látunk neki. Büszkék vagyunk arra, hogy a tervezés és építés során környezetkímélő módszereket alkalmazunk. Hiszünk benne, hogy amikor épületet tervezünk, nem csupán házat építünk, hanem otthont is teremtünk.</p>
                             </div>
                             <div class="col-3">
                                 <figure>
@@ -50,15 +46,9 @@
                     <div class="horizontal-card">
                         <div class="row">
                             <div class="col-7 pl-0">
-                                <p class="text-highlight mb-0">Lorem ipsum</p>
+                                <h3 class="text-highlight mb-0">Milyen munkákat vállalunk?</h3>
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac odio aliquet ante lacinia vulputate vel at sem.
-                                    Sed dictum varius neque. Quisque congue nisi eu ullamcorper condimentum. Morbi sodales nibh mi, a sollicitudin enim sollicitudin ac.
-                                    Suspendisse gravida sem nulla, et tristique neque placerat sed. Vivamus auctor nisi vitae finibus tincidunt. Etiam et dui nisi.
-                                    Fusce venenatis ultricies condimentum. Nam venenatis tincidunt neque eu scelerisque.
-                                    Cras vel tincidunt lectus. Proin ultrices aliquet justo eu venenatis. Sed finibus, nunc vitae gravida accumsan,
-                                    augue tortor sodales ante, nec eleifend tellus sapien et magna. Vivamus dignissim enim in venenatis lobortis.
-                                    In hac habitasse platea dictumst. Phasellus pulvinar euismod laoreet.
+                                    A gerendaház és rönkház sokféle lehet. Lakóházat, üdülőházat, kisebb kerti épületeket, fedett beállókat készítünk. Nagyobb ácsmunkákat, így például tetőgerendázást is vállalunk. A kivitelezés során csak minősített és a jogszabályokban rögzített dokumentációval ellátott alapanyagokat használunk fel.
                                 </p>
                             </div>
                             <div class="col-3">
@@ -103,23 +93,25 @@
     <section class="vision img-after">
         <div class="m-container">
             <div class="col-12">
-                <h2 class="text-white">Jövőkép</h2>
+                <h2 class="text-white">Távlati terveink</h2>
                 <img class="design-line-right-top" src="{{ asset('assets/img/lines/green-small-verti.png') }}" alt="Design elem">
                 <div class="row">
-                    <div class="col-7 pl-0">
+                    <div class="col-12 pl-0">
                         <p class="text-white">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet ultrices erat, non bibendum ligula.
-                            Nunc at tellus vitae libero gravida consequat id sed orci. Morbi maximus odio neque, vitae faucibus dolor gravida ac.
-                            Proin volutpat, nisl sit amet sodales congue, purus orci pharetra arcu, non aliquet nunc diam a est. Phasellus sollicitudin
-                            mi eget pretium scelerisque. Quisque vulputate cursus quam, a posuere ante luctus non.
-                            Sed sed faucibus ligula, sit amet commodo massa. Morbi et lorem laoreet, auctor tortor ac, congue felis.
+                            Szeretnénk a jövőben teljes mértékben megújuló alapanyagokból építkezni, amivel még kisebbé tehetjük az ökolábnyomunkat. A faházak hozzájárulnak a környezeti egyensúly megteremtéséhez és barátságos otthonként is szolgálnak. Ezért reményeink szerint egyre nyitottabbá tehetjük a hazai vásárlókat a gerenda- és rönkházakra.
                         </p>
-                        <p class="text-white">
-                            Aenean sed ultricies mauris. Mauris vehicula eget elit non auctor. Nunc tempor est a turpis congue,
-                            vel eleifend enim tristique. Phasellus maximus, ante ac condimentum aliquet, tortor purus maximus lectus,
-                            ut porttitor erat ligula vitae ipsum. Phasellus lorem magna, laoreet eget sagittis ut, sodales id nisi. Vivamus nunc justo,
-                            sagittis eu finibus sed, imperdiet a nulla. Cras in lobortis urna. Aenean erat sem, ullamcorper eget ornare in, mattis sit amet dolor.
-                        </p>
+                        <div class="call-to-action-btn-group row">
+                            <div class="col-8">
+                                <a href="/arajanlat" class="btn text-white form-btn">
+                                    Gerendaházat szeretne? Vegye fel velünk a kapcsolatot vagy kérjen tőlünk árajánlatot!
+                                </a>
+                            </div>
+                            <div class="col-3">
+                                <a href="tel:+36205555555" class="btn text-white call-btn">
+                                    <i class="fas fa-mobile"></i>&nbsp;+36 20 555 55 55
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -75,7 +75,7 @@
           display: none;
         }
         &.logo {
-          flex: 1;
+          flex: 0 auto;
           order: 1;
         }
         &.logo object {
@@ -90,6 +90,7 @@
           color: $white;
           font-size: 12px;
           line-height: 1.2;
+          letter-spacing: inherit;
           &.left-menu-item{
             font-size: 17px;
           }
@@ -202,9 +203,9 @@
       flex-wrap: nowrap;
       & li {
         flex: 1 0 auto;
-        padding: 2rem 1.5rem 0 0;
+        //padding: 2rem 1.5rem 0 0;
         &.item {
-          border-bottom: 1px solid white;
+          border-bottom: 1px solid #ffffff78;
           display: block;
           width: auto;
           order: 1;

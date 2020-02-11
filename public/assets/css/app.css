@@ -200,6 +200,10 @@ div.img-wrap img {
   display: flex;
 }
 
+div.img-wrap:hover {
+  transform: scaleX(-1);
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -491,6 +495,73 @@ td {
   text-transform: uppercase;
   font-size: 14px;
   justify-content: center;
+}
+
+.call-to-action-btn-group.row {
+  z-index: 9999;
+  position: relative;
+  align-items: center;
+  background-image: linear-gradient(135deg, #f5f7fa 30%, rgba(153, 153, 42, 0.9) 100%);
+}
+
+.call-to-action-btn-group.row:after {
+  content: "";
+  height: 5px;
+  width: 100%;
+  position: absolute;
+  background-image: linear-gradient(135deg, #586e27 0%, #d0d039 100%);
+  left: 0;
+  bottom: 0;
+  z-index: -2;
+  transition: all 1s ease;
+}
+
+@media all and (min-width: 768px) {
+  .call-to-action-btn-group.row {
+    padding: 1em;
+  }
+}
+
+.call-to-action-btn-group.row .form-btn {
+  justify-content: center;
+  font-size: 1em;
+}
+
+@media all and (min-width: 768px) {
+  .call-to-action-btn-group.row .form-btn {
+    font-size: 1.5em;
+    justify-content: flex-start;
+  }
+}
+
+.call-to-action-btn-group.row .call-btn {
+  justify-content: center;
+  font-size: 1em;
+  white-space: nowrap;
+}
+
+@media all and (min-width: 768px) {
+  .call-to-action-btn-group.row .call-btn {
+    font-size: 1.5em;
+  }
+}
+
+@media all and (min-width: 992px) {
+  .call-to-action-btn-group.row .call-btn {
+    font-size: 2em;
+    justify-content: flex-end;
+  }
+}
+
+.call-to-action-btn-group.row a {
+  max-width: 100%;
+  font-family: "Myriad-Regular", sans-serif;
+  padding: 15px 5px;
+  color: #586e27;
+}
+
+.call-to-action-btn-group.row a:hover {
+  color: #b6764c;
 }
 
 /*====================================
@@ -2136,6 +2207,11 @@ img.footer-top-elem {
   margin: 0 auto;
 }
 
+.flex-outer .col-12,
+.flex-outer .col {
+  padding: 10px 0;
+}
+
 .flex-outer label {
   flex: 1 0 120px;
   max-width: 220px;
@@ -3209,7 +3285,7 @@ footer.sticky-footer .sticky-footer-line {
   }
 
   nav.main-nav ul.menu li.logo {
-    flex: 1;
+    flex: 0 auto;
     order: 1;
   }
 
@@ -3226,6 +3302,7 @@ footer.sticky-footer .sticky-footer-line {
     color: #fff;
     font-size: 12px;
     line-height: 1.2;
+    letter-spacing: inherit;
   }
 
   nav.main-nav ul.menu li a.left-menu-item {
@@ -3327,11 +3404,10 @@ footer.sticky-footer .sticky-footer-line {
 
   nav.main-nav ul.menu li {
     flex: 1 0 auto;
-    padding: 2rem 1.5rem 0 0;
   }
 
   nav.main-nav ul.menu li.item {
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #ffffff78;
     display: block;
     width: auto;
     order: 1;

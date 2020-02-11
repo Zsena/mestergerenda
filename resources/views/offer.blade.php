@@ -47,32 +47,26 @@
                                 </div>
                             </div>
                             <div class="row flex-outer">
-                                <div class="col">
+                                <div class="col-12">
                                     <input type="email" id="email" placeholder="*E-mail:" required>
                                 </div>
-                                <div class="col">
+                            </div>
+                            <div class="row flex-outer">
+                                <div class="col-12">
                                     <input type="tel" id="tel" placeholder="*Telefonszám:" required>
                                 </div>
                             </div>
                             <div class="row flex-outer">
-                                <div class="col-3">
+                                <div class="col">
                                     <input type="text" id="zipCode" placeholder="*Irányítószám:" required>
                                 </div>
-                                <li class="col-7">
+                                <div class="col">
                                     <input type="text" id="zipCode" placeholder="*Település:" required>
-                                </li>
+                                </div>
                             </div>
                             <div class="row flex-outer">
                                 <div class="col-12">
-                                    <input type="text" id="street" placeholder="*Utca, Házszám:" required>
-                                </div>
-                            </div>
-                            <div class="row flex-outer">
-                                <div class="col-7">
                                     <input type="file" id="uploadFile" required>
-                                </div>
-                                <div class="col-3">
-                                    <input type="file" id="uploadFile2" required>
                                 </div>
                             </div>
                             <div class="row flex-outer">

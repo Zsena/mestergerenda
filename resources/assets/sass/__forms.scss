@@ -6,6 +6,9 @@
   padding: 0;
   max-width: 800px;
   margin: 0 auto;
+  .col-12, .col {
+    padding: 10px 0;
+  }
 
   label {
     flex: 1 0 120px;

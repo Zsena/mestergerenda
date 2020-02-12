@@ -12,14 +12,10 @@
     <meta property="og:type" content="website">
 
     <title>Mestergerenda</title>
-
+    @yield('css')
     <!-- css -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" rel="stylesheet">
     <link href="{{ asset('assets/css/app.css') }}" rel="stylesheet">
-
-
-    @yield('css')
-
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
     <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
     @include('fragments.cookieconsent')

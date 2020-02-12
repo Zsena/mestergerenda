@@ -18,6 +18,10 @@
       color: $dark-green;
       position: relative;
       z-index: 9999;
+      margin-top: 3em;
+      @media all and (min-width: 500px){
+        margin-top: 1.5em;
+      }
     }
 
     .heading-group {
@@ -25,7 +29,7 @@
       img.line-top {
         position: absolute;
         right: 0;
-        top: 0;
+        top: -85px;
         z-index: 9999;
       }
     }

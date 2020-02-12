@@ -6,7 +6,7 @@ article.header-layer-container {
     flex-direction: row-reverse;
     .main-layer {
       position: relative;
-      top: 14rem;
+      top: 17rem;
       padding: 2rem;
       z-index: 9999;
       .text-box {
@@ -21,7 +21,7 @@ article.header-layer-container {
         }
       }
       h1 {
-        font-size: 4em;
+        font-size: 3em;
         color: $white;
         font-family: 'GillSansMT-Condensed', sans-serif;
         text-transform: uppercase;
@@ -30,10 +30,13 @@ article.header-layer-container {
       p {
         margin-top: -20px;
         font-family: 'Arial', sans-serif;
-        font-size: 20px;
+        font-size: 15px;
         color: $white;
         text-transform: uppercase;
         padding: 0 5px;
+      }
+      .btn {
+        margin-top: 2em;
       }
     }
   }

@@ -33,51 +33,55 @@
                                 sit amet commodo massa. Morbi et lorem laoreet, auctor tortor ac, congue felis.</p>
                         </div>
                     </div>
-
-                     {{--Basic form--}}{{-- TODO -- need a VALIDATION --}}
-                    <form action="#" id="contactForm">
+                    <form action="#" id="offerForm">
                         <ul id="errorContainer" class="error-container"></ul>
                         <div class="row">
-                        <div class="col-3">
+                        <div class="col pl-0 pr-0">
                             <div class="row flex-outer">
-                                <div class="col">
+                                <div class="col pl-0 mr-1">
                                     <input type="text" id="lastName" name="lastName" placeholder="*Vezetéknév:" required>
                                 </div>
-                                <div class="col">
+                                <div class="col pl-0 mr-1">
                                     <input type="text" id="firstName" name="firstName" placeholder="*Keresztnév:" required>
                                 </div>
                             </div>
                             <div class="row flex-outer">
-                                <div class="col-12">
+                                <div class="col-12 pl-0 mr-1">
                                     <input type="email" id="email" name="email" placeholder="*E-mail:" required>
                                 </div>
                             </div>
                             <div class="row flex-outer">
-                                <div class="col-12">
+                                <div class="col-12 pl-0 mr-1">
                                     <input type="tel" id="tel" name="tel" placeholder="*Telefonszám:" required>
                                 </div>
                             </div>
                             <div class="row flex-outer">
-                                <div class="col">
+                                <div class="col pl-0 mr-1">
                                     <input type="text" id="zipCode" name="zipCode" placeholder="*Irányítószám:" required>
                                 </div>
-                                <div class="col">
+                                <div class="col pl-0 mr-1">
                                     <input type="text" id="city" name="city" placeholder="*Település:" required>
                                 </div>
                             </div>
                             <div class="row flex-outer">
-                                <div class="col-12">
-                                    <input type="file" id="uploadFile">
+                                <div class="col-12 pl-0 mr-1">
+                                    <div class="input-file-container">
+                                        <input type="file" class="input-file" id="uploadFile" multiple>
+                                        <label tabindex="0" for="uploadFile" class="input-file-trigger">Dokumentum kiválasztása...</label>
+                                    </div>
+                                    <p class="file-return"></p>
+                                </div>
+                            </div>
+                            <div class="row flex-outer styled-input--square">
+                                <div class="col-12 pl-0 mr-1">
+                                    <div class="styled-input-single">
+                                        <input type="checkbox" id="agree" name="agree" required>
+                                        <label for="agree">Elfogadom  az adatvédelmi nyilatkozatot</label>
+                                    </div>
                                 </div>
                             </div>
                             <div class="row flex-outer">
-                                <div class="col-12">
-                                    <input type="checkbox" id="agree" name="agree" required>
-                                    <label for="agree">Elfogadom  az adatvédelmi nyilatkozatot</label>
-                                </div>
-                            </div>
-                            <div class="row flex-outer">
-                                <div class="col-12">
+                                <div class="col-12 pl-0 mr-1">
                                     <button type="submit" id="sendButton" class="btn-primary btn">Elküld</button>
                                 </div>
                             </div>
@@ -91,7 +95,6 @@
                         </div>
                         </div>
                     </form>
-
                 </div>
             </div>
             <img class="bottom-white-elem" src="{{ asset('assets/img/homepage/design-elements/first-sec-bottom.png') }}" alt="Design elem">
@@ -238,6 +241,27 @@
 @endsection
 
 @section('js')
+    <script>
+        //form: upload file
+        document.querySelector("html").classList.add('js');
+
+        var fileInput  = document.querySelector( ".input-file" ),
+            button     = document.querySelector( ".input-file-trigger" ),
+            the_return = document.querySelector(".file-return");
+
+        button.addEventListener( "keydown", function( event ) {
+            if ( event.keyCode == 13 || event.keyCode == 32 ) {
+                fileInput.focus();
+            }
+        });
+        button.addEventListener( "click", function( event ) {
+            fileInput.focus();
+            return false;
+        });
+        fileInput.addEventListener( "change", function( event ) {
+            the_return.innerHTML = this.value;
+        });
+    </script>
 @endsection
 
 @section('css')

@@ -7,12 +7,13 @@
   max-width: 800px;
   margin: 0 auto;
   .col-12, .col {
-    padding: 10px 0;
+    padding: 5px 0;
+    width: 100%;
   }
 
   label {
     flex: 1 0 120px;
-    max-width: 220px;
+    max-width: 100%;
     padding: 8px;
     font-weight: 300;
     letter-spacing: .09em;
@@ -47,8 +48,285 @@
 
 .flex-outer input:not([type='checkbox']),
 .flex-outer select {
-  padding: 10px;
+  padding: 10px 5px 10px 5px;
   background-color: white;
   width: 100%;
   border: 1px solid $basic-form-border-color;
+}
+
+.input-file-container {
+  position: relative;
+  width: 100%;
+}
+
+.js .input-file-trigger {
+  display: block;
+  padding: 15px 6px;
+  background: $dark-green;
+  color: #fff;
+  font-size: 1em;
+  transition: all .4s;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+}
+.js .input-file {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  opacity: 0;
+  padding: 14px 0;
+  cursor: pointer;
+}
+.js .input-file:hover + .input-file-trigger,
+.js .input-file:focus + .input-file-trigger,
+.js .input-file-trigger:hover,
+.js .input-file-trigger:focus {
+  background: $light-green;
+  color: $white;
+}
+
+.file-return {
+  margin: 0;
+}
+.file-return:not(:empty) {
+  margin: 1em 0;
+}
+.js .file-return {
+  font-style: italic;
+  font-size: .9em;
+  font-weight: bold;
+}
+.js .file-return:not(:empty):before {
+  content: "Kiválasztott fájl: ";
+  font-style: normal;
+  font-weight: normal;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline-color: $light-green;
+}
+
+
+/* checkboxes & radio boxes */
+.styled-input-single {
+  position: relative;
+  padding: 15px 0 20px 20px;
+  text-align: left;
+
+  label {
+    cursor: pointer;
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      border-radius: 50%;
+    }
+    &:before {
+      left: 0;
+      width: 20px;
+      height: 20px;
+      margin: -15px 0 0;
+      background: #f7f7f7;
+      box-shadow: 0 0 1px grey;
+    }
+    &:after {
+      left: 5px;
+      width: 10px;
+      height: 10px;
+      margin: -10px 0 0;
+      opacity: 0;
+      background: $dark-green;
+      transform: translate3d(-40px, 0, 0) scale(0.5);
+      transition: opacity 0.25s ease-in-out, transform 0.25s ease-in-out;
+    }
+  }
+
+  input[type="radio"],
+  input[type="checkbox"] {
+    position: absolute;
+    top: 0;
+    left: -9999px;
+    visibility: hidden;
+
+    &:checked + label {
+      &:before {
+      }
+      &:after {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.styled-input--square {
+  label {
+    &:before,
+    &:after {
+      border-radius: 0;
+    }
+  }
+}
+
+.styled-input--rounded {
+  label {
+    &:before {
+      border-radius: 10px;
+    }
+    &:after {
+      border-radius: 6px;
+    }
+  }
+}
+
+.styled-input--diamond {
+  .styled-input-single {
+    padding-left: 30px;
+  }
+  label {
+    &:before,
+    &:after {
+      border-radius: 0;
+    }
+    &:before {
+      transform: rotate(45deg);
+    }
+  }
+
+  input[type="radio"],
+  input[type="checkbox"] {
+
+    &:checked + label {
+      &:after {
+        transform: rotate(45deg);
+        opacity: 1;
+      }
+    }
+  }
+}
+
+/* ===== Select Box ===== */
+.sel {
+  padding: 20px 0 0;
+  font-size: inherit;
+  display: inline-block;
+  margin: 0;
+  width: 100%;
+  background-color: transparent;
+  position: relative;
+  cursor: pointer;
+  &::before {
+    position: absolute;
+    content: url("../img/icons/down.png");
+    font-size: 2em;
+    color: #FFF;
+    right: 20px;
+    top: calc(50% - 0.5em);
+  }
+}
+.sel.active::before {
+  transform: rotateX(-180deg);
+}
+
+.sel-placeholder {
+  display: block;
+  font-family: 'Myriad-Regular', sans-serif;
+  font-size: 14px;
+  color: #838e95;
+  padding: 0.2em 0.5em;
+  text-align: left;
+  pointer-events: none;
+  user-select: none;
+  visibility: visible;
+  top: -5px;
+  position: relative;
+  &::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0.2em 0.5em;
+    content: attr(data-placeholder);
+    visibility: hidden;
+  }
+}
+
+.sel.active .sel-placeholder {
+  visibility: hidden;
+  &::before {
+    visibility: visible;
+  }
+}
+
+.sel-box {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: -4px;
+  display: none;
+  list-style-type: none;
+  text-align: left;
+  font-size: 1em;
+  background-color: #FFF;
+  width: calc(100% + 8px);
+  box-sizing: border-box;
+}
+
+.sel.active .sel-box {
+  display: block;
+  animation: fadeInUp 500ms;
+}
+
+.sel-box-options {
+  display: list-item;
+  font-family: 'Arial', sans-serif;
+  font-size: 14px;
+  color: #838e95;
+  padding: 0.3em 1em;
+  user-select: none;
+  &:hover {
+    background-color: #ebedef;
+  }
+}
+
+.sel-box-options.selected::after {
+  display: inline;
+}
+
+/* ----- Select Box basic ----- */
+.sel {
+  border-bottom: 4px solid $light-green-rgba;
+}
+
+.sel-box--basic {
+  z-index: 99999;
+}
+
+/* ===== Keyframes ===== */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 20px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.error {
+  color: $light-green;
 }

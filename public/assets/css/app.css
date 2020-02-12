@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 /*====================================
   Our fonts
 =====================================*/
@@ -132,8 +134,16 @@ body {
   margin-top: 0;
 }
 
+.mr-1 {
+  margin-right: 1em !important;
+}
+
 .pl-0 {
-  padding-left: 0;
+  padding-left: 0 !important;
+}
+
+.pr-0 {
+  padding-right: 0 !important;
 }
 
 .pt-3 {
@@ -328,8 +338,13 @@ img {
 .img-frame-1,
 .single-page .article-body .news-body img,
 .single-page #contactForm .news-body img,
+.single-page #offerForm .news-body img,
 .offer-subpage .article-body .news-body img,
-.offer-subpage #contactForm .news-body img {
+.offer-subpage #contactForm .news-body img,
+.offer-subpage #offerForm .news-body img,
+.contact-page .article-body .news-body img,
+.contact-page #contactForm .news-body img,
+.contact-page #offerForm .news-body img {
   background-color: #3f7249;
   padding: 25px;
 }
@@ -821,7 +836,7 @@ article.header-layer-container .row {
 
 article.header-layer-container .row .main-layer {
   position: relative;
-  top: 14rem;
+  top: 17rem;
   padding: 2rem;
   z-index: 9999;
 }
@@ -840,7 +855,7 @@ article.header-layer-container .row .main-layer .text-box .home-header-svg {
 }
 
 article.header-layer-container .row .main-layer h1 {
-  font-size: 4em;
+  font-size: 3em;
   color: #fff;
   font-family: "GillSansMT-Condensed", sans-serif;
   text-transform: uppercase;
@@ -850,10 +865,14 @@ article.header-layer-container .row .main-layer h1 {
 article.header-layer-container .row .main-layer p {
   margin-top: -20px;
   font-family: "Arial", sans-serif;
-  font-size: 20px;
+  font-size: 15px;
   color: #fff;
   text-transform: uppercase;
   padding: 0 5px;
+}
+
+article.header-layer-container .row .main-layer .btn {
+  margin-top: 2em;
 }
 
 /* Homepage main import */
@@ -882,6 +901,13 @@ article.header-layer-container .row .main-layer p {
   color: #586e27;
   position: relative;
   z-index: 9999;
+  margin-top: 3em;
+}
+
+@media all and (min-width: 500px) {
+  .main .block-house-section h2 {
+    margin-top: 1.5em;
+  }
 }
 
 .main .block-house-section .heading-group {
@@ -891,7 +917,7 @@ article.header-layer-container .row .main-layer p {
 .main .block-house-section .heading-group img.line-top {
   position: absolute;
   right: 0;
-  top: 0;
+  top: -85px;
   z-index: 9999;
 }
 
@@ -1886,47 +1912,55 @@ header.news-single-header .header-excerpt {
 }
 
 .single-page img.top-white-elem,
-.offer-subpage img.top-white-elem {
+.offer-subpage img.top-white-elem,
+.contact-page img.top-white-elem {
   min-height: 50px;
 }
 
 .single-page .single-page-section,
-.offer-subpage .single-page-section {
+.offer-subpage .single-page-section,
+.contact-page .single-page-section {
   position: relative;
 }
 
 .single-page .single-page-section .personal-datas ul,
-.offer-subpage .single-page-section .personal-datas ul {
+.offer-subpage .single-page-section .personal-datas ul,
+.contact-page .single-page-section .personal-datas ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
 .single-page .single-page-section .thumbnail-img,
-.offer-subpage .single-page-section .thumbnail-img {
+.offer-subpage .single-page-section .thumbnail-img,
+.contact-page .single-page-section .thumbnail-img {
   margin: auto;
 }
 
 .single-page .single-page-section .thumbnail-img img,
-.offer-subpage .single-page-section .thumbnail-img img {
+.offer-subpage .single-page-section .thumbnail-img img,
+.contact-page .single-page-section .thumbnail-img img {
   width: 100%;
   margin: auto;
 }
 
 .single-page .form-section,
-.offer-subpage .form-section {
+.offer-subpage .form-section,
+.contact-page .form-section {
   position: relative;
 }
 
 .single-page .form-section h2,
-.offer-subpage .form-section h2 {
+.offer-subpage .form-section h2,
+.contact-page .form-section h2 {
   margin-top: 0;
   position: relative;
   z-index: 99999;
 }
 
 .single-page .image-section,
-.offer-subpage .image-section {
+.offer-subpage .image-section,
+.contact-page .image-section {
   position: relative;
   background-color: #586e27;
   padding-bottom: 3rem;
@@ -1940,7 +1974,8 @@ header.news-single-header .header-excerpt {
 }
 
 .single-page .image-section h2,
-.offer-subpage .image-section h2 {
+.offer-subpage .image-section h2,
+.contact-page .image-section h2 {
   padding: 1rem 2rem 2rem;
   justify-content: center;
   display: flex;
@@ -1949,7 +1984,8 @@ header.news-single-header .header-excerpt {
 }
 
 .single-page .image2-section,
-.offer-subpage .image2-section {
+.offer-subpage .image2-section,
+.contact-page .image2-section {
   position: relative;
   background-color: #586e27;
   padding-bottom: 3rem;
@@ -1963,7 +1999,8 @@ header.news-single-header .header-excerpt {
 }
 
 .single-page .image2-section h2,
-.offer-subpage .image2-section h2 {
+.offer-subpage .image2-section h2,
+.contact-page .image2-section h2 {
   padding: 1rem 2rem 2rem;
   justify-content: center;
   display: flex;
@@ -1972,7 +2009,8 @@ header.news-single-header .header-excerpt {
 }
 
 .single-page .image3-section,
-.offer-subpage .image3-section {
+.offer-subpage .image3-section,
+.contact-page .image3-section {
   position: relative;
   background-color: #586e27;
   padding-bottom: 3rem;
@@ -1985,14 +2023,16 @@ header.news-single-header .header-excerpt {
 }
 
 .single-page .image3-section .row,
-.offer-subpage .image3-section .row {
+.offer-subpage .image3-section .row,
+.contact-page .image3-section .row {
   justify-content: center;
   align-items: center;
   min-height: 380px;
 }
 
 .single-page .image3-section .btn-primary,
-.offer-subpage .image3-section .btn-primary {
+.offer-subpage .image3-section .btn-primary,
+.contact-page .image3-section .btn-primary {
   position: relative;
   z-index: 9999;
   max-width: 300px;
@@ -2000,37 +2040,58 @@ header.news-single-header .header-excerpt {
 }
 
 .single-page .lead-text,
-.offer-subpage .lead-text {
+.offer-subpage .lead-text,
+.contact-page .lead-text {
   font-weight: 600;
   color: #99992a;
 }
 
 .single-page .article-body,
 .single-page #contactForm,
+.single-page #offerForm,
 .offer-subpage .article-body,
-.offer-subpage #contactForm {
+.offer-subpage #contactForm,
+.offer-subpage #offerForm,
+.contact-page .article-body,
+.contact-page #contactForm,
+.contact-page #offerForm {
   position: relative;
 }
 
 .single-page .article-body strong,
 .single-page #contactForm strong,
+.single-page #offerForm strong,
 .offer-subpage .article-body strong,
-.offer-subpage #contactForm strong {
+.offer-subpage #contactForm strong,
+.offer-subpage #offerForm strong,
+.contact-page .article-body strong,
+.contact-page #contactForm strong,
+.contact-page #offerForm strong {
   color: #586e27;
 }
 
 .single-page .article-body .news-body img,
 .single-page #contactForm .news-body img,
+.single-page #offerForm .news-body img,
 .offer-subpage .article-body .news-body img,
-.offer-subpage #contactForm .news-body img {
+.offer-subpage #contactForm .news-body img,
+.offer-subpage #offerForm .news-body img,
+.contact-page .article-body .news-body img,
+.contact-page #contactForm .news-body img,
+.contact-page #offerForm .news-body img {
   width: 80%;
   margin: 5em auto;
 }
 
 .single-page .article-body ol,
 .single-page #contactForm ol,
+.single-page #offerForm ol,
 .offer-subpage .article-body ol,
-.offer-subpage #contactForm ol {
+.offer-subpage #contactForm ol,
+.offer-subpage #offerForm ol,
+.contact-page .article-body ol,
+.contact-page #contactForm ol,
+.contact-page #offerForm ol {
   list-style: none;
   counter-reset: number-counter;
   margin: 0;
@@ -2039,8 +2100,13 @@ header.news-single-header .header-excerpt {
 
 .single-page .article-body ol li,
 .single-page #contactForm ol li,
+.single-page #offerForm ol li,
 .offer-subpage .article-body ol li,
-.offer-subpage #contactForm ol li {
+.offer-subpage #contactForm ol li,
+.offer-subpage #offerForm ol li,
+.contact-page .article-body ol li,
+.contact-page #contactForm ol li,
+.contact-page #offerForm ol li {
   counter-increment: number-counter;
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
@@ -2048,8 +2114,13 @@ header.news-single-header .header-excerpt {
 
 .single-page .article-body ol li::before,
 .single-page #contactForm ol li::before,
+.single-page #offerForm ol li::before,
 .offer-subpage .article-body ol li::before,
-.offer-subpage #contactForm ol li::before {
+.offer-subpage #contactForm ol li::before,
+.offer-subpage #offerForm ol li::before,
+.contact-page .article-body ol li::before,
+.contact-page #contactForm ol li::before,
+.contact-page #offerForm ol li::before {
   content: "0" counter(number-counter);
   font-weight: bold;
   font-size: 2rem;
@@ -2062,10 +2133,20 @@ header.news-single-header .header-excerpt {
 .single-page .article-body .error-container,
 .single-page #contactForm ul,
 .single-page #contactForm .error-container,
+.single-page #offerForm ul,
+.single-page #offerForm .error-container,
 .offer-subpage .article-body ul,
 .offer-subpage .article-body .error-container,
 .offer-subpage #contactForm ul,
-.offer-subpage #contactForm .error-container {
+.offer-subpage #contactForm .error-container,
+.offer-subpage #offerForm ul,
+.offer-subpage #offerForm .error-container,
+.contact-page .article-body ul,
+.contact-page .article-body .error-container,
+.contact-page #contactForm ul,
+.contact-page #contactForm .error-container,
+.contact-page #offerForm ul,
+.contact-page #offerForm .error-container {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -2075,10 +2156,20 @@ header.news-single-header .header-excerpt {
 .single-page .article-body .error-container li,
 .single-page #contactForm ul li,
 .single-page #contactForm .error-container li,
+.single-page #offerForm ul li,
+.single-page #offerForm .error-container li,
 .offer-subpage .article-body ul li,
 .offer-subpage .article-body .error-container li,
 .offer-subpage #contactForm ul li,
-.offer-subpage #contactForm .error-container li {
+.offer-subpage #contactForm .error-container li,
+.offer-subpage #offerForm ul li,
+.offer-subpage #offerForm .error-container li,
+.contact-page .article-body ul li,
+.contact-page .article-body .error-container li,
+.contact-page #contactForm ul li,
+.contact-page #contactForm .error-container li,
+.contact-page #offerForm ul li,
+.contact-page #offerForm .error-container li {
   position: relative;
   margin: 0;
   padding-bottom: 1.5em;
@@ -2089,10 +2180,20 @@ header.news-single-header .header-excerpt {
 .single-page .article-body .error-container li::before,
 .single-page #contactForm ul li::before,
 .single-page #contactForm .error-container li::before,
+.single-page #offerForm ul li::before,
+.single-page #offerForm .error-container li::before,
 .offer-subpage .article-body ul li::before,
 .offer-subpage .article-body .error-container li::before,
 .offer-subpage #contactForm ul li::before,
-.offer-subpage #contactForm .error-container li::before {
+.offer-subpage #contactForm .error-container li::before,
+.offer-subpage #offerForm ul li::before,
+.offer-subpage #offerForm .error-container li::before,
+.contact-page .article-body ul li::before,
+.contact-page .article-body .error-container li::before,
+.contact-page #contactForm ul li::before,
+.contact-page #contactForm .error-container li::before,
+.contact-page #offerForm ul li::before,
+.contact-page #offerForm .error-container li::before {
   content: "";
   background-color: #586e27;
   position: absolute;
@@ -2106,10 +2207,20 @@ header.news-single-header .header-excerpt {
 .single-page .article-body .error-container li::after,
 .single-page #contactForm ul li::after,
 .single-page #contactForm .error-container li::after,
+.single-page #offerForm ul li::after,
+.single-page #offerForm .error-container li::after,
 .offer-subpage .article-body ul li::after,
 .offer-subpage .article-body .error-container li::after,
 .offer-subpage #contactForm ul li::after,
-.offer-subpage #contactForm .error-container li::after {
+.offer-subpage #contactForm .error-container li::after,
+.offer-subpage #offerForm ul li::after,
+.offer-subpage #offerForm .error-container li::after,
+.contact-page .article-body ul li::after,
+.contact-page .article-body .error-container li::after,
+.contact-page #contactForm ul li::after,
+.contact-page #contactForm .error-container li::after,
+.contact-page #offerForm ul li::after,
+.contact-page #offerForm .error-container li::after {
   content: "";
   background: #99992a;
   border-radius: 50%;
@@ -2120,40 +2231,47 @@ header.news-single-header .header-excerpt {
 }
 
 .single-page .news-single-section,
-.offer-subpage .news-single-section {
+.offer-subpage .news-single-section,
+.contact-page .news-single-section {
   background-color: #99992a;
   min-height: 600px;
 }
 
 .single-page .news-single-section h2,
-.offer-subpage .news-single-section h2 {
+.offer-subpage .news-single-section h2,
+.contact-page .news-single-section h2 {
   color: #fff;
 }
 
 .single-page .news-single-section .card-row,
-.offer-subpage .news-single-section .card-row {
+.offer-subpage .news-single-section .card-row,
+.contact-page .news-single-section .card-row {
   min-height: 400px;
   padding-bottom: 0;
 }
 
 .single-page em,
-.offer-subpage em {
+.offer-subpage em,
+.contact-page em {
   font-size: 1.5em;
 }
 
 .single-page p,
-.offer-subpage p {
+.offer-subpage p,
+.contact-page p {
   line-height: 1.8;
 }
 
 .single-page p span,
-.offer-subpage p span {
+.offer-subpage p span,
+.contact-page p span {
   padding: 5px;
   line-height: 2;
 }
 
 .single-page table,
-.offer-subpage table {
+.offer-subpage table,
+.contact-page table {
   border-spacing: 0;
   border-color: transparent;
   margin: 5em auto;
@@ -2162,7 +2280,9 @@ header.news-single-header .header-excerpt {
 .single-page table tr td:first-child,
 .single-page table tr td:first-child span,
 .offer-subpage table tr td:first-child,
-.offer-subpage table tr td:first-child span {
+.offer-subpage table tr td:first-child span,
+.contact-page table tr td:first-child,
+.contact-page table tr td:first-child span {
   font-size: 17px !important;
   text-transform: uppercase;
   font-weight: 900;
@@ -2172,26 +2292,33 @@ header.news-single-header .header-excerpt {
 .single-page table tr:first-child strong,
 .single-page table tr strong,
 .offer-subpage table tr:first-child strong,
-.offer-subpage table tr strong {
+.offer-subpage table tr strong,
+.contact-page table tr:first-child strong,
+.contact-page table tr strong {
   color: #222222 !important;
 }
 
 .single-page table tr:nth-child(2n+3) strong,
-.offer-subpage table tr:nth-child(2n+3) strong {
+.offer-subpage table tr:nth-child(2n+3) strong,
+.contact-page table tr:nth-child(2n+3) strong {
   color: #222222;
 }
 
 .single-page table tr:first-child,
 .single-page table tr:nth-child(2n+3),
 .offer-subpage table tr:first-child,
-.offer-subpage table tr:nth-child(2n+3) {
+.offer-subpage table tr:nth-child(2n+3),
+.contact-page table tr:first-child,
+.contact-page table tr:nth-child(2n+3) {
   background-color: #8edd9d59;
 }
 
 .single-page table td,
 .single-page table td span,
 .offer-subpage table td,
-.offer-subpage table td span {
+.offer-subpage table td span,
+.contact-page table td,
+.contact-page table td span {
   padding: 1em;
   font-size: 14px;
   font-weight: 100;
@@ -2201,22 +2328,27 @@ header.news-single-header .header-excerpt {
 .single-page table td span,
 .single-page table tr td:first-child span,
 .offer-subpage table td span,
-.offer-subpage table tr td:first-child span {
+.offer-subpage table tr td:first-child span,
+.contact-page table td span,
+.contact-page table tr td:first-child span {
   padding: 0;
 }
 
 .single-page table a,
-.offer-subpage table a {
+.offer-subpage table a,
+.contact-page table a {
   color: #586e27;
 }
 
 .single-page table a:hover,
-.offer-subpage table a:hover {
+.offer-subpage table a:hover,
+.contact-page table a:hover {
   text-decoration: underline;
 }
 
 .single-page .latest-news-section .card-text,
-.offer-subpage .latest-news-section .card-text {
+.offer-subpage .latest-news-section .card-text,
+.contact-page .latest-news-section .card-text {
   font-size: 0.7em;
 }
 
@@ -2302,12 +2434,13 @@ img.footer-top-elem {
 
 .flex-outer .col-12,
 .flex-outer .col {
-  padding: 10px 0;
+  padding: 5px 0;
+  width: 100%;
 }
 
 .flex-outer label {
   flex: 1 0 120px;
-  max-width: 220px;
+  max-width: 100%;
   padding: 8px;
   font-weight: 300;
   letter-spacing: 0.09em;
@@ -2340,10 +2473,318 @@ img.footer-top-elem {
 
 .flex-outer input:not([type=checkbox]),
 .flex-outer select {
-  padding: 10px;
+  padding: 10px 5px 10px 5px;
   background-color: white;
   width: 100%;
   border: 1px solid #bcc5a9;
+}
+
+.input-file-container {
+  position: relative;
+  width: 100%;
+}
+
+.js .input-file-trigger {
+  display: block;
+  padding: 15px 6px;
+  background: #586e27;
+  color: #fff;
+  font-size: 1em;
+  transition: all 0.4s;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+}
+
+.js .input-file {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  padding: 14px 0;
+  cursor: pointer;
+}
+
+.js .input-file:hover + .input-file-trigger,
+.js .input-file:focus + .input-file-trigger,
+.js .input-file-trigger:hover,
+.js .input-file-trigger:focus {
+  background: #99992a;
+  color: #fff;
+}
+
+.file-return {
+  margin: 0;
+}
+
+.file-return:not(:empty) {
+  margin: 1em 0;
+}
+
+.js .file-return {
+  font-style: italic;
+  font-size: 0.9em;
+  font-weight: bold;
+}
+
+.js .file-return:not(:empty):before {
+  content: "Kiv\E1lasztott f\E1jl: ";
+  font-style: normal;
+  font-weight: normal;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline-color: #99992a;
+}
+
+/* checkboxes & radio boxes */
+
+.styled-input-single {
+  position: relative;
+  padding: 15px 0 20px 20px;
+  text-align: left;
+}
+
+.styled-input-single label {
+  cursor: pointer;
+}
+
+.styled-input-single label:before,
+.styled-input-single label:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  border-radius: 50%;
+}
+
+.styled-input-single label:before {
+  left: 0;
+  width: 20px;
+  height: 20px;
+  margin: -15px 0 0;
+  background: #f7f7f7;
+  box-shadow: 0 0 1px grey;
+}
+
+.styled-input-single label:after {
+  left: 5px;
+  width: 10px;
+  height: 10px;
+  margin: -10px 0 0;
+  opacity: 0;
+  background: #586e27;
+  transform: translate3d(-40px, 0, 0) scale(0.5);
+  transition: opacity 0.25s ease-in-out, transform 0.25s ease-in-out;
+}
+
+.styled-input-single input[type=radio],
+.styled-input-single input[type=checkbox] {
+  position: absolute;
+  top: 0;
+  left: -9999px;
+  visibility: hidden;
+}
+
+.styled-input-single input[type=radio]:checked + label:after,
+.styled-input-single input[type=checkbox]:checked + label:after {
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+}
+
+.styled-input--square label:before,
+.styled-input--square label:after {
+  border-radius: 0;
+}
+
+.styled-input--rounded label:before {
+  border-radius: 10px;
+}
+
+.styled-input--rounded label:after {
+  border-radius: 6px;
+}
+
+.styled-input--diamond .styled-input-single {
+  padding-left: 30px;
+}
+
+.styled-input--diamond label:before,
+.styled-input--diamond label:after {
+  border-radius: 0;
+}
+
+.styled-input--diamond label:before {
+  transform: rotate(45deg);
+}
+
+.styled-input--diamond input[type=radio]:checked + label:after,
+.styled-input--diamond input[type=checkbox]:checked + label:after {
+  transform: rotate(45deg);
+  opacity: 1;
+}
+
+/* ===== Select Box ===== */
+
+.sel {
+  padding: 20px 0 0;
+  font-size: inherit;
+  display: inline-block;
+  margin: 0;
+  width: 100%;
+  background-color: transparent;
+  position: relative;
+  cursor: pointer;
+}
+
+.sel::before {
+  position: absolute;
+  content: url(/images/down.png?41d481fe33636e16bf78c8cb7e7c6411);
+  font-size: 2em;
+  color: #FFF;
+  right: 20px;
+  top: calc(50% - 0.5em);
+}
+
+.sel.active::before {
+  transform: rotateX(-180deg);
+}
+
+.sel-placeholder {
+  display: block;
+  font-family: "Myriad-Regular", sans-serif;
+  font-size: 14px;
+  color: #838e95;
+  padding: 0.2em 0.5em;
+  text-align: left;
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  visibility: visible;
+  top: -5px;
+  position: relative;
+}
+
+.sel-placeholder::before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0.2em 0.5em;
+  content: attr(data-placeholder);
+  visibility: hidden;
+}
+
+.sel.active .sel-placeholder {
+  visibility: hidden;
+}
+
+.sel.active .sel-placeholder::before {
+  visibility: visible;
+}
+
+.sel-box {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: -4px;
+  display: none;
+  list-style-type: none;
+  text-align: left;
+  font-size: 1em;
+  background-color: #FFF;
+  width: calc(100% + 8px);
+  box-sizing: border-box;
+}
+
+.sel.active .sel-box {
+  display: block;
+  -webkit-animation: fadeInUp 500ms;
+          animation: fadeInUp 500ms;
+}
+
+.sel-box-options {
+  display: list-item;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  color: #838e95;
+  padding: 0.3em 1em;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.sel-box-options:hover {
+  background-color: #ebedef;
+}
+
+.sel-box-options.selected::after {
+  display: inline;
+}
+
+/* ----- Select Box basic ----- */
+
+.sel {
+  border-bottom: 4px solid rgba(153, 153, 42, 0.5);
+}
+
+.sel-box--basic {
+  z-index: 99999;
+}
+
+/* ===== Keyframes ===== */
+
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 20px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 20px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@-webkit-keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.error {
+  color: #99992a;
 }
 
 /*====================================
@@ -2351,7 +2792,7 @@ img.footer-top-elem {
 =====================================*/
 
 .content {
-  width: 95%;
+  width: 100%;
 }
 
 .content .question {
@@ -2455,7 +2896,7 @@ img.footer-top-elem {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 80px;
+  height: 70px;
   border-radius: 2px 2px 0px 0px;
 }
 
@@ -2475,7 +2916,7 @@ img.footer-top-elem {
   cursor: pointer;
   width: 25%;
   /*change depending on the number of tabs*/
-  height: 80px;
+  height: 70px;
   position: relative;
   display: flex;
   justify-content: center;
@@ -2563,7 +3004,7 @@ img.footer-top-elem {
   transition: 0.5s ease;
   padding: 0;
   margin: 0;
-  color: #686868;
+  color: #586e27;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   font-weight: 400;
@@ -2576,7 +3017,7 @@ img.footer-top-elem {
 
 @media screen and (max-width: 512px) {
   .tablinks:hover p {
-    color: #686868;
+    color: #586e27;
     opacity: 0.6;
   }
 }
@@ -2616,14 +3057,20 @@ img.footer-top-elem {
 
 .wrapper_tabcontent {
   background-color: white;
-  margin-top: 0px;
+  margin-top: 0;
   z-index: 9999;
   position: relative;
   opacity: 1;
-  padding: 40px 60px;
+  padding: 20px 35px;
   overflow: hidden;
   transition: all 1s ease;
   top: 0;
+}
+
+@media (min-width: 768px) {
+  .wrapper_tabcontent {
+    padding: 40px 45px;
+  }
 }
 
 .tabcontent {
@@ -2683,7 +3130,10 @@ img.footer-top-elem {
   height: 60px;
   background: -webkit-linear-gradient(135deg, #586e27 0%, #d0d039 100%);
   -webkit-background-clip: text;
+  -o-background-clip: text;
   -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  -o-text-fill-color: transparent;
   padding: 0;
   -webkit-animation: title 1s ease;
           animation: title 1s ease;
@@ -2718,7 +3168,7 @@ img.footer-top-elem {
 /* Text*/
 
 .tabcontent p {
-  color: #686868;
+  color: #586e27;
   margin: 0;
   padding: 0;
   line-height: 28px;
@@ -2971,13 +3421,15 @@ img.hover-shadow {
 @media screen and (max-width: 800px) {
   .secondary-table,
   .single-page table,
-  .offer-subpage table {
+  .offer-subpage table,
+  .contact-page table {
     border: 1px solid #aec777;
   }
 
   .secondary-table-tr,
   .single-page table tr,
-  .offer-subpage table tr {
+  .offer-subpage table tr,
+  .contact-page table tr {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -2987,7 +3439,8 @@ img.hover-shadow {
 
   .secondary-table-tr:last-child,
   .single-page table tr:last-child,
-  .offer-subpage table tr:last-child {
+  .offer-subpage table tr:last-child,
+  .contact-page table tr:last-child {
     margin-bottom: 0;
   }
 
@@ -2995,7 +3448,9 @@ img.hover-shadow {
   .single-page table td,
   .single-page table td span,
   .offer-subpage table td,
-  .offer-subpage table td span {
+  .offer-subpage table td span,
+  .contact-page table td,
+  .contact-page table td span {
     flex: 1 1 150px;
     height: auto !important;
   }
@@ -3204,8 +3659,12 @@ footer.mega-footer .flex-outer li {
   align-items: center;
 }
 
+footer.mega-footer .flex-outer .styled-input-single {
+  padding: 10px 0 10px 25px;
+}
+
 footer.mega-footer .flex-outer > li:not(:last-child) {
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 
 footer.mega-footer .flex-outer li p {

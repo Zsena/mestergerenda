@@ -71,28 +71,32 @@
             <div class="col">
                 <h4 class="text-highlight">Hírlevél</h4>
                 <p>Iratkozzon fel és kérjen új információkat álmai házára!</p>
-                <form action="#">
-                    <ul class="flex-outer">
+                <form action="#" id="newsLetterForm">
+                    {{--<ul id="errorContainer" class="error-container"></ul>--}}
+                    <ul class="flex-outer styled-input--square">
                         <li>
-                            <input type="text" id="newsLname" placeholder="*Név:">
+                            <input type="text" id="newsLetterName" name="newsLetterName" placeholder="*Név:" required>
                         </li>
-                        <li>
-                            <input type="email" id="newsLemail" placeholder="E-mail">
+                        <li class="">
+                            <input type="email" id="newsLetterEmail" name="newsLetterEmail" placeholder="*E-mail" required>
                         </li>
-                        <li>
-                            <select id="newsLsubject">
-                                <option value="targy">Tárgy</option>
+                        <li class="sel sel-box--basic">
+                            <select id="newsLetterSubject">
+                                <option value="">Válasszon</option>
                                 <option value="1">Akciók</option>
                                 <option value="2">Információk</option>
                                 <option value="3">Ajánlatok</option>
+                                <option value="4">Ajánlatok</option>
+                                <option value="5">Ajánlatok</option>
                             </select>
                         </li>
-                        <li>
-                            <input type="checkbox" id="agree">
-                            <label for="agree">Elfogadom  az adatvédelmi nyilatkozatot</label>
+                        <li class="styled-input-single">
+                            <input type="checkbox" id="newsLetterAgree" name="newsLetterAgree" required>
+                            <label for="newsLetterAgree">Elfogadom  az adatvédelmi nyilatkozatot</label>
                         </li>
+                        <li id="newsLetterAgreeError"></li>
                         <li>
-                            <button type="submit" class="btn-primary btn">Feliratkozok</button>
+                            <button type="submit" id="newsLetterSubmit" class="btn-primary btn">Feliratkozok</button>
                         </li>
                     </ul>
                 </form>
@@ -109,7 +113,8 @@
 </footer>
 
 <script src="{{ asset('assets/js/jquery.js') }}"></script>
-<script src="{{ asset('assets/js/jquery.validate.min.js') }}"></script>
 <script src="{{ asset('assets/js/app.js') }}"></script>
+<script src="{{ asset('assets/js/jquery.validate.min.js') }}"></script>
+
 
 @yield('js')

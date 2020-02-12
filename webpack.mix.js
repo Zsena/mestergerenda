@@ -13,9 +13,9 @@ const mix = require('laravel-mix');
  */
 
 mix.copy('node_modules/jquery/dist/jquery.js', 'public/assets/js/jquery.js');
+mix.copy('resources/assets/js/jquery.validate.min.js', 'public/assets/js/jquery.validate.min.js');
 
 mix.js('resources/assets/js/app.js', 'public/assets/js').extract(['jQuery'])
     .sass('resources/assets/sass/app.scss', 'public/assets/css');
-
 mix.copyDirectory('resources/assets', 'public/assets');
 

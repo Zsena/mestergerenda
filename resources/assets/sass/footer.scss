@@ -38,15 +38,19 @@ footer.mega-footer {
     max-width: 800px;
     margin: 0 auto;
 
-    li{
+    li {
       display: flex;
       flex-wrap: wrap;
       align-items: center;
     }
+
+    .styled-input-single {
+      padding: 10px 0 10px 25px;
+    }
   }
 
   .flex-outer > li:not(:last-child) {
-    margin-bottom: 20px;
+    margin-bottom: 5px;
   }
 
   .flex-outer li p {

@@ -11,6 +11,16 @@
 /*====================================
    base styles
 =====================================*/
+::-moz-selection { /* Code for Firefox */
+  color: $white;
+  background: $dark-green;
+}
+
+::selection {
+  color: $white;
+  background: $dark-green;
+}
+
 html, body {
   background-color: #fff;
   color: #636b6f;
@@ -24,6 +34,7 @@ html, body {
   max-width: 1140px;
   display: block;
   margin: auto;
+  width: 100%;
 }
 
 .hide {

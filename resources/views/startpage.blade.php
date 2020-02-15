@@ -256,7 +256,7 @@
                                 <h4 class="text-highlight-darker">{{ $l->getTitle() }}</h4>
                             </div>
                             <div class="news-card-text">
-                                <p class="ellipsis">
+                                <p class="">
                                     {{ $l->getExcerpt() }}
                                 </p>
                             </div>

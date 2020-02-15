@@ -5,10 +5,13 @@ header.main-header {
   background-image: url("/public/assets/img/homepage/Header2.png");
   background-position: top center;
   background-repeat: no-repeat;
-  min-height: 900px;
+  min-height: 600px;
   background-size: cover;
   background-attachment: inherit;
-  margin-top: -85px;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }
 
 .header-after:after {
@@ -16,8 +19,8 @@ header.main-header {
   position:absolute;
   width:100%;
   height: auto;
-  min-height: 900px;
-  top: -85px;
+  min-height: 600px;
+  top: 0;
   left:0;
   background:rgba(0,0,0,0.3);
   opacity:0.8;

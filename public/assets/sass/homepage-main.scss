@@ -275,6 +275,14 @@
         .news-card-text {
           width: 85%;
           padding-bottom: 3rem;
+          $font-size: 14px;
+          p {
+            font-size: $font-size;
+            max-width: inherit;
+            height: inherit;
+            @extend .ellipsis;
+
+          }
         }
 
         .news-bottom-lines {

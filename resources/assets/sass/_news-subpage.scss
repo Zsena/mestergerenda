@@ -6,6 +6,19 @@ header.news-subpage-header {
   background-attachment: inherit;
 }
 
+.news-subpage {
+  .news-card-text {
+    $font-size: 14px;
+    p {
+      font-size: $font-size;
+      max-width: inherit;
+      height: inherit;
+      @extend .ellipsis;
+
+    }
+  }
+}
+
 @media all and (min-width: 500px) {
   header.news-subpage-header {
     background-attachment: fixed;

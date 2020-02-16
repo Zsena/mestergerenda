@@ -62,7 +62,7 @@
                 <div class="row">
                     <div class="horizontal-card">
                         <div class="row">
-                            <div class="col-4 pl-0">
+                            <div class="col-4 pl-md-0">
                                 <figure>
                                     <img class="ml-xl-0" src="{{ asset('assets/img/about-us/placeholder-bigger.png') }}" alt="Rólunk">
                                 </figure>

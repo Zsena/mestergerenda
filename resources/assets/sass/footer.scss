@@ -13,7 +13,7 @@ footer.mega-footer {
   }
 
   h4 {
-    font-size: 1.5em;
+    font-size: 1.3em;
   }
 
   .footer-list {
@@ -99,14 +99,21 @@ footer.sticky-footer {
   min-height: 120px;
   position: relative;
   .call-to-action-box {
-    padding: 1rem;
     margin: auto;
     justify-content: center;
     display: flex;
+    .col:first-child {
+      text-align: right;
+    }
+    .row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
   }
   span {
     color: $white;
-    padding: 2rem;
     &.call-to-action-text {
       color: #a7a7a6;
       font-size: 24px;
@@ -127,6 +134,7 @@ footer.sticky-footer {
     bottom:0;
     margin: 0 3rem;
     height: 100%;
+    display: none;
   }
 }
 

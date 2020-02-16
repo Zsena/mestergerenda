@@ -101,7 +101,7 @@
                                     </figure>
                                 </div>
                                 <div class="col-6">
-                                    <h3 class="text-highlight pb-0">Referenciaház programunkról bővebben</h3>
+                                    <h3 class="text-highlight pb-0 mt-0">Referenciaház programunkról bővebben</h3>
                                     <p>
                                         Integer mattis odio id massa efficitur, quis pellentesque est ultricies. In dictum sollicitudin pulvinar.
                                         Etiam cursus nisi est, non malesuada mi fringilla a. Pellentesque habitant morbi tristique senectus et netus et

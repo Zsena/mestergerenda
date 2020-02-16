@@ -373,7 +373,7 @@ img {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.5);
   opacity: 0.8;
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
@@ -560,7 +560,9 @@ td {
 
 .call-to-action-btn-group.row .form-btn {
   justify-content: center;
-  font-size: 1em;
+  font-size: 1.3em;
+  padding-bottom: 0;
+  text-align: center;
 }
 
 @media all and (min-width: 768px) {
@@ -864,7 +866,7 @@ article.header-layer-container .row .main-layer .text-box {
 
 article.header-layer-container .row .main-layer .text-box .home-header-svg {
   position: absolute;
-  right: -10px;
+  right: 0;
   bottom: -10px;
   width: 117px;
   height: 117px;
@@ -885,7 +887,7 @@ article.header-layer-container .row .main-layer p {
   font-size: 15px;
   color: #fff;
   text-transform: uppercase;
-  padding: 0 5px;
+  padding: 0 15px 0 0;
 }
 
 article.header-layer-container .row .main-layer .btn {
@@ -952,6 +954,13 @@ article.header-layer-container .row .main-layer .btn {
   bottom: -4rem;
   right: 13rem;
   z-index: 9999;
+  display: none;
+}
+
+@media all and (min-width: 768px) {
+  .main .block-house-section .img-column .line-bottom {
+    display: block;
+  }
 }
 
 .main .block-house-section .picto-row {
@@ -1060,18 +1069,24 @@ article.header-layer-container .row .main-layer .btn {
 .main .faq-section .ref-long-bline {
   position: absolute;
   top: -5rem;
-  right: 43.5rem;
+  right: 36.5rem;
+  display: none;
+}
+
+@media all and (min-width: 1200px) {
+  .main .faq-section .ref-long-bline {
+    display: block;
+  }
 }
 
 .main .faq-section .ref-program-box {
-  position: absolute;
+  position: relative;
   background-image: url("/public/assets/img/homepage/fooldal_referenciaprogram.png");
   background-repeat: no-repeat;
-  background-size: cover;
-  top: -5rem;
+  background-size: 100% 100%;
   left: 0;
   width: 100%;
-  max-height: 25%;
+  min-height: 150px;
   height: 100%;
 }
 
@@ -1082,11 +1097,8 @@ article.header-layer-container .row .main-layer .btn {
 }
 
 .main .faq-section .program-text {
-  width: 90%;
-  top: -4.2rem;
-  position: absolute;
+  padding: 1rem;
   text-align: justify;
-  margin-left: 1rem;
 }
 
 .main .faq-section .program-text h2.ref-title {
@@ -1097,10 +1109,6 @@ article.header-layer-container .row .main-layer .btn {
 
 .main .faq-section .program-text p.ref-text {
   color: #fff;
-}
-
-.main .faq-section .faq-container {
-  padding-top: 10rem;
 }
 
 .main .faq-section .faq-container .heading-group {
@@ -1173,6 +1181,8 @@ article.header-layer-container .row .main-layer .btn {
   margin-top: -10rem;
   margin-left: -2rem;
   padding-right: 0;
+  left: -10px;
+  position: relative;
 }
 
 .main .testimonial .testi-row .testi-card .commas-row {
@@ -1270,7 +1280,6 @@ header.main-header.subpage-header-size article.header-layer-container .row .main
 
 header.main-header.subpage-header-size article.header-layer-container .row .main-layer .text-box .home-header-svg {
   margin: -1rem 0;
-  right: -15px;
 }
 
 header.main-header.subpage-primary-header-size article.header-layer-container .row {
@@ -1284,7 +1293,6 @@ header.main-header.subpage-primary-header-size article.header-layer-container .r
 
 header.main-header.subpage-primary-header-size article.header-layer-container .row .main-layer .text-box .home-header-svg {
   margin: -1rem 0;
-  right: -15px;
 }
 
 /*====================================
@@ -1334,7 +1342,7 @@ header.about-us-header {
 }
 
 .about-us-section h2 {
-  margin-top: -2rem;
+  margin-top: -1rem;
 }
 
 .vision {
@@ -3631,7 +3639,7 @@ footer.mega-footer .mega-footer-row {
 }
 
 footer.mega-footer h4 {
-  font-size: 1.5em;
+  font-size: 1.3em;
 }
 
 footer.mega-footer .footer-list {
@@ -3721,15 +3729,24 @@ footer.sticky-footer {
 }
 
 footer.sticky-footer .call-to-action-box {
-  padding: 1rem;
   margin: auto;
   justify-content: center;
   display: flex;
 }
 
+footer.sticky-footer .call-to-action-box .col:first-child {
+  text-align: right;
+}
+
+footer.sticky-footer .call-to-action-box .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
 footer.sticky-footer span {
   color: #fff;
-  padding: 2rem;
 }
 
 footer.sticky-footer span.call-to-action-text {
@@ -3753,6 +3770,7 @@ footer.sticky-footer .sticky-footer-line {
   bottom: 0;
   margin: 0 3rem;
   height: 100%;
+  display: none;
 }
 
 @media all and (min-width: 768px) {
@@ -3772,6 +3790,7 @@ footer.sticky-footer .sticky-footer-line {
 
   footer.mega-footer .col {
     flex: 1 25%;
+    padding: 8px;
   }
 }
 
@@ -3782,6 +3801,10 @@ footer.sticky-footer .sticky-footer-line {
 }
 
 @media only screen and (min-width: 768px) {
+  .pl-md-0 {
+    padding-left: 0;
+  }
+
   .column-reverse {
     flex-direction: row;
   }
@@ -3866,10 +3889,12 @@ footer.sticky-footer .sticky-footer-line {
   }
 
   footer.sticky-footer .sticky-footer-line {
-    position: absolute;
-    top: -5.7rem;
-    margin: 0 3rem;
+    position: relative;
+    top: 0;
+    margin: 0;
     height: auto;
+    height: 120px;
+    display: block;
   }
 }
 
@@ -3983,6 +4008,11 @@ footer.sticky-footer .sticky-footer-line {
     margin-left: -2rem;
     padding-right: 8rem;
   }
+
+  footer.mega-footer .col {
+    flex: 1 25%;
+    padding: 15px;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -4047,27 +4077,21 @@ footer.sticky-footer .sticky-footer-line {
   }
 
   .main .faq-section .ref-program-box {
-    top: -5rem;
     left: 0;
     width: 50%;
-    max-height: 200px;
     height: 100%;
   }
 
   .main .faq-section .ref-program-box .ref-green-line {
     position: absolute;
-    bottom: -4px;
+    bottom: 0;
     right: -40px;
   }
 
   .main .faq-section .program-text {
-    width: 35%;
-    top: -4.2rem;
-    margin-left: 1rem;
-  }
-
-  .main .faq-section .faq-container {
-    padding-top: 7rem;
+    width: 86%;
+    margin-left: auto;
+    flex-direction: column;
   }
 
   .main .faq-section .faq-container .heading-group {
@@ -4174,6 +4198,12 @@ footer.sticky-footer .sticky-footer-line {
   article.header-layer-container .row .home-page-layer.main-layer h1 {
     font-size: 100px;
   }
+
+  .main .faq-section .program-text {
+    width: 71%;
+    margin-left: auto;
+    flex-direction: column;
+  }
 }
 
 @media only screen and (min-width: 1900px) {
@@ -4188,12 +4218,6 @@ footer.sticky-footer .sticky-footer-line {
   .ml-xl-0 {
     margin-left: 0;
   }
-
-  .main .faq-section .program-text {
-    width: 25%;
-    top: -4.2rem;
-    margin-left: 1rem;
-  }
 }
 
 @media only screen and (min-width: 2100px) {
@@ -4207,12 +4231,6 @@ footer.sticky-footer .sticky-footer-line {
 
   .ml-xl-0 {
     margin-left: 0;
-  }
-
-  .main .faq-section .program-text {
-    width: 20%;
-    top: -4.2rem;
-    margin-left: 1rem;
   }
 }
 
@@ -4275,20 +4293,8 @@ footer.sticky-footer .sticky-footer-line {
     padding: 1em;
   }
 
-  .main .faq-section .program-text {
-    width: 40%;
-  }
-
-  .main .faq-section .ref-program-box {
-    min-height: 280px;
-  }
-
   .main .faq-section .program-text p.ref-text {
     font-size: 1.3em;
-  }
-
-  .main .faq-section .faq-container h2 {
-    margin-top: 5rem;
   }
 
   .main .testimonial .testi-row .testi-card .commas-row {

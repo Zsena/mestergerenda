@@ -7,6 +7,7 @@
   footer.mega-footer {
     .col {
       flex: 1 25%;
+      padding: 8px;
     }
   }
 
@@ -19,6 +20,9 @@
 }
 
 @media only screen and (min-width: 768px) {
+  .pl-md-0 {
+    padding-left: 0;
+  }
 
   .column-reverse {
     flex-direction: row;
@@ -113,10 +117,12 @@
 
   footer.sticky-footer {
     .sticky-footer-line {
-      position: absolute;
-      top: -5.7rem;
-      margin: 0 3rem;
+      position: relative;
+      top: 0;
+      margin: 0;
       height: auto;
+      height: 120px;
+      display: block;
     }
   }
 }
@@ -225,6 +231,13 @@
       }
     }
   }
+
+  footer.mega-footer {
+    .col {
+      flex: 1 25%;
+      padding: 15px;
+    }
+  }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -284,24 +297,23 @@
   .main {
     .faq-section {
       .ref-program-box {
-        top: -5rem;
+        //top: -5rem;
         left: 0;
         width: 50%;
-        max-height: 200px;
+        //max-height: 200px;
         height: 100%;
         .ref-green-line {
           position: absolute;
-          bottom: -4px;
+          bottom: 0;
           right: -40px;
         }
       }
       .program-text {
-        width: 35%;
-        top: -4.2rem;
-        margin-left: 1rem;
+        width: 86%;
+        margin-left: auto;
+        flex-direction: column;
       }
       .faq-container {
-        padding-top: 7rem;
         .heading-group {
           padding-bottom: 0;
         }
@@ -428,6 +440,14 @@
       }
     }
   }
+
+  .main .faq-section {
+    .program-text {
+      width: 71%;
+      margin-left: auto;
+      flex-direction: column;
+    }
+  }
 }
 
 
@@ -443,20 +463,6 @@
   .ml-xl-0 {
     margin-left: 0;
   }
-
-  .main {
-    .faq-section {
-      .program-text {
-        width: 25%;
-        top: -4.2rem;
-        margin-left: 1rem;
-      }
-      .faq-container {
-        .heading-group {
-        }
-      }
-    }
-  }
 }
 
 @media only screen and (min-width: 2100px) {
@@ -470,27 +476,6 @@
 
   .ml-xl-0 {
     margin-left: 0;
-  }
-
-  .main {
-    .faq-section {
-      .ref-program-box {
-        .ref-green-line {
-        }
-      }
-      .program-text {
-        width: 20%;
-        top: -4.2rem;
-        margin-left: 1rem;
-      }
-      .faq-container {
-        .heading-group {
-        }
-        h2 {
-        }
-
-      }
-    }
   }
 }
 
@@ -544,20 +529,9 @@
     max-width: 35%;
     padding: 1em;
   }
-  .main .faq-section .program-text {
-    width: 40%;
-  }
-
-  .main .faq-section .ref-program-box {
-    min-height: 280px;
-  }
 
   .main .faq-section .program-text p.ref-text {
     font-size: 1.3em;
-  }
-
-  .main .faq-section .faq-container h2 {
-    margin-top: 5rem;
   }
 
   .main .testimonial .testi-row .testi-card .commas-row {

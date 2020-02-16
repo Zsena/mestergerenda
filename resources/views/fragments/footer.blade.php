@@ -2,7 +2,7 @@
     <div class="m-container">
         <div class="row mega-footer-row">
             <div class="col">
-                <h4 class="text-highlight">Főbb oldalak</h4>
+                <h4 class="text-highlight-darker">Főbb oldalak</h4>
                 <ul class="footer-list">
                     <li>
                         <a href="/arajanlat">Árajánlatkérés</a>
@@ -22,7 +22,7 @@
                 </ul>
             </div>
             <div class="col">
-                <h4 class="text-highlight">Elérhetőségeink</h4>
+                <h4 class="text-highlight-darker">Elérhetőségeink</h4>
                 <ul class="footer-list">
                     <li>
                         <a href="/kapcsolat">Kapcsolat</a>
@@ -42,7 +42,7 @@
                 </ul>
             </div>
             <div class="col">
-                <h4 class="text-highlight">Híreink</h4>
+                <h4 class="text-highlight-darker">Híreink</h4>
                 <ul class="footer-list">
                     @foreach($footer_news as $l)
                     <li>
@@ -52,7 +52,7 @@
                 </ul>
             </div>
             <div class="col">
-                <h4 class="text-highlight">Információk</h4>
+                <h4 class="text-highlight-darker">Információk</h4>
                 <ul class="footer-list">
                     <li>
                         <a href="/cookie">Cookie szabályzat</a>
@@ -69,7 +69,7 @@
                 </ul>
             </div>
             <div class="col">
-                <h4 class="text-highlight">Hírlevél</h4>
+                <h4 class="text-highlight-darker">Hírlevél</h4>
                 <p>Iratkozzon fel és kérjen új információkat álmai házára!</p>
                 <form action="#" id="newsLetterForm">
                     {{--<ul id="errorContainer" class="error-container"></ul>--}}
@@ -105,10 +105,16 @@
     </div>
 </footer>
 <footer class="sticky-footer">
-    <div class="col-12 call-to-action-box">
-        <span class="call-to-action-text">Hívjon minket:</span>
-        <img class="sticky-footer-line" src="{{ asset('assets/img/homepage/design-elements/vertical-line-bfooter.png') }}" alt="Design elem">
-        <span><a href="tel:4444">4444</a></span>
+    <div class="call-to-action-box">
+        <div class="row">
+            <div class="col">
+               <span class="call-to-action-text">Hívjon minket:</span>
+            </div>
+            <img class="sticky-footer-line" src="{{ asset('assets/img/homepage/design-elements/vertical-line-bfooter.png') }}" alt="Design elem">
+            <div class="col">
+                <span><a href="tel:4444">01 0101 0101</a></span>
+            </div>
+        </div>
     </div>
 </footer>
 

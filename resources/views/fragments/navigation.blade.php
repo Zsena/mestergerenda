@@ -5,10 +5,9 @@
         <li class="item"><a class="left-menu-item" href="/arajanlat">Árajánlat</a></li>
         <li class="logo">
             <a href="/">
-                <object type="image/svg+xml" data="{{ asset('assets/img/homepage/logo.svg') }}">
+                <object type="image/svg+xml" width="200" data="{{ asset('assets/img/svg/mestergerenda_logo.svg') }}">
                     Your browser does not support SVG.
                 </object>
-                {{--<img src="{{ asset('assets/img/homepage/logo.svg') }}" alt="Mestergerenda logó">--}}
             </a></li>
         <li class="item"><a href="/rolunk">Rólunk</a>
         <li class="item"><a href="/hirek">Hírek</a>
@@ -20,3 +19,4 @@
         <li class="toggle"><i class="fas fa-bars"></i></li>
     </ul>
 </nav>
+<a href="/" id="backToTop" title="Fel az oldal tetejére"><i class="arrow"></i></a>

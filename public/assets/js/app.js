@@ -321,6 +321,24 @@ $('.sel-box-options').click(function() {
     $currentSel.children('select').prop('selectedIndex', index + 1);
 });
 
+/*Scroll to top when arrow up clicked BEGIN*/
+$('#backToTop').fadeOut();
+$(window).scroll(function() {
+    var height = $(window).scrollTop();
+    if (height > 1000) {
+        $('#backToTop').fadeIn();
+    } else {
+        $('#backToTop').fadeOut();
+    }
+});
+
+$("#backToTop").click(function(event) {
+    event.preventDefault();
+    $("html, body").animate({ scrollTop: 0 }, "slow");
+    return false;
+});/*Scroll to top when arrow up clicked END*/
+
+
 $(document).ready(function(){
     toggleMenuFunction();
     bindValidation();

@@ -431,6 +431,16 @@ td {
   letter-spacing: 1px;
 }
 
+.text-justify {
+  text-align: justify;
+}
+
+.fb-quote.fb_iframe_widget {
+  position: relative !important;
+  z-index: 99999 !important;
+  left: 0 !important;
+}
+
 /*====================================
   pagination styles
 =====================================*/
@@ -462,6 +472,58 @@ td {
 .pagination .pagination-container a:active {
   color: #586e27;
   font-size: 1.2em;
+}
+
+/*====================================
+  back to TOP styles
+=====================================*/
+
+i.arrow {
+  width: 4vmin;
+  height: 4vmin;
+  box-sizing: border-box;
+  position: fixed;
+  z-index: 999999;
+  top: 86%;
+  right: 5%;
+  transform: rotate(-45deg);
+}
+
+i.arrow::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-width: 1.5vmin 1.5vmin 0 0;
+  border-style: solid;
+  border-color: #586e27;
+  transition: 0.2s ease;
+  display: block;
+  transform-origin: 100% 0;
+}
+
+i.arrow:after {
+  content: "";
+  float: left;
+  position: relative;
+  top: -100%;
+  width: 100%;
+  height: 100%;
+  border-width: 0 1.2vmin 0 0;
+  border-style: solid;
+  border-color: #99992a;
+  transform-origin: 110% 0;
+  transition: 0.2s ease;
+}
+
+i.arrow:hover::after {
+  transform: rotate(45deg);
+  border-color: #99992a;
+  height: 120%;
+}
+
+i.arrow:hover::before {
+  border-color: #99992a;
+  transform: scale(0.8);
 }
 
 /*====================================
@@ -814,7 +876,7 @@ nav.main-nav.sticky-bg-color {
 =====================================*/
 
 header.main-header {
-  background-image: url("/public/assets/img/homepage/Header2.png");
+  background-image: url("/public/assets/img/homepage/header.jpg");
   background-position: top center;
   background-repeat: no-repeat;
   min-height: 600px;
@@ -1081,7 +1143,7 @@ article.header-layer-container .row .main-layer .btn {
 
 .main .faq-section .ref-program-box {
   position: relative;
-  background-image: url("/public/assets/img/homepage/fooldal_referenciaprogram.png");
+  background-image: url("/public/assets/img/homepage/fooldal_referenciaprogram.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   left: 0;
@@ -1135,7 +1197,7 @@ article.header-layer-container .row .main-layer .btn {
 
 .main .testimonial {
   min-height: 885px;
-  background-image: url("/public/assets/img/homepage/fooldal_rolunkmondtak_BG.png");
+  background-image: url("/public/assets/img/homepage/fooldal_rolunkmondtak_BG.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1899,8 +1961,12 @@ header.single-page-header {
   background-attachment: inherit;
 }
 
+header.main-header.subpage-header-size.news-single-header {
+  min-height: 400px;
+}
+
 header.news-single-header.header-after:after {
-  min-height: 540px;
+  min-height: 400px;
   height: auto;
   background: rgba(0, 0, 0, 0.4);
 }
@@ -1912,6 +1978,7 @@ header.news-single-header {
 
 header.news-single-header article.header-layer-container .row .main-layer h1 {
   font-size: 35px;
+  word-break: break-word;
 }
 
 header.news-single-header article.header-layer-container .row .main-layer p {
@@ -2030,7 +2097,6 @@ header.news-single-header .header-excerpt {
   padding-bottom: 3rem;
   padding-top: 3rem;
   background-attachment: fixed;
-  background-image: url("/public/assets/img/homepage/Header.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -2374,7 +2440,8 @@ header.news-single-header .header-excerpt {
 
 @media only screen and (min-width: 768px) {
   header.news-single-header.header-after:after {
-    max-height: 540px;
+    max-height: 400px;
+    min-height: 400px;
   }
 }
 
@@ -2388,7 +2455,7 @@ header.news-single-header .header-excerpt {
   }
 
   header.news-single-header.header-after:after {
-    min-height: 540px;
+    min-height: 400px;
   }
 }
 
@@ -2483,6 +2550,7 @@ img.footer-top-elem {
   min-height: 300px;
   border: 1px solid #bcc5a9;
   resize: none;
+  padding: 5px;
 }
 
 .flex-outer input:not([type=checkbox]),
@@ -2888,18 +2956,10 @@ select:focus {
 
 .content-row {
   width: 100%;
-  min-width: 260px;
   margin-top: 5%;
   transition: 0.3s ease;
   position: relative;
   z-index: 99999;
-}
-
-@media screen and (max-width: 512px) {
-  .content-row {
-    margin: 0 4%;
-    margin-top: 5%;
-  }
 }
 
 /* Tabs menu */
@@ -3627,15 +3687,21 @@ input:checked ~ .modal__overlay {
 =====================================*/
 
 footer.mega-footer {
-  padding: 3rem 10px 1rem;
+  padding: 0;
   background-color: #ededed;
   min-height: 400px;
   font-family: "Myriad-Regular", "sans-serif";
 }
 
+footer.mega-footer .col {
+  flex-direction: column;
+}
+
 footer.mega-footer .mega-footer-row {
   align-items: flex-start;
-  justify-content: flex-start;
+  padding: 5rem 10px 1rem;
+  display: flex;
+  justify-content: space-between;
 }
 
 footer.mega-footer h4 {
@@ -3773,6 +3839,50 @@ footer.sticky-footer .sticky-footer-line {
   display: none;
 }
 
+footer.sticky-footer .footer-social-links {
+  font-size: 20px;
+  text-align: center;
+  background-color: #ededed;
+  padding: 2rem;
+}
+
+footer.sticky-footer .footer-social-links a {
+  width: 35px;
+  height: 35px;
+  line-height: 40px;
+  position: relative;
+  margin: 0 5px;
+  text-align: center;
+  display: inline-block;
+  color: #99992a;
+  transition: all 0.27s cubic-bezier(0.3, 0.1, 0.58, 1);
+}
+
+footer.sticky-footer .footer-social-links a:hover {
+  color: #b6764c;
+}
+
+footer.sticky-footer .footer-social-links a:before {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1px solid #99992a;
+  border-radius: 2px;
+  transform: rotate(45deg);
+  transition: all 0.27s cubic-bezier(0.3, 0.1, 0.58, 1);
+}
+
+footer.sticky-footer .footer-social-links .footer-social-links a i,
+footer.sticky-footer .footer-social-links .footer-social-links a span {
+  position: relative;
+  top: 2px;
+  left: 1px;
+}
+
 @media all and (min-width: 768px) {
   .mega-footer .col {
     padding: 0;
@@ -3787,11 +3897,6 @@ footer.sticky-footer .sticky-footer-line {
 
 @media only screen and (min-width: 480px) {
   /* Styles for wide mobiles (480px) and above */
-
-  footer.mega-footer .col {
-    flex: 1 25%;
-    padding: 8px;
-  }
 }
 
 @media all and (min-width: 500px) {
@@ -3811,13 +3916,13 @@ footer.sticky-footer .sticky-footer-line {
 
   img.bottom-white-elem {
     bottom: -3rem;
-    min-height: 13%;
+    min-height: auto;
     z-index: 9999;
   }
 
   img.top-white-elem {
     top: -3rem;
-    min-height: 13%;
+    min-height: auto;
     z-index: 9999;
   }
 
@@ -3947,7 +4052,7 @@ footer.sticky-footer .sticky-footer-line {
   nav.main-nav ul.menu li.logo object {
     max-width: 100px;
     margin-top: -32px;
-    margin-left: 0.5rem;
+    margin-left: 1.5rem;
     top: inherit;
     position: relative;
     left: 0;
@@ -4007,11 +4112,6 @@ footer.sticky-footer .sticky-footer-line {
     margin-top: -10rem;
     margin-left: -2rem;
     padding-right: 8rem;
-  }
-
-  footer.mega-footer .col {
-    flex: 1 25%;
-    padding: 15px;
   }
 }
 
@@ -4139,11 +4239,6 @@ footer.sticky-footer .sticky-footer-line {
   .main .news .news-row .news-card .news-bottom-lines.second-row-line {
     left: -50px;
   }
-
-  footer.mega-footer .col {
-    flex: 1 50%;
-    padding: 0 5px;
-  }
 }
 
 @media only screen and (min-width: 1400px) {
@@ -4173,7 +4268,7 @@ footer.sticky-footer .sticky-footer-line {
   }
 
   nav.main-nav ul.menu li.logo object {
-    max-width: 135px;
+    max-width: 150px;
   }
 
   nav.main-nav ul.menu li a.left-menu-item {
@@ -4278,10 +4373,6 @@ footer.sticky-footer .sticky-footer-line {
 
   footer.mega-footer .flex-outer li button {
     max-width: 80%;
-  }
-
-  footer.mega-footer .footer-list {
-    padding-right: 1em;
   }
 
   .m-container {

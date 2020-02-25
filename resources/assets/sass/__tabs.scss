@@ -16,16 +16,11 @@ $n02: $light-green-rgba; /* neutral 2*/
 
 .content-row {
   width: 100%;
-  min-width: 260px;
+  //min-width: 260px;
   margin-top: 5%;
   transition: 0.3s ease;
   position: relative;
   z-index: 99999;
-
-  @media screen and (max-width: 512px) {
-    margin: 0 4%;
-    margin-top: 5%;
-  }
 }
 
 /* Tabs menu */

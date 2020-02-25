@@ -64,7 +64,12 @@
                         <a href="/cegadatok">Cégadatok</a>
                     </li>
                     <li>
-                        <a href="/"><img class="footer-logo" src="{{ asset('assets/img/homepage/logo-cropped.png') }}" alt="Mestergerenda logó"></a>
+                        <a href="/">
+                            <object class="footer-logo" type="image/svg+xml" width="200" data="{{ asset('assets/img/svg/mestergerenda_logo.svg') }}">
+                                Your browser does not support SVG.
+                            </object>
+                            {{--<img  src="{{ asset('assets/img/homepage/logo-cropped.png') }}" alt="Mestergerenda logó">--}}
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -105,6 +110,12 @@
     </div>
 </footer>
 <footer class="sticky-footer">
+    <div class="footer-social-links">
+        <a href="#" title="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" title="Youtube" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="#" title="Google+" target="_blank"><i class="fab fa-google-plus-g"></i></a>
+        <a href="#" title="LinkedIn+" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+    </div>
     <div class="call-to-action-box">
         <div class="row">
             <div class="col">

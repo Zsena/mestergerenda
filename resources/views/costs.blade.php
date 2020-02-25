@@ -75,7 +75,7 @@
                                 <img class="foorplan-img" src="{{ asset('assets/img/cost/alaprajz_mini.png') }}" alt="Alaprajz">
                             </figure>
                         </div>
-                        <div class="col">
+                        <div class="col pl-0 pr-0">
                             <div class="cost-list-container">
                                 <h3 class="text-highlight">Költségbecslés</h3>
                                 <div class="row cost-list-row">
@@ -203,7 +203,7 @@
                                 <img class="foorplan-img" src="{{ asset('assets/img/cost/alaprajz_mini.png') }}" alt="Alaprajz">
                             </figure>
                         </div>
-                        <div class="col">
+                        <div class="col pl-0 pr-0">
                             <div class="cost-list-container">
                                 <h3 class="text-highlight">Költségbecslés</h3>
                                 <div class="row cost-list-row">
@@ -331,7 +331,7 @@
                                 <img class="foorplan-img" src="{{ asset('assets/img/cost/alaprajz_mini.png') }}" alt="Alaprajz">
                             </figure>
                         </div>
-                        <div class="col">
+                        <div class="col pl-0 pr-0">
                             <div class="cost-list-container">
                                 <h3 class="text-highlight">Költségbecslés</h3>
                                 <div class="row cost-list-row">

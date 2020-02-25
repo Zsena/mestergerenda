@@ -25,7 +25,7 @@
                     <h2 class="text-highlight-darker">Árajánlatkérését itt leadhatja</h2>
                     <img class="design-line-top" src="{{ asset('assets/img/homepage/design-elements/vertical-line-brown.png') }}" alt="Design elem">
                     <div class="row">
-                        <div class="col-12 pl-0">
+                        <div class="col-12 pl-0 pr-0 text-justify">
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet ultrices erat, non bibendum ligula.
                             Nunc at tellus vitae libero gravida consequat id sed orci. Morbi maximus odio neque, vitae faucibus dolor gravida ac.
                             Proin volutpat, nisl sit amet sodales congue, purus orci pharetra arcu, non aliquet nunc diam a est.
@@ -86,7 +86,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-7">
+                        <div class="col-7 pl-0 pr-0">
                             <div class="flex-outer row">
                                 <div class="col-12">
                                     <textarea id="message" name="message" placeholder="Írja le mit szeretne pontosan..." required></textarea>

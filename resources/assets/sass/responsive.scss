@@ -4,12 +4,6 @@
 
 @media only screen and (min-width: 480px) {
   /* Styles for wide mobiles (480px) and above */
-  footer.mega-footer {
-    .col {
-      flex: 1 25%;
-      padding: 8px;
-    }
-  }
 
 }
 
@@ -30,13 +24,13 @@
 
   img.bottom-white-elem {
     bottom: -3rem;
-    min-height: 13%;
+    min-height: auto;
     z-index: 9999;
   }
 
   img.top-white-elem {
     top: -3rem;
-    min-height: 13%;
+    min-height: auto;
     z-index: 9999;
   }
 
@@ -163,7 +157,7 @@
         &.logo object {
           max-width: 100px;
           margin-top: -32px;
-          margin-left: 0.5rem;
+          margin-left: 1.5rem;
           top: inherit;
           position: relative;
           left: 0;
@@ -229,13 +223,6 @@
           padding-right: 8rem;
         }
       }
-    }
-  }
-
-  footer.mega-footer {
-    .col {
-      flex: 1 25%;
-      padding: 15px;
     }
   }
 }
@@ -370,13 +357,6 @@
       }
     }
   }
-
-  footer.mega-footer {
-    .col {
-      flex: 1 50%;
-      padding: 0 5px;
-    }
-  }
 }
 
 
@@ -405,7 +385,7 @@
           order: 1;
         }
         &.logo object {
-          max-width: 135px;
+          max-width: 150px;
         }
         a {
           &.left-menu-item {
@@ -515,10 +495,6 @@
 
   footer.mega-footer .flex-outer li button {
     max-width: 80%;
-  }
-
-  footer.mega-footer .footer-list {
-    padding-right: 1em;
   }
 
   .m-container {

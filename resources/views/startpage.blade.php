@@ -38,31 +38,30 @@
                     <div class="row picto-row">
                         <div class="col">
                             <figure>
-                                <img src="{{ asset('assets/img/homepage/design-elements/vector1.png') }}" alt="Ikon">
+                                <img src="{{ asset('assets/img/svg/vector1.svg') }}" alt="Ikon">
                                 <figcaption>Személyre szabható</figcaption>
                             </figure>
                         </div>
                         <div class="col">
                             <figure>
-                                <img style="max-width: 35px;" src="{{ asset('assets/img/homepage/design-elements/vector2.png') }}" alt="Ikon">
-                                <figcaption>Természetes alapanyagok</figcaption>
+                                <img style="max-width: 35px" src="{{ asset('assets/img/svg/vector2.svg') }}" alt="Ikon">                                <figcaption>Természetes alapanyagok</figcaption>
                             </figure>
                         </div>
                         <div class="col">
                             <figure>
-                                <img src="{{ asset('assets/img/homepage/design-elements/vector3.png') }}" alt="Ikon">
+                                <img src="{{ asset('assets/img/svg/vector3.svg') }}" alt="Ikon">
                                 <figcaption>Egészséges beltér</figcaption>
                             </figure>
                         </div>
                         <div class="col">
                             <figure>
-                                <img src="{{ asset('assets/img/homepage/design-elements/vector4.png') }}" alt="Ikon">
+                                <img src="{{ asset('assets/img/svg/vector4.svg') }}" alt="Ikon">
                                 <figcaption>Jó ár-érték arány</figcaption>
                             </figure>
                         </div>
                         <div class="col">
                             <figure>
-                                <img src="{{ asset('assets/img/homepage/design-elements/vector5.png') }}" alt="Ikon">
+                                <img src="{{ asset('assets/img/svg/vector5.svg') }}" alt="Ikon">
                                 <figcaption>Kisebb ökológiai lábnyom</figcaption>
                             </figure>
                         </div>
@@ -71,7 +70,7 @@
                 <div class="col">
                     <div class="img-wrap">
                         <figure>
-                            <img src="{{ asset('assets/img/homepage/fooldal_gerendahaz.png') }}" alt="">
+                            <img src="{{ asset('assets/img/homepage/fooldal_gerendahaz.jpg') }}" alt="">
                         </figure>
                     </div>
                     <div class="img-column">
@@ -105,7 +104,7 @@
                 </div>
                 <div class="col">
                     <div class="card">
-                        <img src="{{ asset('assets/img/homepage/fooldal_referenciahaz.png') }}" alt="Referenciaház">
+                        <img src="{{ asset('assets/img/homepage/fooldal_referenciahaz.jpg') }}" alt="Referenciaház">
                         <div class="card-body">
                             <h5 class="card-title ref-title">Referenciaház program</h5>
                             <p class="card-text">
@@ -166,7 +165,7 @@
                 </div>
                 <div class="col-4">
                     <figure class="color-effect">
-                        <a href="/arajanlat#gyik"><img src="{{ asset('assets/img/homepage/fooldal_gyakorikerdesek.png') }}" alt="Gyakori kérdések szekció:Ház kerttel kép"></a>
+                        <a href="/arajanlat#gyik"><img src="{{ asset('assets/img/homepage/fooldal_gyakorikerdesek.jpg') }}" alt="Gyakori kérdések szekció:Ház kerttel kép"></a>
                     </figure>
                 </div>
             </div>
@@ -180,7 +179,7 @@
         <div class="m-container">
             <div class="row testi-row">
                 <div class="col">
-                    <img class="testi-main-img" src="{{ asset('assets/img/homepage/about-us3.png') }}" title="Photo by Djordje Petrovic" alt="Rólunk mondták: Photo by Djordje Petrovic">
+                    <img class="testi-main-img" src="{{ asset('assets/img/homepage/about-us3.jpg') }}" title="Photo by Djordje Petrovic" alt="Rólunk mondták: Photo by Djordje Petrovic">
                 </div>
                 <div class="col testi-column">
                     <div class="testi-card">
@@ -264,7 +263,7 @@
                         </div>
                         <img class="news-bottom-lines second-row-line" src="{{ asset('assets/img/homepage/design-elements/home_header_elem.png') }}" alt="Design elem">
                         <div class="col">
-                            <img class="news-card-img ml-0" src="{{ asset('assets/img/homepage/placeholder_news.png') }}" alt="Hírek">
+                            <img class="news-card-img ml-0" src="{{$l->getThumbnail()}}" alt="Hírek">
                         </div>
                     </div>
                 </div>

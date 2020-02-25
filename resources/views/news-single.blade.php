@@ -5,68 +5,53 @@
         header.news-single-header {
             background-image: url({{ $news->getThumbnail() }}{{-- Voyager::image($news->thumbnail('cropped')) --}});
         }
+
+        .single-page .image3-section {
+            background-image: url({{ $news->getThumbnail() }}{{-- Voyager::image($news->thumbnail('cropped')) --}});
+        }
     </style>
     <header class="news-single-header header-after subpage-header-size main-header">
         <article class="m-container header-layer-container">
             <div class="row">
-                <div class="main-layer col">
+                <div class="main-layer">
                     <div class="text-box">
                         <h1>{{ $news->getTitle() }}</h1>
-                        <img class="home-header-svg" src="{{ asset('assets/img/homepage/design-elements/home_header_elem.png') }}" alt="Design elem">
-                        <p class="header-excerpt">{{ $news->getExcerpt() }}</p>
+                        {{--<img class="home-header-svg" src="{{ asset('assets/img/homepage/design-elements/home_header_elem.png') }}" alt="Design elem">--}}
+                        {{--<p class="header-excerpt">{{ $news->getExcerpt() }}</p>--}}
                     </div>
                 </div>
             </div>
         </article>
     </header>
     <main class="main single-page">
-        <section class="single-page-section">
-            <div class="m-container">
-                <img class="top-white-elem" src="{{ asset('assets/img/homepage/design-elements/first-sec-top.png') }}" alt="Design elem">
-                <div class="col-12 pt-3">
-                    {{--<h2 class="text-highlight-darker pt-3">{{ $news->title}}</h2>--}}
-                    <small class="pt-3">{{-- {{ $news->author->name }}:--}}{{ $news->getCreatedAt() }}</small>
-                    {{--{{var_dump($latest_news)}}--}}
-                    <img class="design-line-top" src="{{ asset('assets/img/homepage/design-elements/vertical-line-brown.png') }}" alt="Design elem">
-                    <div class="row">
-                        <div class="horizontal-card">
-                            <div class="row">
-                                <div class="pl-0 pt-0">
-                                    <p class="lead-text">
-                                        {{ $news->getExcerpt() }}
-                                        {{--{{ var_dump($latest_news)}}--}}
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row pb-2">
-                    <div class="col-12">
-                        <figure class="img-frame-2 thumbnail-img position-relative z-index-99999">
-                            <img src="{{$news->getThumbnail()}}" alt="basic">
-                        </figure>
-                    </div>
-                </div>
-            </div>
-            <img class="bottom-white-elem" src="{{ asset('assets/img/homepage/design-elements/first-sec-bottom.png') }}" alt="Design elem">
-        </section>
-        <section class="image3-section img-after">
-            <div class="row">
-                    <a class="btn btn-primary" href="/hirek">Vissza a hírekhez</a>
-            </div>
-        </section>
         <section class="article-body">
             <img class="top-white-elem" src="{{ asset('assets/img/homepage/design-elements/first-sec-top.png') }}" alt="Design elem">
             <div class="m-container">
                 <div class="col-12">
-                    <h2 class="text-highlight-darker">{{ $news->getTitle() }}</h2>
+                    {{--<h2 class="text-highlight-darker">{{ $news->getTitle() }}</h2>--}}
                     <img class="design-line-top" src="{{ asset('assets/img/homepage/design-elements/vertical-line-brown.png') }}" alt="Design elem">
                     <div class="row">
                         <div class="col-12 pl-0 pt-3 news-body">
+                            <small class="pt-3">{{-- {{ $news->author->name }}:--}}{{ $news->getCreatedAt() }}</small>
                             <p>
                                 {!! $news->getBody() !!}
                             </p>
+                            {{--<!-- Comment #4: Plugin Code -->--}}
+                            {{--<div class="fb-quote"></div>--}}
+
+                            {{-- TODO real facebook link need here --}}
+                            <!-- Your like button code -->
+                            <div class="fb-like"
+                                 data-href="https://zsena.fragum.tech"
+                                 data-layout="button_count"
+                                 data-action="like"
+                                 data-show-faces="true">
+                            </div>
+                            <!-- Your share button code -->
+                            <div class="fb-share-button"
+                                 data-href="https://zsena.fragum.tech"
+                                 data-layout="button_count">
+                            </div>
                             <p>Források</p>
                             <ul>
                                 <li><a href="#">List here</a></li>
@@ -78,9 +63,17 @@
             </div>
             <img class="bottom-white-elem" src="{{ asset('assets/img/homepage/design-elements/first-sec-bottom.png') }}" alt="Design elem">
         </section>
-        <section class="gallery-section">
+        <section class="image3-section img-after position-relative">
+            <img class="design-line-right-top" src="{{ asset('assets/img/homepage/design-elements/vertical-line-brown.png') }}" alt="Design elem">
+            <div class="row">
+                <a class="btn btn-primary" href="/hirek">Vissza a hírekhez</a>
+            </div>
+        </section>
+        <section class="gallery-section position-relative">
+            <img class="top-white-elem" src="{{ asset('assets/img/homepage/design-elements/first-sec-top.png') }}" alt="Design elem">
             <div class="m-container">
                 <div class="col-12">
+                    <img class="design-line-top" src="{{ asset('assets/img/homepage/design-elements/vertical-line-brown.png') }}" alt="Design elem">
                     <h2 class="text-highlight-darker">Képgaléria</h2>
                     <div class="row">
                         <div class="col pl-0">
@@ -174,9 +167,10 @@
             </div>
             <img class="bottom-white-elem" src="{{ asset('assets/img/homepage/design-elements/first-sec-bottom.png') }}" alt="Design elem">
         </section>
-        <section class="news-single-section latest-news-section">
+        <section class="news-single-section latest-news-section position-relative">
             <div class="m-container">
                 <div class="col-12">
+                    <img class="design-line-right-top" src="{{ asset('assets/img/homepage/design-elements/vertical-line-brown.png') }}" alt="Design elem">
                     <h2>Legfrissebb Híreink</h2>
                 </div>
                 <div class="row card-row">

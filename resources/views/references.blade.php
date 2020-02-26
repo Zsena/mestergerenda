@@ -128,7 +128,7 @@
                 <div class="col-12">
                     <h2 class="text-white">Kialakítás</h2>
                     <div class="row">
-                        <div class="col-3 pl-0">
+                        <div class="col-5 pl-0">
                             <p class="text-white">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet ultrices erat, non bibendum ligula.
                                 Nunc at tellus vitae libero gravida consequat id sed orci. Morbi maximus odio neque, vitae faucibus dolor gravida ac.

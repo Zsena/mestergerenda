@@ -1435,6 +1435,10 @@ header.references-header {
   background-attachment: inherit;
 }
 
+.foorplan-section .row {
+  display: block;
+}
+
 .references-section,
 .foorplan-section,
 .gallery-section {
@@ -1484,6 +1488,10 @@ header.references-header {
   .references-subpage img.design-line-right-top {
     top: -6rem;
     left: -20rem;
+  }
+
+  .foorplan-section .row {
+    display: flex;
   }
 }
 

@@ -1431,7 +1431,7 @@ header.about-us-header {
 =====================================*/
 
 header.references-header {
-  background-image: url("/public/assets/img/references/referenciak.png");
+  background-image: url("/public/assets/img/references/referenciak.jpg");
   background-attachment: inherit;
 }
 
@@ -3686,6 +3686,117 @@ input:checked ~ .modal__overlay {
   -o-transform: scale(1);
   z-index: 9999999;
   overflow: auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #fef8f9;
+}
+
+.slider-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+.slider-container button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 20px 5px;
+  color: #3c376f;
+  font-size: 2rem;
+}
+
+.slider-container button span {
+  position: relative;
+  display: inline-block;
+  transform: translateX(0);
+  transition: transform 0.3s ease;
+}
+
+.slider-container .slider-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.slider-container .slider-nav ul li {
+  display: flex;
+  flex: 2;
+  text-align: center;
+}
+
+.slider-container .slider img {
+  max-width: 100%;
+  display: none;
+  box-shadow: 10px 10px 20px 0 rgba(94, 47, 59, 0.2);
+}
+
+.slider-container .slider img.active,
+.slider-container .slider img:active {
+  display: block;
+  -webkit-animation: fadeImg 0.8s;
+          animation: fadeImg 0.8s;
+}
+
+.slider-container .slider-nav .arrow {
+  flex: 0 0 15%;
+}
+
+.slider-container .slider-nav a {
+  flex-basis: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.slider-container .slider-nav span {
+  display: block;
+  width: 100%;
+}
+
+@-webkit-keyframes fadeImg {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeImg {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.slider-container .previous:hover span {
+  transform: translateX(-10px) scale(1.2);
+}
+
+.slider-container .next:hover span {
+  transform: translateX(10px) scale(1.2);
 }
 
 /* Footer import */

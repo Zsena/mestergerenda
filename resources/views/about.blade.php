@@ -8,9 +8,9 @@
                 <div class="text-box">
                     <h1>Rólunk</h1>
                     <img class="home-header-svg" src="{{ asset('assets/img/homepage/design-elements/home_header_elem.png') }}" alt="Design elem">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Mauris ullamcorper tincidunt turpis, mattis ullamcorper nisl pulvinar quis.
-                        Vestibulum quis erat risus. </p>
+                    <p>
+                        Gerendaház- és rönkházépítéssel foglalkozó cégünk 2019-ben alakult. Olyan, több évtizedes tapasztalattal rendelkező műszaki szakemberekkel dolgozunk, akiknek már a felmenőik is famegmunkálással foglalkoztak.
+                    </p>
                 </div>
 
             </div>

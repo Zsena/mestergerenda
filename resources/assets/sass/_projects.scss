@@ -2,7 +2,7 @@
   Project page styles
 =====================================*/
 header.projects-header {
-  background-image: url("/public/assets/img/about-us/about-us-header.png");
+  background-image: url("/public/assets/img/about-us/about-us-header.jpg");
   background-attachment: inherit;
 }
 
@@ -13,12 +13,7 @@ header.projects-header {
     position: relative;
     z-index: 99999;
     margin-bottom: 0;
-    margin-top: 0;
   }
-}
-
-.projects-section h2 {
-  margin-top: -2rem;
 }
 
 .projects-second-section {

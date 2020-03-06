@@ -94,7 +94,7 @@
                     <div class="row">
                         <div class="horizontal-card">
                             <div class="row">
-                                <div class="col-4 pl-0">
+                                <div class="col-4 pl-0 pr-0">
                                     <figure>
                                         <img class="ml-xl-0" src="{{ asset('assets/img/about-us/placeholder-bigger.png') }}" alt="Rólunk">
                                     </figure>
@@ -120,7 +120,7 @@
                     </div>
                 </div>
             </div>
-            <img class="bottom-white-elem" src="{{ asset('assets/img/homepage/design-elements/first-sec-bottom.png') }}" alt="Design elem">
+            <img class="bottom-white-elem z-index-99999" src="{{ asset('assets/img/homepage/design-elements/first-sec-bottom.png') }}" alt="Design elem">
         </section>
         <section class="projects-second-section">
             <div class="m-container">
@@ -152,7 +152,7 @@
                                         facilisis ut tellus. Vestibulum feugiat id elit ac efficitur. Suspendisse potenti.
                                     </p>
                                 </div>
-                                <div class="col-4 pl-0">
+                                <div class="col-4 pl-0 pr-0">
                                     <figure>
                                         <img style="min-height: 340px;" class="ml-xl-0" src="{{ asset('assets/img/about-us/placeholder-bigger.png') }}" alt="Rólunk">
                                     </figure>
@@ -165,7 +165,7 @@
         </section>
         <section class="gallery-section">
             <img class="top-white-elem" src="{{ asset('assets/img/homepage/design-elements/first-sec-top.png') }}" alt="Design elem">
-            <div class="m-container">
+            <div class="m-container gallery-light-box">
                 <div class="col-12">
                     <h2 class="text-highlight-darker">Kisteres projektek</h2>
                     <img class="design-line-top" src="{{ asset('assets/img/homepage/design-elements/vertical-line-brown.png') }}" alt="Design elem">

@@ -389,7 +389,7 @@ i.arrow {
     height: 100%;
     border-width: 1.5vmin 1.5vmin 0 0;
     border-style: solid;
-    border-color: $dark-green;
+    border-color: #393b35;
     transition: .2s ease;
     display: block;
     transform-origin: 100% 0;
@@ -570,7 +570,7 @@ img.bottom-white-elem {
   right: 0;
   width: 50%;
   height: max-content;
-  min-height: 5%;
+  //min-height: 5%;
 }
 
 img.top-white-elem {
@@ -579,8 +579,13 @@ img.top-white-elem {
   left: 0;
   width: 50%;
   height: max-content;
-  min-height: 5%;
+  //min-height: 5%;
 }
+
+.m-width-90 {
+  max-width: 90%;
+}
+
 /*====================================
    clickable card & card styles
 =====================================*/

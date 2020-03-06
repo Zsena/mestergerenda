@@ -22,7 +22,7 @@
             <div class="m-container">
                 <img class="top-white-elem" src="{{ asset('assets/img/homepage/design-elements/first-sec-top.png') }}" alt="Design elem">
                 <div class="col-12">
-                    <h2 class="text-highlight-darker">A sütik kezelése</h2>
+                    <h2 class="text-highlight-darker mt-0 mb-0 position-relative z-index-99999">A sütik kezelése</h2>
                     <img class="design-line-top" src="{{ asset('assets/img/homepage/design-elements/vertical-line-brown.png') }}" alt="Design elem">
                     <div class="row">
                         <div class="horizontal-card">
@@ -105,7 +105,7 @@
                     <img class="design-line-top" src="{{ asset('assets/img/homepage/design-elements/vertical-line-brown.png') }}" alt="Design elem">
                     <div class="row">
                         <div class="col-12 pl-0">
-                            <h3 class="text-highlight-darker pt-3">1. Lorem Ipsum</h3>
+                            <h3 class="text-highlight-darker">1. Lorem Ipsum</h3>
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet ultrices erat, non bibendum ligula.
                                 Nunc at tellus vitae libero gravida consequat id sed orci. Morbi maximus odio neque, vitae faucibus dolor gravida ac.

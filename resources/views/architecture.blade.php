@@ -26,12 +26,13 @@
                     <div class="row">
                         <div class="horizontal-card">
                             <div class="row">
-                                <div class="col pl-0">
+                                <div class="col pl-0 pr-0">
                                     <figure>
-                                        <img class="ml-xl-0" src="{{ asset('assets/img/about-us/placeholder-bigger.png') }}" alt="Rólunk">
+                                        {{--<img class="ml-xl-0" src="{{ asset('assets/img/about-us/placeholder-bigger.png') }}" alt="Rólunk">--}}
+                                        <img class="ml-xl-0 m-width-90" src="https://images.pexels.com/photos/793485/pexels-photo-793485.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Rólunk">
                                     </figure>
                                 </div>
-                                <div class="col">
+                                <div class="col pl-0">
                                     <p class="text-highlight pb-0">Integer auctor nulla</p>
                                     <p>
                                         Integer mattis odio id massa efficitur, quis pellentesque est ultricies. In dictum sollicitudin pulvinar.
@@ -55,7 +56,8 @@
                             <div class="row">
                                 <div class="col-3 pl-0">
                                     <figure>
-                                        <img class="ml-xl-0" src="{{ asset('assets/img/about-us/placeholder-small.png') }}" alt="Rólunk">
+                                        {{--<img class="ml-xl-0" src="{{ asset('assets/img/about-us/placeholder-small.png') }}" alt="Rólunk">--}}
+                                        <img class="ml-xl-0 m-width-90" src="https://images.pexels.com/photos/1472540/pexels-photo-1472540.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Rólunk">
                                     </figure>
                                 </div>
                                 <div class="col-7 pl-0">
@@ -177,9 +179,10 @@
                                     </p>
                                     <a class="btn btn-primary" href="/arajanlat">Ajánlat kérés</a>
                                 </div>
-                                <div class="col-4 pl-0">
+                                <div class="col-4 pl-0 pr-0">
                                     <figure>
-                                        <img style="min-height: 340px;" class="ml-xl-0" src="{{ asset('assets/img/about-us/placeholder-bigger.png') }}" alt="Rólunk">
+                                        {{--<img style="min-height: 340px;" class="ml-xl-0" src="{{ asset('assets/img/about-us/placeholder-bigger.png') }}" alt="Rólunk">--}}
+                                        <img style="min-height: 340px;" class="ml-xl-0" src="https://images.pexels.com/photos/793485/pexels-photo-793485.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Rólunk">
                                     </figure>
                                 </div>
                             </div>
@@ -190,7 +193,7 @@
         </section>
         <section class="gallery-section">
             <img class="top-white-elem" src="{{ asset('assets/img/homepage/design-elements/first-sec-top.png') }}" alt="Design elem">
-            <div class="m-container">
+            <div class="m-container gallery-light-box">
                 <div class="col-12">
                     <h2 class="text-highlight-darker">Egyéb faépítészet</h2>
                     <img class="design-line-top" src="{{ asset('assets/img/homepage/design-elements/vertical-line-brown.png') }}" alt="Design elem">

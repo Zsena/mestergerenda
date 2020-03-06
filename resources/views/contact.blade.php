@@ -22,7 +22,7 @@
             <div class="m-container">
                 <img class="top-white-elem" src="{{ asset('assets/img/homepage/design-elements/first-sec-top.png') }}" alt="Design elem">
                 <div class="col-12">
-                    <h2 class="text-highlight-darker">Irodánkról</h2>
+                    <h2 class="text-highlight-darker mt-0 position-relative z-index-99999 mb-0">Irodánkról</h2>
                     <img class="design-line-top" src="{{ asset('assets/img/homepage/design-elements/vertical-line-brown.png') }}" alt="Design elem">
                     <div class="row">
                         <div class="horizontal-card">
@@ -158,7 +158,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-7">
+                            <div class="col-7 pl-0 pr-0">
                                 <div class="flex-outer row">
                                     <div class="col-12">
                                         <textarea id="contactMessage" name="contactMessage" placeholder="Írja le mit szeretne pontosan..." required></textarea>

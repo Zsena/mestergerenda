@@ -11,7 +11,7 @@ header.ingredients-header {
   .type-section {
     position: relative;
     h2 {
-      margin-top: -2rem;
+      margin-top: -1rem;
       position: relative;
       z-index: 9999;
     }
@@ -21,6 +21,7 @@ header.ingredients-header {
     position: relative;
     background-color: $dark-green;
     min-height: 500px;
+    margin-bottom: 1em;
   }
 
   .properties {
@@ -33,6 +34,8 @@ header.ingredients-header {
     .vector-col {
       img {
         margin-top: 2rem;
+        margin-right: 2rem;
+        margin-left: 2rem;
       }
     }
   }

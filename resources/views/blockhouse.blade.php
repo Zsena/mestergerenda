@@ -74,7 +74,7 @@
                     </div>
                     <div class="col">
                         <div class="card">
-                            <img src="{{ asset('assets/img/homepage/fooldal_referenciahaz.png') }}" alt="">
+                            <img src="{{ asset('assets/img/homepage/fooldal_referenciahaz.jpg') }}" alt="">
                             <div class="card-body">
                                 <h5 class="card-title">Típus_2</h5>
                                 <div class="rating">

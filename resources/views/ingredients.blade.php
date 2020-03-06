@@ -22,7 +22,7 @@
             <div class="m-container">
                 <img class="top-white-elem" src="{{ asset('assets/img/homepage/design-elements/first-sec-top.png') }}" alt="Design elem">
                 <div class="col-12">
-                    <h2 class="text-highlight-darker">Fa típusa</h2>
+                    <h2 class="text-highlight-darker mb-0">Fa típusa</h2>
                     <img class="design-line-top" src="{{ asset('assets/img/homepage/design-elements/vertical-line-brown.png') }}" alt="Design elem">
                     <div class="row">
                         <div class="horizontal-card">
@@ -100,7 +100,7 @@
         <section class="swot-section">
             <div class="m-container">
                 <div class="col-12">
-                    <h2 class="text-white">Hátrányok és előnyök</h2>
+                    <h2 class="text-white mb-0">Hátrányok és előnyök</h2>
                     <img class="design-line-right-top" src="{{ asset('assets/img/lines/green-small-verti.png') }}" alt="Design elem">
                     <div class="row">
                         <div class="col-7 pl-0">
@@ -128,7 +128,7 @@
             <img class="top-white-elem" src="{{ asset('assets/img/homepage/design-elements/first-sec-top.png') }}" alt="Design elem">
             <div class="m-container">
                 <div class="col-12">
-                    <h2 class="text-highlight">Vastagság</h2>
+                    <h2 class="text-highlight mb-0">Vastagság</h2>
                     <img class="design-line-top" src="{{ asset('assets/img/homepage/design-elements/vertical-line-brown.png') }}" alt="Design elem">
                     <div class="row">
                         <div class="row">
@@ -148,7 +148,7 @@
                                     </div>
                                     <div class="col-3">
                                         <figure>
-                                            <img class="mr-xl-0" src="{{ asset('assets/img/ingredients/properties.png') }}" alt="Photo by Lukas: https://www.pexels.com/@goumbik">
+                                            <img class="mr-xl-0" src="{{ asset('assets/img/ingredients/properties.jpg') }}" alt="Photo by Lukas: https://www.pexels.com/@goumbik">
                                         </figure>
                                     </div>
                                 </div>

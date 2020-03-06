@@ -36,20 +36,30 @@ header.blockhouse-header {
         margin: 0 1px;
       }
     }
+
+    .card {
+      img {
+        height: auto;
+        object-fit: cover;
+        -o-object-fit: cover;
+        @media all and (min-width: 768px) {
+          height: 165px;
+        }
+      }
+    }
   }
 
   .properties {
     position: relative;
 
     h2 {
-      margin-top: -2rem;
+      //margin-top: -2rem;
       position: relative;
       z-index: 9999;
     }
 
     .vector-col {
       img {
-        margin-right: 5rem;
         margin-top: -1rem;
         width: 100%;
         max-width: 150px;
@@ -84,7 +94,11 @@ header.blockhouse-header {
 }
 
 @media all and (min-width: 768px) {
-  .blockhouse-page .first-section h2, .blockhouse-page .technologies h2 {
-    margin-top: -2rem;
+  .properties {
+    .vector-col {
+      img {
+        margin-right: 5rem;
+      }
+    }
   }
 }

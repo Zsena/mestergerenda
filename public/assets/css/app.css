@@ -515,7 +515,7 @@ i.arrow::before {
   height: 100%;
   border-width: 1.5vmin 1.5vmin 0 0;
   border-style: solid;
-  border-color: #586e27;
+  border-color: #393b35;
   transition: 0.2s ease;
   display: block;
   transform-origin: 100% 0;
@@ -716,7 +716,6 @@ img.bottom-white-elem {
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  min-height: 5%;
 }
 
 img.top-white-elem {
@@ -727,7 +726,10 @@ img.top-white-elem {
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  min-height: 5%;
+}
+
+.m-width-90 {
+  max-width: 90%;
 }
 
 /*====================================
@@ -884,7 +886,7 @@ nav.main-nav ul.menu li a:hover {
 
 nav.main-nav.sticky-bg-color {
   background-color: rgba(255, 255, 255, 0.8);
-  height: 70px;
+  height: 65px;
   margin: auto;
   display: flex;
   width: 100%;
@@ -1360,10 +1362,6 @@ header.main-header.subpage-header-size article.header-layer-container .row .main
   padding: 1rem;
 }
 
-header.main-header.subpage-header-size article.header-layer-container .row .main-layer .text-box .home-header-svg {
-  margin: -1rem 0;
-}
-
 header.main-header.subpage-primary-header-size article.header-layer-container .row {
   flex-direction: row;
 }
@@ -1373,16 +1371,12 @@ header.main-header.subpage-primary-header-size article.header-layer-container .r
   top: 7rem;
 }
 
-header.main-header.subpage-primary-header-size article.header-layer-container .row .main-layer .text-box .home-header-svg {
-  margin: -1rem 0;
-}
-
 /*====================================
   news subpage styles
 =====================================*/
 
 header.news-subpage-header {
-  background-image: url("/public/assets/img/news/news-header.png");
+  background-image: url("/public/assets/img/news/news-header.jpg");
   background-attachment: inherit;
 }
 
@@ -1403,7 +1397,7 @@ header.news-subpage-header {
 =====================================*/
 
 header.about-us-header {
-  background-image: url("/public/assets/img/about-us/about-us-header.png");
+  background-image: url("/public/assets/img/about-us/about-us-header.jpg");
   background-attachment: inherit;
 }
 
@@ -1428,7 +1422,7 @@ header.about-us-header {
 }
 
 .vision {
-  background-image: url("/public/assets/img/homepage/fooldal_rolunkmondtak_BG.png");
+  background-image: url("/public/assets/img/homepage/fooldal_rolunkmondtak_BG.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 10rem;
@@ -1707,7 +1701,7 @@ header.offer-header {
 =====================================*/
 
 header.contact-header {
-  background-image: url("/public/assets/img/contact/contact.png");
+  background-image: url("/public/assets/img/contact/contact.jpg");
   background-attachment: inherit;
 }
 
@@ -1772,7 +1766,7 @@ header.ingredients-header {
 }
 
 .ingredients-page .type-section h2 {
-  margin-top: -2rem;
+  margin-top: -1rem;
   position: relative;
   z-index: 9999;
 }
@@ -1781,6 +1775,7 @@ header.ingredients-header {
   position: relative;
   background-color: #586e27;
   min-height: 500px;
+  margin-bottom: 1em;
 }
 
 .ingredients-page .properties {
@@ -1795,6 +1790,8 @@ header.ingredients-header {
 
 .ingredients-page .properties .vector-col img {
   margin-top: 2rem;
+  margin-right: 2rem;
+  margin-left: 2rem;
 }
 
 @media all and (min-width: 500px) {
@@ -1841,18 +1838,28 @@ header.blockhouse-header {
   margin: 0 1px;
 }
 
+.blockhouse-page .b-type-section .card img {
+  height: auto;
+  object-fit: cover;
+  -o-object-fit: cover;
+}
+
+@media all and (min-width: 768px) {
+  .blockhouse-page .b-type-section .card img {
+    height: 165px;
+  }
+}
+
 .blockhouse-page .properties {
   position: relative;
 }
 
 .blockhouse-page .properties h2 {
-  margin-top: -2rem;
   position: relative;
   z-index: 9999;
 }
 
 .blockhouse-page .properties .vector-col img {
-  margin-right: 5rem;
   margin-top: -1rem;
   width: 100%;
   max-width: 150px;
@@ -1884,9 +1891,8 @@ header.blockhouse-header {
 }
 
 @media all and (min-width: 768px) {
-  .blockhouse-page .first-section h2,
-  .blockhouse-page .technologies h2 {
-    margin-top: -2rem;
+  .properties .vector-col img {
+    margin-right: 5rem;
   }
 }
 
@@ -1914,7 +1920,7 @@ header.architecture-header {
 }
 
 .architecture-section h2 {
-  margin-top: -2rem;
+  margin-bottom: 2rem;
 }
 
 .architecture-second-section {
@@ -1940,7 +1946,7 @@ header.architecture-header {
 =====================================*/
 
 header.projects-header {
-  background-image: url("/public/assets/img/about-us/about-us-header.png");
+  background-image: url("/public/assets/img/about-us/about-us-header.jpg");
   background-attachment: inherit;
 }
 
@@ -1955,11 +1961,6 @@ header.projects-header {
   position: relative;
   z-index: 99999;
   margin-bottom: 0;
-  margin-top: 0;
-}
-
-.projects-section h2 {
-  margin-top: -2rem;
 }
 
 .projects-second-section {
@@ -1985,7 +1986,7 @@ header.projects-header {
 =====================================*/
 
 header.single-page-header {
-  background-image: url("/public/assets/img/contact/contact.png");
+  background-image: url("/public/assets/img/contact/contact.jpg");
   background-attachment: inherit;
 }
 
@@ -3617,8 +3618,9 @@ select:focus {
   -o-transition: all 0.55s;
   margin: auto;
   padding: 0.75em 1.5em;
-  font-family: Arial;
+  font-family: "Arial", sans-serif;
   font-size: 14px;
+  text-align: center;
 }
 
 .btn-modal > label:hover {
@@ -3634,7 +3636,6 @@ select:focus {
 }
 
 .modal__overlay {
-  background: #fff;
   bottom: 0;
   left: 0;
   position: fixed;
@@ -3643,37 +3644,26 @@ select:focus {
   text-shadow: none;
   top: 0;
   z-index: 600;
+  background-color: #586e27;
 }
 
 .modal__wrap {
+  background-color: #fff;
   padding: 1em;
   position: relative;
   margin: 0 auto;
-  max-width: 500px;
-  top: 10%;
-  width: 90%;
-  overflow: auto;
+  max-width: 1140px;
+  max-height: 500px;
+  height: 100%;
+  top: 15%;
+  width: 80%;
+  overflow-y: auto;
+  border: 2px solid #99992a;
 }
 
 @media (min-width: 50em) {
   .modal__wrap {
     padding: 1.75em;
-  }
-}
-
-@media (min-height: 37.5em) {
-  .modal__wrap {
-    left: 50%;
-    position: absolute;
-    top: 90%;
-    height: 100%;
-    margin-bottom: 2rem;
-    transform: translate(-50%, -80%);
-    -ms-transform: translateY(-50%, -80%);
-    -webkit-transform: translateY(-50%, -80%);
-    -moz-transform: translateY(-50%, -80%);
-    -o-transform: translateY(-50%, -80%);
-    border: 2px solid #586e27;
   }
 }
 
@@ -3697,7 +3687,6 @@ select:focus {
 }
 
 .modal__wrap p {
-  color: #99992a;
   text-align: justify;
 }
 
@@ -3734,7 +3723,6 @@ input:checked ~ .modal__overlay {
   -moz-transform: scale(1);
   -o-transform: scale(1);
   z-index: 9999999;
-  overflow: auto;
 }
 
 .slider-container {
@@ -4493,108 +4481,6 @@ footer.sticky-footer .footer-social-links .footer-social-links a span {
 
   .ml-xl-0 {
     margin-left: 0;
-  }
-}
-
-@media only screen and (min-width: 2500px) {
-  header.main-header {
-    background-position: center;
-  }
-
-  p,
-  li,
-  th,
-  td,
-  a,
-  .btn,
-  article.header-layer-container .row .main-layer p {
-    font-size: 2em;
-  }
-
-  nav.main-nav ul.menu li a {
-    font-size: 1.1em;
-  }
-
-  nav.main-nav.sticky-bg-color,
-  nav.main-nav ul.menu,
-  nav.main-nav ul.menu li.logo object {
-    height: 160px;
-  }
-
-  nav.main-nav ul.menu li.item {
-    padding-top: 2em;
-  }
-
-  nav.main-nav ul.menu {
-    width: 100%;
-  }
-
-  nav.main-nav ul.menu li a.left-menu-item {
-    font-size: 1.2em;
-  }
-
-  footer.mega-footer .footer-list li a,
-  footer.mega-footer .flex-outer li button {
-    font-size: 1.3em;
-  }
-
-  footer.mega-footer .flex-outer li button {
-    max-width: 80%;
-  }
-
-  .m-container {
-    max-width: 90%;
-  }
-
-  .btn {
-    max-width: 35%;
-    padding: 1em;
-  }
-
-  .main .faq-section .program-text p.ref-text {
-    font-size: 1.3em;
-  }
-
-  .main .testimonial .testi-row .testi-card .commas-row {
-    font-size: 2em;
-    width: 100%;
-  }
-
-  div.img-wrap img {
-    zoom: 1.5;
-  }
-
-  section {
-    padding: 2em 0;
-  }
-
-  .main .news .news-row .news-card .news-card-title h4 {
-    font-size: 3em;
-  }
-
-  h2,
-  .main .special-offers-section .card-row .card .card-title {
-    font-size: 2em;
-  }
-
-  .heading-group h2,
-  h2.text-highlight-darker {
-    font-size: 4em;
-  }
-
-  .main .block-house-section figcaption {
-    font-size: 3em;
-  }
-
-  .card img,
-  .news-card img,
-  img {
-    zoom: 2;
-  }
-
-  .main .testimonial .testi-row .testi-main-img {
-    width: 70%;
-    top: 0;
   }
 }
 

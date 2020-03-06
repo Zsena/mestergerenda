@@ -22,7 +22,7 @@
             <div class="m-container">
                 <img class="top-white-elem" src="{{ asset('assets/img/homepage/design-elements/first-sec-top.png') }}" alt="Design elem">
                 <div class="col-12">
-                    <h2 class="text-highlight-darker">Adatok kezelése</h2>
+                    <h2 class="text-highlight-darker mt-0 mb-0 position-relative z-index-99999">Adatok kezelése</h2>
                     <img class="design-line-top" src="{{ asset('assets/img/homepage/design-elements/vertical-line-brown.png') }}" alt="Design elem">
                     <div class="row">
                         <div class="horizontal-card">
@@ -84,7 +84,7 @@
             <img class="top-white-elem" src="{{ asset('assets/img/homepage/design-elements/first-sec-top.png') }}" alt="Design elem">
             <div class="m-container">
                 <div class="col-12">
-                    <h2 class="text-highlight-darker">Az adatok kezeléséről bővebben</h2>
+                    <h2 class="text-highlight-darker mb-0">Az adatok kezeléséről bővebben</h2>
                     <img class="design-line-top" src="{{ asset('assets/img/homepage/design-elements/vertical-line-brown.png') }}" alt="Design elem">
                     <div class="row">
                         <div class="col-12 pl-0">

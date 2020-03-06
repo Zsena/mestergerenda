@@ -25,8 +25,9 @@
   -o-transition: all 0.55s;
   margin: auto;
   padding: 0.75em 1.5em;
-  font-family: Arial;
+  font-family: 'Arial', sans-serif;
   font-size: 14px;
+  text-align: center;
   &:hover {
     background-color: $svg-brown;
     color: $white;
@@ -39,7 +40,6 @@
   -o-transform: scale(0.97);
 }
 .modal__overlay {
-  background: $white;
   bottom: 0;
   left: 0;
   position: fixed;
@@ -48,36 +48,28 @@
   text-shadow: none;
   top: 0;
   z-index: 600;
+  background-color: $dark-green;
 }
 .modal__wrap {
+  background-color: $white;
   padding: 1em;
   position: relative;
   margin: 0 auto;
-  max-width: 500px;
-  top: 10%;
-  width: 90%;
-  overflow: auto;
+  max-width: 1140px;
+  max-height: 500px;
+  height: 100%;
+  top: 15%;
+  width: 80%;
+  overflow-y: auto;
+  border: 2px solid $light-green;
 }
+
 @media (min-width: 50em) {
   .modal__wrap {
     padding: 1.75em;
   }
 }
-@media (min-height: 37.5em) {
-  .modal__wrap {
-    left: 50%;
-    position: absolute;
-    top: 90%;
-    height: 100%;
-    margin-bottom: 2rem;
-    transform: translate(-50%, -80%);
-    -ms-transform: translateY(-50%, -80%);
-    -webkit-transform: translateY(-50%, -80%);
-    -moz-transform: translateY(-50%, -80%);
-    -o-transform: translateY(-50%, -80%);
-    border: 2px solid $dark-green;
-  }
-}
+
 .modal__wrap label {
   background: $dark-green;
   border-radius: 50%;
@@ -96,9 +88,9 @@
   text-transform: uppercase;
 }
 .modal__wrap p {
-  color: $light-green;
   text-align: justify;
 }
+
 .btn-modal input:focus ~ label {
   transform: scale(0.97);
   -webkit-transform:scale(0.97);
@@ -132,5 +124,5 @@ input:checked ~ .modal__overlay {
   -moz-transform: scale(1);
   -o-transform: scale(1);
   z-index: 9999999;
-  overflow: auto;
+  //overflow: auto;
 }

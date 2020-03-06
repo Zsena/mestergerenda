@@ -232,6 +232,26 @@ div.img-wrap:hover {
   transform: scaleX(-1);
 }
 
+.small-img {
+  width: 100%;
+  max-width: 600px;
+  height: 300px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+@media only screen and (min-width: 768px) {
+  .small-img {
+    height: 500px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .small-img {
+    height: 200px;
+  }
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -3461,32 +3481,56 @@ select:focus {
 }
 
 .panel-body table {
-  background-color: transparent;
-  border-collapse: collapse;
   border-spacing: 0;
+  border-color: transparent;
+  margin: auto;
 }
 
-.panel-body table tr {
-  border-bottom: 1px solid #586e27;
-  border-top: 0;
+.panel-body table tr td:first-child,
+.panel-body table tr td:first-child span {
+  font-size: 17px !important;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #222222;
 }
 
-.panel-body table tr:hover {
-  transition: all 0.3s ease;
-  background-color: #f5f5f5;
+.panel-body table tr:first-child strong,
+.panel-body table tr strong {
+  color: #222222 !important;
+}
+
+.panel-body table tr:nth-child(2n+3) strong {
+  color: #222222;
+}
+
+.panel-body table tr:first-child,
+.panel-body table tr:nth-child(2n+3) {
+  background-color: #8edd9d59;
+}
+
+.panel-body table td,
+.panel-body table td span {
+  padding: 1em;
+  font-size: 14px;
+  font-weight: 100;
+  width: 50% !important;
+}
+
+.panel-body table td span,
+.panel-body table tr td:first-child span {
+  padding: 0;
+}
+
+.panel-body table a {
+  color: #586e27;
+}
+
+.panel-body table a:hover {
+  text-decoration: underline;
 }
 
 .panel-body table th {
-  color: #99992a;
-  text-transform: uppercase;
-}
-
-.panel-body table th,
-.panel-body table td {
-  border-top: 0;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  text-align: left;
+  padding-left: 5px;
 }
 
 .panel-body a {
@@ -3494,7 +3538,7 @@ select:focus {
 }
 
 .panel-body a:hover {
-  color: #d0d039;
+  text-decoration: underline;
 }
 
 /* secondary tables responsive - if extended this table  */
@@ -3503,25 +3547,29 @@ select:focus {
   .secondary-table,
   .single-page table,
   .offer-subpage table,
-  .contact-page table {
+  .contact-page table,
+  .panel-body table {
     border: 1px solid #aec777;
   }
 
   .secondary-table-tr,
   .single-page table tr,
   .offer-subpage table tr,
-  .contact-page table tr {
+  .contact-page table tr,
+  .panel-body table tr {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     height: auto !important;
     margin-bottom: 20px;
+    padding: 10px 0 0;
   }
 
   .secondary-table-tr:last-child,
   .single-page table tr:last-child,
   .offer-subpage table tr:last-child,
-  .contact-page table tr:last-child {
+  .contact-page table tr:last-child,
+  .panel-body table tr:last-child {
     margin-bottom: 0;
   }
 
@@ -3531,7 +3579,9 @@ select:focus {
   .offer-subpage table td,
   .offer-subpage table td span,
   .contact-page table td,
-  .contact-page table td span {
+  .contact-page table td span,
+  .panel-body table td,
+  .panel-body table td span {
     flex: 1 1 150px;
     height: auto !important;
   }
@@ -4117,6 +4167,10 @@ footer.sticky-footer .footer-social-links .footer-social-links a span {
 }
 
 @media only screen and (min-width: 992px) {
+  .mr-lg-05 {
+    margin-right: 0.5em;
+  }
+
   /* Styles for large screens (desktops 992px) and above */
 
   nav.main-nav {

@@ -71,7 +71,7 @@
         </section>
         <section class="gallery-section position-relative">
             <img class="top-white-elem" src="{{ asset('assets/img/homepage/design-elements/first-sec-top.png') }}" alt="Design elem">
-            <div class="m-container">
+            <div class="m-container gallery-light-box">
                 <div class="col-12">
                     <img class="design-line-top" src="{{ asset('assets/img/homepage/design-elements/vertical-line-brown.png') }}" alt="Design elem">
                     <h2 class="text-highlight-darker">Képgaléria</h2>

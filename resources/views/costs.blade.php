@@ -40,7 +40,8 @@
                                 </div>
                                 <div class="col-3">
                                     <figure>
-                                        <img class="mr-xl-0" src="{{ asset('assets/img/about-us/placeholder-small.png') }}" alt="Költség">
+                                        {{--<img class="mr-xl-0 small-img" src="{{ asset('assets/img/about-us/placeholder-small.png') }}" alt="Költség">--}}
+                                        <img class="mr-xl-0 small-img" src="https://images.pexels.com/photos/1878810/pexels-photo-1878810.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Költség">
                                     </figure>
                                 </div>
                             </div>
@@ -63,7 +64,9 @@
                                 </div>
                                 <div class="col-3">
                                     <figure>
-                                        <img class="mr-xl-0" src="{{ asset('assets/img/about-us/placeholder-small.png') }}" alt="Költség">
+                                        {{--<img class="mr-xl-0 small-img" src="{{ asset('assets/img/about-us/placeholder-small.png') }}" alt="Költség">--}}
+                                        <img class="mr-xl-0 small-img" src="https://images.pexels.com/photos/1878810/pexels-photo-1878810.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Költség">
+
                                     </figure>
                                 </div>
                             </div>
@@ -139,7 +142,7 @@
                         </div>
                         <div class="col">
                             <figure>
-                                <img class="mr-xl-0" src="{{ asset('assets/img/about-us/placeholder-small.png') }}" alt="Költség">
+                                <img class="mr-lg-05 mr-xl-0 small-img" src="https://images.pexels.com/photos/1878810/pexels-photo-1878810.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Költség">
                             </figure>
                         </div>
                     </div>
@@ -168,7 +171,7 @@
                                 </div>
                                 <div class="col-3">
                                     <figure>
-                                        <img class="mr-xl-0" src="{{ asset('assets/img/about-us/placeholder-small.png') }}" alt="Költség">
+                                        <img class="mr-xl-0 small-img" src="{{ asset('assets/img/about-us/placeholder-small.png') }}" alt="Költség">
                                     </figure>
                                 </div>
                             </div>
@@ -191,7 +194,7 @@
                                 </div>
                                 <div class="col-3">
                                     <figure>
-                                        <img class="mr-xl-0" src="{{ asset('assets/img/about-us/placeholder-small.png') }}" alt="Költség">
+                                        <img class="mr-xl-0 small-img" src="{{ asset('assets/img/about-us/placeholder-small.png') }}" alt="Költség">
                                     </figure>
                                 </div>
                             </div>
@@ -267,7 +270,7 @@
                         </div>
                         <div class="col">
                             <figure>
-                                <img class="mr-xl-0" src="{{ asset('assets/img/about-us/placeholder-small.png') }}" alt="Költség">
+                                <img class="mr-lg-05 mr-xl-0 small-img" src="{{ asset('assets/img/about-us/placeholder-small.png') }}" alt="Költség">
                             </figure>
                         </div>
                     </div>
@@ -296,7 +299,7 @@
                                 </div>
                                 <div class="col-3">
                                     <figure>
-                                        <img class="mr-xl-0" src="{{ asset('assets/img/about-us/placeholder-small.png') }}" alt="Költség">
+                                        <img class="mr-xl-0 small-img" src="{{ asset('assets/img/about-us/placeholder-small.png') }}" alt="Költség">
                                     </figure>
                                 </div>
                             </div>
@@ -319,7 +322,7 @@
                                 </div>
                                 <div class="col-3">
                                     <figure>
-                                        <img class="mr-xl-0" src="{{ asset('assets/img/about-us/placeholder-small.png') }}" alt="Költség">
+                                        <img class="mr-xl-0 small-img" src="{{ asset('assets/img/about-us/placeholder-small.png') }}" alt="Költség">
                                     </figure>
                                 </div>
                             </div>
@@ -328,7 +331,7 @@
                     <div class="row">
                         <div class="col">
                             <figure>
-                                <img class="foorplan-img" src="{{ asset('assets/img/cost/alaprajz_mini.png') }}" alt="Alaprajz">
+                                <img class="foorplan-img small-img" src="{{ asset('assets/img/cost/alaprajz_mini.png') }}" alt="Alaprajz">
                             </figure>
                         </div>
                         <div class="col pl-0 pr-0">
@@ -395,7 +398,7 @@
                         </div>
                         <div class="col">
                             <figure>
-                                <img class="mr-xl-0" src="{{ asset('assets/img/about-us/placeholder-small.png') }}" alt="Költség">
+                                <img class="mr-lg-05 mr-xl-0 small-img" src="{{ asset('assets/img/about-us/placeholder-small.png') }}" alt="Költség">
                             </figure>
                         </div>
                     </div>

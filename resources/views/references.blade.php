@@ -124,7 +124,7 @@
                     <div class="row">
                         <div class="horizontal-card">
                             <div class="row">
-                                <div class="col-4 pl-0">
+                                <div class="col-4 pl-xl-0">
                                     <figure>
                                         <img class="ml-xl-0"
                                              src="{{ asset('assets/img/about-us/placeholder-bigger.png') }}"
@@ -214,25 +214,30 @@
             <img class="top-white-elem" src="{{ asset('assets/img/homepage/design-elements/first-sec-top.png') }}"
                  alt="Design elem">
             <div class="m-container">
+                <div class="col-12">
+                    <h2 class="text-highlight-darker">Referenciáink képekben</h2>
+                </div>
                 <div class="slider-container">
                     <div class="slider">
-                        <img class="active" src="https://source.unsplash.com/gKk9rpyDryU">
-                        <img src="https://source.unsplash.com/VFGEhLznjPU">
-                        <img src="https://source.unsplash.com/InR-EhiO_js">
+                        <img class="active" src="https://images.pexels.com/photos/206648/pexels-photo-206648.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Referenciák">
+                        <img src="https://images.pexels.com/photos/259618/pexels-photo-259618.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Referenciák">
+                        <img src="https://images.pexels.com/photos/1365110/pexels-photo-1365110.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Referenciák">
+                        <img src="https://images.pexels.com/photos/2996071/pexels-photo-2996071.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Referenciák">
+                        <img src="https://images.pexels.com/photos/1878810/pexels-photo-1878810.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Referenciák">
                     </div>
                     <nav class="slider-nav">
                         <ul>
                             <li class="arrow">
                                 <button class="previous">
                                   <span>
-                                    <i class="ion-arrow-left-c"></i>
+                                    <i class="fas fa-arrow-left"></i>
                                   </span>
                                 </button>
                             </li>
                             <li class="arrow">
                                 <button class="i-next">
                                   <span>
-                                    <i class="ion-arrow-right-c"></i>
+                                   <i class="fas fa-arrow-right"></i>
                                   </span>
                                 </button>
                             </li>
@@ -240,147 +245,149 @@
                     </nav>
                 </div>
                 {{--slider-container end--}}
-                <div class="col-12">
-                    <h2 class="text-highlight-darker">Képgaléria</h2>
-                    <img class="design-line-right-top" src="{{ asset('assets/img/lines/green-small-verti.png') }}"
-                         alt="Design elem">
-                    <div class="row">
-                        <div class="col pl-0">
-                            <figure>
-                                <img onclick="openModal();currentSlide(1)" class="hover-shadow cursor"
-                                     src="{{ asset('assets/img/about-us/placeholder-small.png') }}" alt="Galéria">
-                            </figure>
+                <div class="gallery-light-box">
+                    <div class="col-12">
+                        <h2 class="text-highlight-darker">Képgaléria</h2>
+                        <img class="design-line-right-top" src="{{ asset('assets/img/lines/green-small-verti.png') }}"
+                             alt="Design elem">
+                        <div class="row">
+                            <div class="col pl-0">
+                                <figure>
+                                    <img onclick="openModal();currentSlide(1)" class="hover-shadow cursor"
+                                         src="https://images.pexels.com/photos/206648/pexels-photo-206648.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Galéria">
+                                </figure>
+                            </div>
+                            <div class="col pl-0">
+                                <figure>
+                                    <img onclick="openModal();currentSlide(2)" class="hover-shadow cursor"
+                                         src="{{ asset('assets/img/about-us/placeholder-small.png') }}" alt="Galéria">
+                                </figure>
+                            </div>
+                            <div class="col pl-0">
+                                <figure>
+                                    <img onclick="openModal();currentSlide(3)" class="hover-shadow cursor"
+                                         src="{{ asset('assets/img/about-us/placeholder-small.png') }}" alt="Galéria">
+                                </figure>
+                            </div>
+                            <div class="col pl-0">
+                                <figure>
+                                    <img onclick="openModal();currentSlide(4)" class="hover-shadow cursor"
+                                         src="{{ asset('assets/img/about-us/placeholder-small.png') }}" alt="Galéria">
+                                </figure>
+                            </div>
                         </div>
-                        <div class="col pl-0">
-                            <figure>
-                                <img onclick="openModal();currentSlide(2)" class="hover-shadow cursor"
-                                     src="{{ asset('assets/img/about-us/placeholder-small.png') }}" alt="Galéria">
-                            </figure>
+                        <div class="row">
+                            <div class="col pl-0">
+                                <figure>
+                                    <img onclick="openModal();currentSlide(5)" class="hover-shadow cursor"
+                                         src="{{ asset('assets/img/about-us/placeholder-small.png') }}" alt="Galéria">
+                                </figure>
+                            </div>
+                            <div class="col pl-0">
+                                <figure>
+                                    <img onclick="openModal();currentSlide(6)" class="hover-shadow cursor"
+                                         src="{{ asset('assets/img/about-us/placeholder-small.png') }}" alt="Galéria">
+                                </figure>
+                            </div>
+                            <div class="col pl-0">
+                                <figure>
+                                    <img onclick="openModal();currentSlide(7)" class="hover-shadow cursor"
+                                         src="{{ asset('assets/img/about-us/placeholder-small.png') }}" alt="Galéria">
+                                </figure>
+                            </div>
+                            <div class="col pl-0">
+                                <figure>
+                                    <img onclick="openModal();currentSlide(8)" class="hover-shadow cursor"
+                                         src="{{ asset('assets/img/about-us/placeholder-small.png') }}" alt="Galéria">
+                                </figure>
+                            </div>
                         </div>
-                        <div class="col pl-0">
-                            <figure>
-                                <img onclick="openModal();currentSlide(3)" class="hover-shadow cursor"
-                                     src="{{ asset('assets/img/about-us/placeholder-small.png') }}" alt="Galéria">
-                            </figure>
-                        </div>
-                        <div class="col pl-0">
-                            <figure>
-                                <img onclick="openModal();currentSlide(4)" class="hover-shadow cursor"
-                                     src="{{ asset('assets/img/about-us/placeholder-small.png') }}" alt="Galéria">
-                            </figure>
+                        <div class="row">
+                            <div class="col pl-0">
+                                <figure>
+                                    <img onclick="openModal();currentSlide(9)" class="hover-shadow cursor"
+                                         src="{{ asset('assets/img/about-us/placeholder-small.png') }}" alt="Galéria">
+                                </figure>
+                            </div>
+                            <div class="col pl-0">
+                                <figure>
+                                    <img onclick="openModal();currentSlide(10)" class="hover-shadow cursor"
+                                         src="{{ asset('assets/img/about-us/placeholder-small.png') }}" alt="Galéria">
+                                </figure>
+                            </div>
+                            <div class="col pl-0">
+                                <figure>
+                                    <img onclick="openModal();currentSlide(11)" class="hover-shadow cursor"
+                                         src="{{ asset('assets/img/about-us/placeholder-small.png') }}" alt="Galéria">
+                                </figure>
+                            </div>
+                            <div class="col pl-0">
+                                <figure>
+                                    <img onclick="openModal();currentSlide(12)" class="hover-shadow cursor"
+                                         src="{{ asset('assets/img/about-us/placeholder-small.png') }}" alt="Galéria">
+                                </figure>
+                            </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col pl-0">
-                            <figure>
-                                <img onclick="openModal();currentSlide(5)" class="hover-shadow cursor"
-                                     src="{{ asset('assets/img/about-us/placeholder-small.png') }}" alt="Galéria">
-                            </figure>
-                        </div>
-                        <div class="col pl-0">
-                            <figure>
-                                <img onclick="openModal();currentSlide(6)" class="hover-shadow cursor"
-                                     src="{{ asset('assets/img/about-us/placeholder-small.png') }}" alt="Galéria">
-                            </figure>
-                        </div>
-                        <div class="col pl-0">
-                            <figure>
-                                <img onclick="openModal();currentSlide(7)" class="hover-shadow cursor"
-                                     src="{{ asset('assets/img/about-us/placeholder-small.png') }}" alt="Galéria">
-                            </figure>
-                        </div>
-                        <div class="col pl-0">
-                            <figure>
-                                <img onclick="openModal();currentSlide(8)" class="hover-shadow cursor"
-                                     src="{{ asset('assets/img/about-us/placeholder-small.png') }}" alt="Galéria">
-                            </figure>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col pl-0">
-                            <figure>
-                                <img onclick="openModal();currentSlide(9)" class="hover-shadow cursor"
-                                     src="{{ asset('assets/img/about-us/placeholder-small.png') }}" alt="Galéria">
-                            </figure>
-                        </div>
-                        <div class="col pl-0">
-                            <figure>
-                                <img onclick="openModal();currentSlide(10)" class="hover-shadow cursor"
-                                     src="{{ asset('assets/img/about-us/placeholder-small.png') }}" alt="Galéria">
-                            </figure>
-                        </div>
-                        <div class="col pl-0">
-                            <figure>
-                                <img onclick="openModal();currentSlide(11)" class="hover-shadow cursor"
-                                     src="{{ asset('assets/img/about-us/placeholder-small.png') }}" alt="Galéria">
-                            </figure>
-                        </div>
-                        <div class="col pl-0">
-                            <figure>
-                                <img onclick="openModal();currentSlide(12)" class="hover-shadow cursor"
-                                     src="{{ asset('assets/img/about-us/placeholder-small.png') }}" alt="Galéria">
-                            </figure>
-                        </div>
-                    </div>
-                </div>
-                <div id="myModal" class="modal">
-                    <span class="close cursor" onclick="closeModal()">&times;</span>
-                    <div class="modal-content">
+                    <div id="myModal" class="modal">
+                        <span class="close cursor" onclick="closeModal()">&times;</span>
+                        <div class="modal-content">
 
-                        <div class="gellerySlides">
-                            <div class="numbertext">1 / 12</div>
-                            <img src="{{ asset('assets/img/about-us/placeholder-bigger.png') }}" style="width:100%">
-                        </div>
+                            <div class="gellerySlides">
+                                <div class="numbertext">1 / 12</div>
+                                <img src="https://images.pexels.com/photos/206648/pexels-photo-206648.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" style="width:100%">
+                            </div>
 
-                        <div class="gellerySlides">
-                            <div class="numbertext">2 / 12</div>
-                            <img src="{{ asset('assets/img/about-us/placeholder-bigger.png') }}" style="width:100%">
-                        </div>
+                            <div class="gellerySlides">
+                                <div class="numbertext">2 / 12</div>
+                                <img src="{{ asset('assets/img/about-us/placeholder-bigger.png') }}" style="width:100%">
+                            </div>
 
-                        <div class="gellerySlides">
-                            <div class="numbertext">3 / 12</div>
-                            <img src="{{ asset('assets/img/about-us/placeholder-bigger.png') }}" style="width:100%">
-                        </div>
+                            <div class="gellerySlides">
+                                <div class="numbertext">3 / 12</div>
+                                <img src="{{ asset('assets/img/about-us/placeholder-bigger.png') }}" style="width:100%">
+                            </div>
 
-                        <div class="gellerySlides">
-                            <div class="numbertext">4 / 12</div>
-                            <img src="{{ asset('assets/img/about-us/placeholder-bigger.png') }}" style="width:100%">
-                        </div>
-                        <div class="gellerySlides">
-                            <div class="numbertext">5 / 12</div>
-                            <img src="{{ asset('assets/img/about-us/placeholder-bigger.png') }}" style="width:100%">
-                        </div>
-                        <div class="gellerySlides">
-                            <div class="numbertext">6 / 12</div>
-                            <img src="{{ asset('assets/img/about-us/placeholder-bigger.png') }}" style="width:100%">
-                        </div>
-                        <div class="gellerySlides">
-                            <div class="numbertext">7 / 12</div>
-                            <img src="{{ asset('assets/img/about-us/placeholder-bigger.png') }}" style="width:100%">
-                        </div>
-                        <div class="gellerySlides">
-                            <div class="numbertext">8 / 12</div>
-                            <img src="{{ asset('assets/img/about-us/placeholder-bigger.png') }}" style="width:100%">
-                        </div>
-                        <div class="gellerySlides">
-                            <div class="numbertext">9 / 12</div>
-                            <img src="{{ asset('assets/img/about-us/placeholder-bigger.png') }}" style="width:100%">
-                        </div>
-                        <div class="gellerySlides">
-                            <div class="numbertext">10 / 12</div>
-                            <img src="{{ asset('assets/img/about-us/placeholder-bigger.png') }}" style="width:100%">
-                        </div>
-                        <div class="gellerySlides">
-                            <div class="numbertext">11 / 12</div>
-                            <img src="{{ asset('assets/img/about-us/placeholder-bigger.png') }}" style="width:100%">
-                        </div>
-                        <div class="gellerySlides">
-                            <div class="numbertext">12 / 12</div>
-                            <img src="{{ asset('assets/img/about-us/placeholder-bigger.png') }}" style="width:100%">
-                        </div>
+                            <div class="gellerySlides">
+                                <div class="numbertext">4 / 12</div>
+                                <img src="{{ asset('assets/img/about-us/placeholder-bigger.png') }}" style="width:100%">
+                            </div>
+                            <div class="gellerySlides">
+                                <div class="numbertext">5 / 12</div>
+                                <img src="{{ asset('assets/img/about-us/placeholder-bigger.png') }}" style="width:100%">
+                            </div>
+                            <div class="gellerySlides">
+                                <div class="numbertext">6 / 12</div>
+                                <img src="{{ asset('assets/img/about-us/placeholder-bigger.png') }}" style="width:100%">
+                            </div>
+                            <div class="gellerySlides">
+                                <div class="numbertext">7 / 12</div>
+                                <img src="{{ asset('assets/img/about-us/placeholder-bigger.png') }}" style="width:100%">
+                            </div>
+                            <div class="gellerySlides">
+                                <div class="numbertext">8 / 12</div>
+                                <img src="{{ asset('assets/img/about-us/placeholder-bigger.png') }}" style="width:100%">
+                            </div>
+                            <div class="gellerySlides">
+                                <div class="numbertext">9 / 12</div>
+                                <img src="{{ asset('assets/img/about-us/placeholder-bigger.png') }}" style="width:100%">
+                            </div>
+                            <div class="gellerySlides">
+                                <div class="numbertext">10 / 12</div>
+                                <img src="{{ asset('assets/img/about-us/placeholder-bigger.png') }}" style="width:100%">
+                            </div>
+                            <div class="gellerySlides">
+                                <div class="numbertext">11 / 12</div>
+                                <img src="{{ asset('assets/img/about-us/placeholder-bigger.png') }}" style="width:100%">
+                            </div>
+                            <div class="gellerySlides">
+                                <div class="numbertext">12 / 12</div>
+                                <img src="{{ asset('assets/img/about-us/placeholder-bigger.png') }}" style="width:100%">
+                            </div>
 
-                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        </div>
                     </div>
                 </div>
             </div>
